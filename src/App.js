@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "./App.css";
 import Homepage from "./components/pages/homepage/HomePage";
 import LoginPage from "./components/pages/user/LoginPage";
+import SignupPage from "./components/pages/user/SignupPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
         </Routes>
       </BrowserRouter>
     </div>
