@@ -58,5 +58,5 @@ FullStack
   - 부정 거래 티켓 신고 처리
 
 ## 사이트맵(SITEMAP)
+<img width="5176" height="2302" alt="image" src="https://github.com/user-attachments/assets/8b4e1661-f7b8-4212-a45a-f0c4d5b3fd5d" />
 
-![alt text](image.png)
