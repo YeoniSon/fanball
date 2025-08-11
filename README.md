@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# FANBALL 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 주제: KBO 기반 야구 팬 커뮤니티 & 티켓 양도 플랫폼
 
-## Available Scripts
+## 개발 형태
 
-In the project directory, you can run:
+---
 
-### `npm start`
+FullStack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+→ FrontEnd: React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+→ BackEnd : Java Spring Boot
 
-### `npm test`
+## 목표
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+- KBO 스크롤링 을 활용해 실시간 정보를 제공, 팬간 커뮤니티, 실시간 메시징, 티켓 양도 기능을 통해 야구 팬 문화 확장
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 주요기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 회원기능
 
-### `npm run eject`
+  - 회원가입 / 로그인
+  - 응원 팀 설정
+  - 프로필 수정
+  - 마이페이지 (티켓 판매 내역, 응원팀 변경, 1:1 메시지, 거래내역, 게시판 작성 내역)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- KBO 관련
+  - 1군
+    - 실시간 경기 일정
+    - 경기 결과
+    - 각 경기 채팅방 자동 개설
+    - 선수 등/말소 기록
+    - 순위
+  - 2군
+    - 경기일정
+    - 경기 결과
+    - 선수 등/말소 기록
+    - 각 경기 채팅방 자동 개설
+- 팬 커뮤니티 기능
+  - 팀별 게시판(응원게시판, 정보공유)
+  - 경기별 실시간 채팅방
+  - 신고/ 차단 기능
+- 티켓 거래 시스템
+  - 티켓 등록(날짜, 팀, 좌석, 가격 → 가격은 각 구장별 가격에 따라)
+  - 거래 상태 (신청/ 수락/완료 처리)
+  - 실시간 티켓 거래 대화 기능
+    - 1:1 쪽지
+    - 읽음 여부 표시
+  - 후기 작성 기능
+  - 신고 기능
+- 관리자 기능
+  - 유저 관리(신고, 제재 등 )
+  - 부정 거래 티켓 신고 처리
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 사이트맵(SITEMAP)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image.png](attachment:fb532cc5-090b-48ec-ae11-e3e4ecefad26:image.png)
