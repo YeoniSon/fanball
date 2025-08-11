@@ -137,7 +137,7 @@ const SignupPage = () => {
   return (
     <SignupContainer>
       <SignupCard>
-        <Logo>
+        <Logo onClick={() => navigate("/")}>
           <h1>⚾ FANBALL</h1>
           <p>회원가입</p>
         </Logo>
