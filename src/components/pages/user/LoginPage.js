@@ -12,7 +12,7 @@ import {
   LoginButton,
   SignupLink,
   TestAccounts,
-} from "../../../styles/login/LoginPageStyled";
+} from "../../../styles/LoginPageStyled";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/base/Header";
+import SideBar from "./components/base/SideBar";
 import Homepage from "./components/pages/homepage/HomePage";
 import LoginPage from "./components/pages/user/LoginPage";
 import SignupPage from "./components/pages/user/SignupPage";
@@ -15,13 +16,29 @@ function AppContent() {
 
   return (
     <>
+      {/* 헤더는 로그인/회원가입 페이지에서만 숨김 */}
       {showHeader && <Header />}
-      <div style={{ marginTop: showHeader ? "4rem" : "0" }}>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-        </Routes>
+
+      {/* 메인 콘텐츠 영역 */}
+      <div
+        style={{
+          marginTop: showHeader ? "4rem" : "0", // 헤더가 있을 때만 상단 여백
+          minHeight: "calc(100vh - 4rem)",
+        }}
+      >
+        <div style={{ display: "flex" }}>
+          {/* 사이드바 */}
+          <SideBar showHeader={showHeader} />
+
+          {/* 메인 콘텐츠 */}
+          <div style={{ flex: 1, padding: "2rem" }}>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
+            </Routes>
+          </div>
+        </div>
       </div>
     </>
   );

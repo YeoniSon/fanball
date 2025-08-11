@@ -14,7 +14,7 @@ import {
   SignupButton,
   LoginLink,
   Row,
-} from "../../../styles/signup/SignupPageStyled";
+} from "../../../styles/SignupPageStyled";
 
 const SignupPage = () => {
   const [formData, setFormData] = useState({

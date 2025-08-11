@@ -21,7 +21,7 @@ import {
   AuthButtons,
   LoginButton,
   SignupButton,
-} from "../../styles/header/HeaderStyled";
+} from "../../styles/HeaderStyled";
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -29,6 +29,9 @@ const Header = () => {
   // 알림 및 메시지 상태
   const [notifications, setNotifications] = useState(3);
   const [unreadMessages, setUnreadMessages] = useState(5);
+  // 스크롤 상태
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -43,6 +46,30 @@ const Header = () => {
       setUser(JSON.parse(userData));
     }
   }, []);
+
+  // 스크롤 감지
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // 스크롤 방향에 따라 헤더 표시/숨김
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // 아래로 스크롤하고 100px 이상 스크롤했을 때 헤더 숨김
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        // 위로 스크롤할 때 헤더 표시
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   const handleLogout = () => {
     // 로그아웃 처리
@@ -67,7 +94,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer>
+    <HeaderContainer isVisible={isVisible}>
       <Container>
         <HeaderContent>
           {/* Logo */}
