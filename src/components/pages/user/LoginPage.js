@@ -82,7 +82,7 @@ const LoginPage = () => {
   return (
     <LoginContainer>
       <LoginCard>
-        <Logo>
+        <Logo onClick={() => navigate("/")}>
           <h1>⚾ FANBALL</h1>
           <p>팬들의 야구 커뮤니티</p>
         </Logo>
