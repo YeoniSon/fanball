@@ -7,7 +7,9 @@ const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1001;
+  transform: translateY(${(props) => (props.isVisible ? "0" : "-100%")});
+  transition: transform 0.3s ease-in-out;
 `;
 
 const Container = styled.div`
