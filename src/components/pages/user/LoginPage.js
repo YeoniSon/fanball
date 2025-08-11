@@ -120,7 +120,22 @@ const LoginPage = () => {
         </Form>
 
         <SignupLink>
-          계정이 없으신가요? <a href="/signup">회원가입</a>
+          계정이 없으신가요?{" "}
+          <button
+            type="button"
+            onClick={() => navigate("/signup")}
+            style={{
+              background: "none",
+              border: "none",
+              color: "#2563eb",
+              textDecoration: "underline",
+              cursor: "pointer",
+              fontSize: "inherit",
+              fontFamily: "inherit",
+            }}
+          >
+            회원가입
+          </button>
         </SignupLink>
       </LoginCard>
     </LoginContainer>
