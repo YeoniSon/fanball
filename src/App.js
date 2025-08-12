@@ -12,34 +12,39 @@ function AppContent() {
   const location = useLocation();
 
   // 현재 경로가 login, signup이면 false
-  const showHeader = !["/login", "/signup"].includes(location.pathname);
+  const isAuthPage = ["/login", "/signup"].includes(location.pathname);
 
   return (
     <>
-      {/* 헤더는 로그인/회원가입 페이지에서만 숨김 */}
-      {showHeader && <Header />}
-
       {/* 메인 콘텐츠 영역 */}
-      <div
-        style={{
-          marginTop: showHeader ? "4rem" : "0", // 헤더가 있을 때만 상단 여백
-          minHeight: "calc(100vh - 4rem)",
-        }}
-      >
-        <div style={{ display: "flex" }}>
-          {/* 사이드바 */}
-          {showHeader && <SideBar />}
+      {isAuthPage ? (
+        // 로그인/회원가입 페이지일 때는 여백 없이 전체 화면
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+        </Routes>
+      ) : (
+        // 일반 페이지일 때는 헤더와 사이드바 포함
+        <div
+          style={{
+            marginTop: "4rem", // 헤더 높이만큼 여백
+            minHeight: "calc(100vh - 4rem)",
+          }}
+        >
+          <Header />
+          <div style={{ display: "flex" }}>
+            {/* 사이드바 */}
+            <SideBar />
 
-          {/* 메인 콘텐츠 */}
-          <div style={{ flex: 1, padding: "2rem" }}>
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signup" element={<SignupPage />} />
-            </Routes>
+            {/* 메인 콘텐츠 */}
+            <div style={{ flex: 1, padding: "2rem" }}>
+              <Routes>
+                <Route path="/" element={<Homepage />} />
+              </Routes>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
