@@ -28,7 +28,7 @@ function AppContent() {
       >
         <div style={{ display: "flex" }}>
           {/* 사이드바 */}
-          <SideBar showHeader={showHeader} />
+          {showHeader && <SideBar />}
 
           {/* 메인 콘텐츠 */}
           <div style={{ flex: 1, padding: "2rem" }}>
