@@ -2,6 +2,7 @@ import React from "react";
 
 import WelcomeSection from "../../features/homepage/WelcomeSection";
 import ActionSection from "../../features/homepage/ActionSection";
+import TicketSection from "../../features/homepage/TicketSection";
 
 const Homepage = () => {
   const actionItem = [
@@ -34,6 +35,7 @@ const Homepage = () => {
     <div>
       <WelcomeSection />
       <ActionSection actionItems={actionItem} />
+      <TicketSection />
     </div>
   );
 };

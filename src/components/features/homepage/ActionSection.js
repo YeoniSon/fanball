@@ -9,7 +9,7 @@ import {
   ActionDescription,
   ActionContents,
   IconBox,
-} from "../../../styles/HomePageStyled";
+} from "../../../styles/HomePage/ActionSectionStyled";
 
 const ActionSection = ({ actionItems }) => {
   const navigate = useNavigate();
@@ -51,7 +51,7 @@ const ActionSection = ({ actionItems }) => {
   };
 
   return (
-    <div style={{ padding: "1rem", marginTop: "0.5rem" }}>
+    <div style={{ padding: "0.5rem" }}>
       <ActionGrid>
         {actionItems.map((item, index) => (
           <ActionBox key={index}>

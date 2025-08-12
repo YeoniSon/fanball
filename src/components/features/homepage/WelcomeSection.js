@@ -13,7 +13,7 @@ import {
   FeatureItem,
   FeatureIcon,
   FeatureText,
-} from "../../../styles/HomePageStyled";
+} from "../../../styles/HomePage/WelcomeSectionStyled";
 
 const WelcomeSection = () => {
   return (

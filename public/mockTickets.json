@@ -1,0 +1,171 @@
+{
+  "tickets": [
+    {
+      "id": "T001",
+      "team": "SSG 랜더스",
+      "opponent": "KIA 타이거즈",
+      "date": "2024-04-15",
+      "time": "18:30",
+      "stadium": "인천SSG랜더스필드",
+      "section": "1루석",
+      "row": "A",
+      "seat": "15",
+      "price": 45000,
+      "originalPrice": 50000,
+      "seller": {
+        "id": "U001",
+        "name": "김야구",
+        "nickname": "야구팬1",
+        "rating": 4.8,
+        "verified": true
+      },
+      "status": "available",
+      "description": "1루석 A열 15번 좌석입니다. 좋은 위치에서 경기를 관람하실 수 있어요!",
+      "createdAt": "2024-04-10T10:00:00Z",
+      "expiresAt": "2024-04-14T23:59:59Z"
+    },
+    {
+      "id": "T002",
+      "team": "LG 트윈스",
+      "opponent": "두산 베어스",
+      "date": "2024-04-16",
+      "time": "19:00",
+      "stadium": "잠실야구장",
+      "section": "3루석",
+      "row": "C",
+      "seat": "8",
+      "price": 35000,
+      "originalPrice": 40000,
+      "seller": {
+        "id": "U002",
+        "name": "이야구",
+        "nickname": "LG팬",
+        "rating": 4.9,
+        "verified": true
+      },
+      "status": "available",
+      "description": "3루석 C열 8번 좌석. 잠실야구장에서 LG 트윈스 응원하세요!",
+      "createdAt": "2024-04-11T14:30:00Z",
+      "expiresAt": "2024-04-15T23:59:59Z"
+    },
+    {
+      "id": "T003",
+      "team": "삼성 라이온즈",
+      "opponent": "롯데 자이언츠",
+      "date": "2024-04-17",
+      "time": "18:30",
+      "stadium": "대구삼성라이온즈파크",
+      "section": "중앙석",
+      "row": "B",
+      "seat": "12",
+      "price": 55000,
+      "originalPrice": 60000,
+      "seller": {
+        "id": "U003",
+        "name": "박야구",
+        "nickname": "삼성팬",
+        "rating": 4.7,
+        "verified": false
+      },
+      "status": "reserved",
+      "description": "중앙석 B열 12번. 삼성 라이온즈 홈 경기 티켓입니다.",
+      "createdAt": "2024-04-12T09:15:00Z",
+      "expiresAt": "2024-04-16T23:59:59Z"
+    },
+    {
+      "id": "T004",
+      "team": "KIA 타이거즈",
+      "opponent": "NC 다이노스",
+      "date": "2024-04-18",
+      "time": "19:00",
+      "stadium": "광주기아챔피언스필드",
+      "section": "2루석",
+      "row": "D",
+      "seat": "5",
+      "price": 40000,
+      "originalPrice": 45000,
+      "seller": {
+        "id": "U004",
+        "name": "최야구",
+        "nickname": "KIA팬",
+        "rating": 4.6,
+        "verified": true
+      },
+      "status": "available",
+      "description": "2루석 D열 5번. KIA 타이거즈 홈 경기 티켓입니다.",
+      "createdAt": "2024-04-13T16:45:00Z",
+      "expiresAt": "2024-04-17T23:59:59Z"
+    },
+    {
+      "id": "T005",
+      "team": "두산 베어스",
+      "opponent": "한화 이글스",
+      "date": "2024-04-19",
+      "time": "18:30",
+      "stadium": "잠실야구장",
+      "section": "1루석",
+      "row": "E",
+      "seat": "20",
+      "price": 38000,
+      "originalPrice": 42000,
+      "seller": {
+        "id": "U005",
+        "name": "정야구",
+        "nickname": "두산팬",
+        "rating": 4.8,
+        "verified": true
+      },
+      "status": "available",
+      "description": "1루석 E열 20번. 두산 베어스 홈 경기 티켓입니다.",
+      "createdAt": "2024-04-14T11:20:00Z",
+      "expiresAt": "2024-04-18T23:59:59Z"
+    },
+    {
+      "id": "T006",
+      "team": "KT 위즈",
+      "opponent": "키움 히어로즈",
+      "date": "2024-04-20",
+      "time": "19:00",
+      "stadium": "수원KT위즈파크",
+      "section": "3루석",
+      "row": "A",
+      "seat": "10",
+      "price": 32000,
+      "originalPrice": 35000,
+      "seller": {
+        "id": "U006",
+        "name": "강야구",
+        "nickname": "KT팬",
+        "rating": 4.5,
+        "verified": false
+      },
+      "status": "available",
+      "description": "3루석 A열 10번. KT 위즈 홈 경기 티켓입니다.",
+      "createdAt": "2024-04-15T13:10:00Z",
+      "expiresAt": "2024-04-19T23:59:59Z"
+    }
+  ],
+  "teams": [
+    "SSG 랜더스",
+    "KIA 타이거즈",
+    "LG 트윈스",
+    "NC 다이노스",
+    "KT 위즈",
+    "두산 베어스",
+    "삼성 라이온즈",
+    "롯데 자이언츠",
+    "키움 히어로즈",
+    "한화 이글스"
+  ],
+  "stadiums": [
+    "인천SSG랜더스필드",
+    "광주기아챔피언스필드",
+    "잠실야구장",
+    "창원NC파크",
+    "수원KT위즈파크",
+    "대구삼성라이온즈파크",
+    "사직야구장",
+    "고척스카이돔"
+  ],
+  "sections": ["1루석", "2루석", "3루석", "중앙석", "외야석", "VIP석"]
+}
