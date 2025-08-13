@@ -71,6 +71,12 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   useEffect(() => {
     const currentPath = location.pathname;
 
+    // 실시간 채팅 페이지인 경우
+    if (currentPath.includes("/live-chat/")) {
+      setActiveMenuState("community");
+      return;
+    }
+
     // 게시글 상세 페이지인 경우 팀 ID 추출
     if (currentPath.includes("/post/")) {
       const teamId = currentPath.split("/")[1]; // /{teamId}/post/{postId}에서 teamId 추출
