@@ -26,7 +26,7 @@ const CommunityIcon = () => {
 
 const CommunityMenu = ({ activeMenu, onMenuClick }) => {
   const handleMenuClick = () => {
-    onMenuClick("community", "/community");
+    onMenuClick("community", "/live-chat");
   };
 
   return (
