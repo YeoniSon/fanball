@@ -70,6 +70,25 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   // 현재 경로에 따라 활성 메뉴 설정
   useEffect(() => {
     const currentPath = location.pathname;
+
+    // 게시글 상세 페이지인 경우 팀 ID 추출
+    if (currentPath.includes("/post/")) {
+      const teamId = currentPath.split("/")[1]; // /{teamId}/post/{postId}에서 teamId 추출
+
+      // 팀 ID에 해당하는 메뉴 찾기
+      const teamMenu = allMenuItems.find((item) => {
+        // item.path에서 / 제거하고 비교
+        const itemPath = item.path.replace("/", "");
+        return itemPath === teamId;
+      });
+
+      if (teamMenu) {
+        setActiveMenuState(teamMenu.id);
+        return;
+      }
+    }
+
+    // 일반 경로인 경우 기존 로직 사용
     const currentMenu = allMenuItems.find((item) => item.path === currentPath);
     if (currentMenu) {
       setActiveMenuState(currentMenu.id);

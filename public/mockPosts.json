@@ -1,0 +1,55 @@
+{
+  "popularPosts": [
+    {
+      "id": "post_001",
+      "title": "오늘 경기 너무 재밌었어요!",
+      "author": "야구팬123",
+      "team": "ssgLanders",
+
+      "time": "2시간 전",
+      "likes": 45,
+      "comments": 12,
+      "content": "오늘 SSG vs KIA 경기 정말 재밌었어요. 최정의 홈런이 정말 멋졌습니다!"
+    },
+    {
+      "id": "post_002",
+      "title": "내일 경기 예측해보세요",
+      "author": "예측왕",
+      "team": "lgTwins",
+      "time": "4시간 전",
+      "likes": 32,
+      "comments": 8,
+      "content": "내일 LG vs 두산 경기 어떻게 될까요? 여러분의 의견을 들어보고 싶어요."
+    },
+    {
+      "id": "post_003",
+      "title": "선수 응원가 모음",
+      "author": "응원단장",
+      "team": "kiaTigers",
+      "time": "6시간 전",
+      "likes": 67,
+      "comments": 23,
+      "content": "KIA 선수들의 응원가를 정리해봤어요. 함께 불러봐요!"
+    },
+    {
+      "id": "post_004",
+      "title": "야구장 맛집 추천",
+      "author": "맛집탐험가",
+      "team": "samsungLions",
+      "time": "8시간 전",
+      "likes": 28,
+      "comments": 15,
+      "content": "대구구장 근처 맛집들을 소개해드릴게요. 경기 전후로 맛있는 것 먹고 가세요!"
+    },
+    {
+      "id": "post_005",
+      "title": "어제 경기 하이라이트",
+      "author": "하이라이트맨",
+      "team": "ncDinos",
+      "time": "12시간 전",
+      "likes": 89,
+      "comments": 31,
+      "content": "어제 NC vs 삼성 경기의 주요 장면들을 정리해봤어요. 놓치신 분들 보세요!"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import ActionSection from "../../features/homepage/ActionSection";
 import TicketSection from "../../features/homepage/TicketSection";
 import TodayGameSection from "../../features/homepage/TodayGameSection";
 import FuturesGameSection from "../../features/homepage/FuturesGameSection";
+import PopularPostsSection from "../../features/homepage/PopularPostsSection";
 
 const HomePage = () => {
   const actionItem = [
@@ -47,6 +48,7 @@ const HomePage = () => {
           <FuturesGameSection />
         </div>
       </div>
+      <PopularPostsSection />
     </div>
   );
 };
