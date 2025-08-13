@@ -1,0 +1,378 @@
+{
+  "gamesByDate": {
+    "2024-03-21": [
+      {
+        "id": "game_001",
+        "homeTeam": "SSG 랜더스",
+        "awayTeam": "KIA 타이거즈",
+        "homeScore": 3,
+        "awayScore": 2,
+        "status": "live",
+        "time": "18:30",
+        "stadium": "인천SSG랜더스필드",
+        "broadcast": "KBS2",
+        "weather": "맑음",
+        "temperature": "22°C",
+        "attendance": 12500,
+        "currentInning": 7,
+        "inningHalf": "top",
+        "inningScores": {
+          "home": [0, 1, 0, 0, 1, 0, 1, 0, 0],
+          "away": [0, 0, 1, 0, 0, 1, 0, 0, 0]
+        },
+        "highlights": [
+          "1회초 KIA 김선빈 2루타",
+          "3회말 SSG 최정 2점 홈런",
+          "7회말 SSG 한유섬 적시타"
+        ]
+      },
+      {
+        "id": "game_002",
+        "homeTeam": "LG 트윈스",
+        "awayTeam": "두산 베어스",
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "scheduled",
+        "time": "18:30",
+        "stadium": "잠실야구장",
+        "broadcast": "SBS",
+        "weather": "흐림",
+        "temperature": "19°C",
+        "attendance": null,
+        "highlights": []
+      },
+      {
+        "id": "game_003",
+        "homeTeam": "NC 다이노스",
+        "awayTeam": "삼성 라이온즈",
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "scheduled",
+        "time": "18:30",
+        "stadium": "창원NC파크",
+        "broadcast": "MBC",
+        "weather": "맑음",
+        "temperature": "24°C",
+        "attendance": null,
+        "highlights": []
+      }
+    ],
+    "2024-03-20": [
+      {
+        "id": "result_001",
+        "homeTeam": "SSG 랜더스",
+        "awayTeam": "KIA 타이거즈",
+        "homeScore": 5,
+        "awayScore": 3,
+        "status": "completed",
+        "time": "18:30",
+        "stadium": "인천SSG랜더스필드",
+        "broadcast": "KBS2",
+        "attendance": 12500,
+        "inningScores": {
+          "home": [0, 1, 0, 0, 1, 0, 1, 0, 2],
+          "away": [0, 0, 1, 0, 0, 1, 0, 0, 1]
+        },
+        "highlights": [
+          "1회초 KIA 김선빈 2루타",
+          "3회말 SSG 최정 2점 홈런",
+          "7회말 SSG 한유섬 적시타",
+          "9회초 KIA 김도영 솔로홈런"
+        ],
+        "winningPitcher": "김광현",
+        "losingPitcher": "양현종",
+        "save": "고우석"
+      },
+      {
+        "id": "result_002",
+        "homeTeam": "LG 트윈스",
+        "awayTeam": "두산 베어스",
+        "homeScore": 2,
+        "awayScore": 7,
+        "status": "completed",
+        "time": "18:30",
+        "stadium": "잠실야구장",
+        "broadcast": "SBS",
+        "attendance": 15800,
+        "inningScores": {
+          "home": [0, 0, 0, 1, 0, 0, 0, 1, 0],
+          "away": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "highlights": [
+          "2회초 두산 양의지 3점 홈런",
+          "4회말 LG 오지환 적시타",
+          "6회초 두산 김재환 2점 홈런",
+          "8회말 LG 김현수 솔로홈런"
+        ],
+        "winningPitcher": "정우영",
+        "losingPitcher": "켈리",
+        "save": "정우영"
+      },
+      {
+        "id": "result_003",
+        "homeTeam": "NC 다이노스",
+        "awayTeam": "삼성 라이온즈",
+        "homeScore": 8,
+        "awayScore": 4,
+        "status": "completed",
+        "time": "18:30",
+        "stadium": "창원NC파크",
+        "broadcast": "MBC",
+        "attendance": 9800,
+        "inningScores": {
+          "home": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "away": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "highlights": [
+          "1회말 NC 박석민 2점 홈런",
+          "3회초 삼성 구자욱 적시타",
+          "5회말 NC 김주원 3점 홈런",
+          "7회초 삼성 오승환 구원 등판"
+        ],
+        "winningPitcher": "이재학",
+        "losingPitcher": "백정현",
+        "save": "이민호"
+      }
+    ],
+    "2024-03-19": [
+      {
+        "id": "result_004",
+        "homeTeam": "KT 위즈",
+        "awayTeam": "롯데 자이언츠",
+        "homeScore": 1,
+        "awayScore": 3,
+        "status": "completed",
+        "time": "18:30",
+        "stadium": "수원KT위즈파크",
+        "broadcast": "SBS",
+        "attendance": 11200,
+        "inningScores": {
+          "home": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "away": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "highlights": [
+          "2회초 롯데 전준우 적시타",
+          "4회말 KT 박경수 솔로홈런",
+          "6회초 롯데 안치홍 2점 홈런"
+        ],
+        "winningPitcher": "윤성빈",
+        "losingPitcher": "소형준",
+        "save": "김원중"
+      },
+      {
+        "id": "result_005",
+        "homeTeam": "키움 히어로즈",
+        "awayTeam": "한화 이글스",
+        "homeScore": 6,
+        "awayScore": 2,
+        "status": "completed",
+        "time": "18:30",
+        "stadium": "고척스카이돔",
+        "broadcast": "MBC",
+        "attendance": 8500,
+        "inningScores": {
+          "home": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "away": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "highlights": [
+          "1회말 키움 이정후 적시타",
+          "3회초 한화 노시환 솔로홈런",
+          "5회말 키움 송성문 2점 홈런",
+          "7회말 키움 김혜성 적시타"
+        ],
+        "winningPitcher": "에이버리",
+        "losingPitcher": "김민우",
+        "save": "정우영"
+      }
+    ],
+    "2024-03-22": [
+      {
+        "id": "upcoming_001",
+        "homeTeam": "SSG 랜더스",
+        "awayTeam": "LG 트윈스",
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "scheduled",
+        "time": "18:30",
+        "stadium": "인천SSG랜더스필드",
+        "broadcast": "KBS2",
+        "weather": "맑음",
+        "temperature": "20°C"
+      },
+      {
+        "id": "upcoming_002",
+        "homeTeam": "KIA 타이거즈",
+        "awayTeam": "두산 베어스",
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "scheduled",
+        "time": "18:30",
+        "stadium": "광주기아챔피언스필드",
+        "broadcast": "SBS",
+        "weather": "흐림",
+        "temperature": "18°C"
+      },
+      {
+        "id": "upcoming_003",
+        "homeTeam": "NC 다이노스",
+        "awayTeam": "삼성 라이온즈",
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "scheduled",
+        "time": "18:30",
+        "stadium": "창원NC파크",
+        "broadcast": "MBC",
+        "weather": "맑음",
+        "temperature": "22°C"
+      }
+    ]
+  },
+  "standings": {
+    "rankings": [
+      {
+        "rank": 1,
+        "team": "SSG 랜더스",
+        "games": 5,
+        "wins": 4,
+        "losses": 1,
+        "ties": 0,
+        "winRate": 0.8,
+        "gamesBehind": 0.0,
+        "last10": "4-1",
+        "streak": "W3"
+      },
+      {
+        "rank": 2,
+        "team": "NC 다이노스",
+        "games": 5,
+        "wins": 4,
+        "losses": 1,
+        "ties": 0,
+        "winRate": 0.8,
+        "gamesBehind": 0.0,
+        "last10": "4-1",
+        "streak": "W2"
+      },
+      {
+        "rank": 3,
+        "team": "두산 베어스",
+        "games": 5,
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "winRate": 0.6,
+        "gamesBehind": 1.0,
+        "last10": "3-2",
+        "streak": "W1"
+      },
+      {
+        "rank": 4,
+        "team": "롯데 자이언츠",
+        "games": 5,
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "winRate": 0.6,
+        "gamesBehind": 1.0,
+        "last10": "3-2",
+        "streak": "L1"
+      },
+      {
+        "rank": 5,
+        "team": "키움 히어로즈",
+        "games": 5,
+        "wins": 3,
+        "losses": 2,
+        "ties": 0,
+        "winRate": 0.6,
+        "gamesBehind": 1.0,
+        "last10": "3-2",
+        "streak": "W1"
+      },
+      {
+        "rank": 6,
+        "team": "LG 트윈스",
+        "games": 5,
+        "wins": 2,
+        "losses": 3,
+        "ties": 0,
+        "winRate": 0.4,
+        "gamesBehind": 2.0,
+        "last10": "2-3",
+        "streak": "L2"
+      },
+      {
+        "rank": 7,
+        "team": "KIA 타이거즈",
+        "games": 5,
+        "wins": 2,
+        "losses": 3,
+        "ties": 0,
+        "winRate": 0.4,
+        "gamesBehind": 2.0,
+        "last10": "2-3",
+        "streak": "L2"
+      },
+      {
+        "rank": 8,
+        "team": "삼성 라이온즈",
+        "games": 5,
+        "wins": 1,
+        "losses": 4,
+        "ties": 0,
+        "winRate": 0.2,
+        "gamesBehind": 3.0,
+        "last10": "1-4",
+        "streak": "L3"
+      },
+      {
+        "rank": 9,
+        "team": "KT 위즈",
+        "games": 5,
+        "wins": 1,
+        "losses": 4,
+        "ties": 0,
+        "winRate": 0.2,
+        "gamesBehind": 3.0,
+        "last10": "1-4",
+        "streak": "L2"
+      },
+      {
+        "rank": 10,
+        "team": "한화 이글스",
+        "games": 5,
+        "wins": 0,
+        "losses": 5,
+        "ties": 0,
+        "winRate": 0.0,
+        "gamesBehind": 4.0,
+        "last10": "0-5",
+        "streak": "L5"
+      }
+    ]
+  },
+  "teams": [
+    "SSG 랜더스",
+    "KIA 타이거즈",
+    "LG 트윈스",
+    "NC 다이노스",
+    "KT 위즈",
+    "두산 베어스",
+    "삼성 라이온즈",
+    "롯데 자이언츠",
+    "키움 히어로즈",
+    "한화 이글스"
+  ],
+  "stadiums": [
+    "인천SSG랜더스필드",
+    "광주기아챔피언스필드",
+    "잠실야구장",
+    "창원NC파크",
+    "수원KT위즈파크",
+    "잠실야구장",
+    "대구삼성라이온즈파크",
+    "부산사직야구장",
+    "고척스카이돔",
+    "대전한화생명이글스파크"
+  ]
+}

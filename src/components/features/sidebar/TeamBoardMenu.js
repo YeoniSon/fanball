@@ -3,15 +3,22 @@ import {
   MenuSection,
   MenuItem,
   MenuList,
+  TeamMenuButton,
 } from "../../../styles/SideBarStyled";
 
-const TeamBoardMenu = ({ activeMenu, onMenuClick }) => {
+const TeamBoardMenu = ({ activeMenu, onMenuClick, allMenuItems }) => {
   const teamMenuItems = [
     {
       id: "SSG",
       label: "SSG 랜더스",
       logo: "/team-logos/ssg-landers.png",
       path: "/ssgLanders",
+    },
+    {
+      id: "NC",
+      label: "NC 다이노스",
+      logo: "/team-logos/nc-dinos.png",
+      path: "/ncDinos",
     },
     {
       id: "KIA",
@@ -24,12 +31,6 @@ const TeamBoardMenu = ({ activeMenu, onMenuClick }) => {
       label: "LG 트윈스",
       logo: "/team-logos/lg-twins.png",
       path: "/lgTwins",
-    },
-    {
-      id: "NC",
-      label: "NC 다이노스",
-      logo: "/team-logos/nc-dinos.png",
-      path: "/ncDinos",
     },
     {
       id: "KT",
@@ -73,35 +74,47 @@ const TeamBoardMenu = ({ activeMenu, onMenuClick }) => {
     onMenuClick(menuId, path);
   };
 
+  // 팀 색상 가져오기
+  const getTeamColor = (teamId) => {
+    const team = allMenuItems?.find((item) => item.id === teamId);
+    return team?.color || "#6b7280"; // 기본 색상
+  };
+
   return (
     <>
       <MenuSection>팀별 게시판</MenuSection>
       <MenuList>
-        {teamMenuItems.map((item) => (
-          <MenuItem key={item.id}>
-            <MenuButton
-              active={activeMenu === item.id}
-              onClick={() => handleMenuClick(item.id, item.path)}
-            >
-              <img
-                src={item.logo}
-                alt={`${item.label} 로고`}
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  objectFit: "contain",
-                }}
-                onError={(e) => {
-                  // 로고 이미지가 없을 때 기본 아이콘 표시
-                  e.target.style.display = "none";
-                  e.target.nextSibling.style.display = "block";
-                }}
-              />
-              <span style={{ display: "none" }}>⚾</span>
-              {item.label}
-            </MenuButton>
-          </MenuItem>
-        ))}
+        {teamMenuItems.map((item) => {
+          const isActive = activeMenu === item.id;
+          const teamColor = getTeamColor(item.id);
+
+          return (
+            <MenuItem key={item.id}>
+              <TeamMenuButton
+                active={isActive}
+                teamColor={teamColor}
+                onClick={() => handleMenuClick(item.id, item.path)}
+              >
+                <img
+                  src={item.logo}
+                  alt={`${item.label} 로고`}
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    objectFit: "contain",
+                  }}
+                  onError={(e) => {
+                    // 로고 이미지가 없을 때 기본 아이콘 표시
+                    e.target.style.display = "none";
+                    e.target.nextSibling.style.display = "block";
+                  }}
+                />
+                <span style={{ display: "none" }}>⚾</span>
+                {item.label}
+              </TeamMenuButton>
+            </MenuItem>
+          );
+        })}
       </MenuList>
     </>
   );

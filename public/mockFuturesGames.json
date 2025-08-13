@@ -1,0 +1,169 @@
+{
+  "gamesByDate": {
+    "2024-03-21": [
+      {
+        "id": "futures_001",
+        "homeTeam": "SSG 랜더스 2군",
+        "awayTeam": "KIA 타이거즈 2군",
+        "homeScore": 2,
+        "awayScore": 4,
+        "status": "live",
+        "time": "14:00",
+        "stadium": "인천SSG랜더스필드 2군구장",
+        "broadcast": "SSG TV",
+        "weather": "맑음",
+        "temperature": "24°C",
+        "attendance": 1200,
+        "currentInning": 8,
+        "inningHalf": "bottom",
+        "inningScores": {
+          "home": [0, 0, 1, 0, 0, 0, 1, 0, 0],
+          "away": [1, 0, 0, 2, 0, 0, 0, 1, 0]
+        },
+        "highlights": [
+          "1회초 KIA 2군 김도영 적시타",
+          "4회초 KIA 2군 박찬호 2점 홈런",
+          "7회말 SSG 2군 한유섬 적시타"
+        ]
+      },
+      {
+        "id": "futures_002",
+        "homeTeam": "LG 트윈스 2군",
+        "awayTeam": "두산 베어스 2군",
+        "homeScore": 1,
+        "awayScore": 1,
+        "status": "live",
+        "time": "14:00",
+        "stadium": "잠실야구장 2군구장",
+        "broadcast": "LG TV",
+        "weather": "흐림",
+        "temperature": "20°C",
+        "attendance": 800,
+        "currentInning": 6,
+        "inningHalf": "top",
+        "inningScores": {
+          "home": [0, 0, 0, 1, 0, 0, 0, 0, 0],
+          "away": [0, 0, 0, 0, 0, 1, 0, 0, 0]
+        },
+        "highlights": [
+          "4회말 LG 2군 오지환 적시타",
+          "6회초 두산 2군 양의지 적시타"
+        ]
+      },
+      {
+        "id": "futures_003",
+        "homeTeam": "NC 다이노스 2군",
+        "awayTeam": "삼성 라이온즈 2군",
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "scheduled",
+        "time": "14:00",
+        "stadium": "창원NC파크 2군구장",
+        "broadcast": "NC TV",
+        "weather": "맑음",
+        "temperature": "26°C",
+        "attendance": null,
+        "highlights": []
+      }
+    ],
+    "2024-03-20": [
+      {
+        "id": "futures_result_001",
+        "homeTeam": "SSG 랜더스 2군",
+        "awayTeam": "KIA 타이거즈 2군",
+        "homeScore": 5,
+        "awayScore": 2,
+        "status": "completed",
+        "time": "14:00",
+        "stadium": "인천SSG랜더스필드 2군구장",
+        "broadcast": "SSG TV",
+        "attendance": 1100,
+        "inningScores": {
+          "home": [0, 2, 0, 0, 1, 0, 2, 0, 0],
+          "away": [0, 0, 1, 0, 0, 0, 0, 1, 0]
+        },
+        "highlights": [
+          "2회말 SSG 2군 최정 2점 홈런",
+          "5회말 SSG 2군 한유섬 적시타",
+          "7회말 SSG 2군 김주원 2점 홈런"
+        ],
+        "winningPitcher": "김광현 2군",
+        "losingPitcher": "양현종 2군",
+        "save": "고우석 2군"
+      },
+      {
+        "id": "futures_result_002",
+        "homeTeam": "LG 트윈스 2군",
+        "awayTeam": "두산 베어스 2군",
+        "homeScore": 3,
+        "awayScore": 4,
+        "status": "completed",
+        "time": "14:00",
+        "stadium": "잠실야구장 2군구장",
+        "broadcast": "LG TV",
+        "attendance": 950,
+        "inningScores": {
+          "home": [0, 0, 1, 0, 0, 0, 2, 0, 0],
+          "away": [1, 0, 0, 0, 2, 0, 0, 1, 0]
+        },
+        "highlights": [
+          "1회초 두산 2군 양의지 적시타",
+          "5회초 두산 2군 김재환 2점 홈런",
+          "7회말 LG 2군 오지환 2점 홈런"
+        ],
+        "winningPitcher": "정우영 2군",
+        "losingPitcher": "켈리 2군",
+        "save": "정우영 2군"
+      }
+    ],
+    "2024-03-19": [
+      {
+        "id": "futures_result_003",
+        "homeTeam": "KT 위즈 2군",
+        "awayTeam": "롯데 자이언츠 2군",
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "completed",
+        "time": "14:00",
+        "stadium": "수원KT위즈파크 2군구장",
+        "broadcast": "KT TV",
+        "attendance": 700,
+        "inningScores": {
+          "home": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+          "away": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "highlights": [
+          "7회말 KT 2군 박경수 적시타",
+          "9회초 롯데 2군 전준우 적시타"
+        ],
+        "winningPitcher": "윤성빈 2군",
+        "losingPitcher": "소형준 2군",
+        "save": "김원중 2군"
+      }
+    ]
+  },
+  "teams": [
+    "SSG 랜더스 2군",
+    "KIA 타이거즈 2군",
+    "LG 트윈스 2군",
+    "NC 다이노스 2군",
+    "KT 위즈 2군",
+    "두산 베어스 2군",
+    "삼성 라이온즈 2군",
+    "롯데 자이언츠 2군",
+    "키움 히어로즈 2군",
+    "한화 이글스 2군"
+  ],
+  "stadiums": [
+    "인천SSG랜더스필드 2군구장",
+    "광주기아챔피언스필드 2군구장",
+    "잠실야구장 2군구장",
+    "창원NC파크 2군구장",
+    "수원KT위즈파크 2군구장",
+    "잠실야구장 2군구장",
+    "대구삼성라이온즈파크 2군구장",
+    "부산사직야구장 2군구장",
+    "고척스카이돔 2군구장",
+    "대전한화생명이글스파크 2군구장"
+  ]
+}
