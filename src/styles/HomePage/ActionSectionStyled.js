@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 export const ActionBox = styled.div`
   background: white;
+  min-width: 200px;
+  flex-shrink: 0;
   border-radius: 0.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -80,12 +82,9 @@ export const ActionDescription = styled.p`
 // 새로운 그리드 레이아웃 스타일
 export const ActionGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  width: 100%;
 `;
 
 export const ActionBadge = styled.span`

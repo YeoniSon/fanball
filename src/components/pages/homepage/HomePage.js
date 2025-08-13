@@ -3,8 +3,10 @@ import React from "react";
 import WelcomeSection from "../../features/homepage/WelcomeSection";
 import ActionSection from "../../features/homepage/ActionSection";
 import TicketSection from "../../features/homepage/TicketSection";
+import TodayGameSection from "../../features/homepage/TodayGameSection";
+import FuturesGameSection from "../../features/homepage/FuturesGameSection";
 
-const Homepage = () => {
+const HomePage = () => {
   const actionItem = [
     {
       title: "티켓 거래",
@@ -35,9 +37,18 @@ const Homepage = () => {
     <div>
       <WelcomeSection />
       <ActionSection actionItems={actionItem} />
+
       <TicketSection />
+      <div style={{ display: "flex" }}>
+        <div style={{ flex: 1, marginRight: "1rem" }}>
+          <TodayGameSection />
+        </div>
+        <div style={{ flex: 1 }}>
+          <FuturesGameSection />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Homepage;
+export default HomePage;
