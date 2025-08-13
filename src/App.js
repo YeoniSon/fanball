@@ -6,6 +6,7 @@ import SideBar from "./components/base/SideBar";
 import Homepage from "./components/pages/homepage/HomePage";
 import LoginPage from "./components/pages/user/LoginPage";
 import SignupPage from "./components/pages/user/SignupPage";
+import LeagueSchedulePage from "./components/pages/schedule/LeagueSchedulePage";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
@@ -40,6 +41,7 @@ function AppContent() {
             <div style={{ flex: 1, padding: "2rem" }}>
               <Routes>
                 <Route path="/" element={<Homepage />} />
+                <Route path="/schedule" element={<LeagueSchedulePage />} />
               </Routes>
             </div>
           </div>
