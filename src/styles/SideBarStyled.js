@@ -102,6 +102,35 @@ const MenuButton = styled.button`
   }
 `;
 
+const TeamMenuButton = styled.button`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 1rem;
+  background: ${(props) =>
+    props.active ? `${props.teamColor}` : "transparent"};
+  color: ${(props) => (props.active ? "white" : "black")};
+  border: ${(props) =>
+    props.active ? `2px solid ${props.teamColor}` : "none"};
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  font-size: 0.87rem;
+  font-weight: ${(props) => (props.active ? "600" : "500")};
+
+  &:hover {
+    background: ${(props) =>
+      props.active ? `${props.teamColor}20` : "rgba(1, 1, 1, 0.3)"};
+    color: ${(props) => (props.active ? props.teamColor : "white")};
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+`;
+
 export {
   SideBarContainer,
   LogoSection,
@@ -110,6 +139,7 @@ export {
   MenuList,
   MenuItem,
   MenuButton,
+  TeamMenuButton,
   MenuSection,
   Bar,
 };
