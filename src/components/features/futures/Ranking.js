@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   RankingContainer,
-  RankingTitle,
   LeagueTabs,
   LeagueTab,
   RankingTable,
@@ -13,9 +12,8 @@ import {
   RankingTeamLogo,
   RankingTeamName,
   StatsCell,
-  MilitaryTeam,
   LoadingMessage,
-} from "../../../styles/SchedulePageStyled";
+} from "../../../styles/schedules/RankingStyled";
 
 const Ranking = () => {
   const [activeLeague, setActiveLeague] = useState("north");

@@ -27,7 +27,7 @@ import {
   GamesListBox,
   VS,
   LoadingMessage,
-} from "../../../styles/SchedulePageStyled";
+} from "../../../styles/schedules/AllScheduleStyled";
 
 const AllSchedule = () => {
   const navigate = useNavigate();

@@ -18,11 +18,9 @@ import {
   TodayHeaderTitle,
   TodayHeaderCount,
   TodayGamesListBox,
-  LiveChatButton,
-  ScheduledGameMessage,
   FinishedGameMessage,
   VS,
-} from "../../../styles/SchedulePageStyled";
+} from "../../../styles/schedules/TodayGameStyled";
 
 const TodayGame = () => {
   const navigate = useNavigate();

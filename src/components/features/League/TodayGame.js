@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   TodayGamesContainer,
-  TodayGamesTitle,
-  TodayGamesDescription,
   GameCard,
   GameHeader,
   GameTeams,
@@ -24,7 +22,7 @@ import {
   ScheduledGameMessage,
   FinishedGameMessage,
   VS,
-} from "../../../styles/SchedulePageStyled";
+} from "../../../styles/schedules/TodayGameStyled";
 
 const TodayGame = () => {
   const navigate = useNavigate();

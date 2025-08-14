@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   SelectContainer,
   MonthlyScheduleButton,
-} from "../../../styles/SchedulePageStyled";
+} from "../../../styles/schedules/SchedulePageStyled";
 import AllSchedule from "./AllSchedule";
 import TodayGame from "./TodayGame";
 
