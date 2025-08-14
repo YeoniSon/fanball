@@ -1,0 +1,148 @@
+{
+  "byYear": {
+    "2025": {
+      "standings": [
+        {
+          "rank": 1,
+          "teamId": "kia-tigers",
+          "team": "KIA 타이거즈",
+          "logo": "/team-logos/kia-tigers.png",
+          "games": 101,
+          "wins": 61,
+          "losses": 38,
+          "ties": 2,
+          "winRate": 0.615,
+          "gamesBehind": 0.0,
+          "streak": "W4",
+          "last10": "8-2"
+        },
+        {
+          "rank": 2,
+          "teamId": "lg-twins",
+          "team": "LG 트윈스",
+          "logo": "/team-logos/lg-twins.png",
+          "games": 101,
+          "wins": 58,
+          "losses": 41,
+          "ties": 2,
+          "winRate": 0.587,
+          "gamesBehind": 3.0,
+          "streak": "L2",
+          "last10": "5-5"
+        },
+        {
+          "rank": 3,
+          "teamId": "ssg-landers",
+          "team": "SSG 랜더스",
+          "logo": "/team-logos/ssg-landers.png",
+          "games": 101,
+          "wins": 57,
+          "losses": 43,
+          "ties": 1,
+          "winRate": 0.57,
+          "gamesBehind": 3.5,
+          "streak": "W3",
+          "last10": "7-3"
+        },
+        {
+          "rank": 4,
+          "teamId": "nc-dinos",
+          "team": "NC 다이노스",
+          "logo": "/team-logos/nc-dinos.png",
+          "games": 101,
+          "wins": 55,
+          "losses": 45,
+          "ties": 1,
+          "winRate": 0.55,
+          "gamesBehind": 5.5,
+          "streak": "L1",
+          "last10": "5-5"
+        },
+        {
+          "rank": 5,
+          "teamId": "kt-wiz",
+          "team": "KT 위즈",
+          "logo": "/team-logos/kt-wiz.png",
+          "games": 101,
+          "wins": 52,
+          "losses": 48,
+          "ties": 1,
+          "winRate": 0.52,
+          "gamesBehind": 8.5,
+          "streak": "W2",
+          "last10": "6-4"
+        },
+        {
+          "rank": 6,
+          "teamId": "doosan-bears",
+          "team": "두산 베어스",
+          "logo": "/team-logos/doosan-bears.png",
+          "games": 101,
+          "wins": 50,
+          "losses": 50,
+          "ties": 1,
+          "winRate": 0.5,
+          "gamesBehind": 10.5,
+          "streak": "W1",
+          "last10": "5-5"
+        },
+        {
+          "rank": 7,
+          "teamId": "lotte-giants",
+          "team": "롯데 자이언츠",
+          "logo": "/team-logos/lotte-giants.png",
+          "games": 101,
+          "wins": 47,
+          "losses": 53,
+          "ties": 1,
+          "winRate": 0.47,
+          "gamesBehind": 13.5,
+          "streak": "L1",
+          "last10": "4-6"
+        },
+        {
+          "rank": 8,
+          "teamId": "samsung-lions",
+          "team": "삼성 라이온즈",
+          "logo": "/team-logos/samsung-lions.png",
+          "games": 101,
+          "wins": 45,
+          "losses": 55,
+          "ties": 1,
+          "winRate": 0.45,
+          "gamesBehind": 15.5,
+          "streak": "W1",
+          "last10": "4-6"
+        },
+        {
+          "rank": 9,
+          "teamId": "hanwha-eagles",
+          "team": "한화 이글스",
+          "logo": "/team-logos/hanwha-eagles.png",
+          "games": 101,
+          "wins": 43,
+          "losses": 57,
+          "ties": 1,
+          "winRate": 0.43,
+          "gamesBehind": 17.5,
+          "streak": "L1",
+          "last10": "3-7"
+        },
+        {
+          "rank": 10,
+          "teamId": "kiwoom-heroes",
+          "team": "키움 히어로즈",
+          "logo": "/team-logos/kiwoom-heroes.png",
+          "games": 101,
+          "wins": 40,
+          "losses": 60,
+          "ties": 1,
+          "winRate": 0.4,
+          "gamesBehind": 20.5,
+          "streak": "L4",
+          "last10": "2-8"
+        }
+      ]
+    }
+  }
+}
