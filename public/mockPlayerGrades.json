@@ -1,294 +1,584 @@
 {
-  "playerRegistrations": [
-    {
-      "id": "p001",
-      "name": "김현수",
-      "team": "두산 베어스",
-      "uniformNumber": 7,
-      "batterType": "우투우타",
-      "birthDate": "1999-03-15",
-      "position": "외야수",
-      "height": 185,
-      "weight": 88,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
+  "dailyRegistrations": {
+    "2025-08-14": {
+      "두산 베어스": {
+        "기존선수": {
+          "감독": [
+            {
+              "id": "p001",
+              "name": "이승엽",
+              "uniformNumber": 36,
+              "batterType": "우투우타",
+              "position": "감독",
+              "birthDate": "1976-05-18",
+              "height": 183,
+              "weight": 95,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "투수": [
+            {
+              "id": "p002",
+              "name": "김광현",
+              "uniformNumber": 29,
+              "batterType": "좌투좌타",
+              "birthDate": "1988-07-22",
+              "position": "투수",
+              "height": 188,
+              "weight": 95,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p003",
+              "name": "정재훈",
+              "uniformNumber": 17,
+              "batterType": "우투우타",
+              "birthDate": "1990-03-15",
+              "position": "투수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p004",
+              "name": "이영하",
+              "uniformNumber": 11,
+              "batterType": "우투우타",
+              "birthDate": "1989-05-12",
+              "position": "투수",
+              "height": 183,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "포수": [
+            {
+              "id": "p005",
+              "name": "양의지",
+              "uniformNumber": 47,
+              "batterType": "우투우타",
+              "birthDate": "1993-07-15",
+              "position": "포수",
+              "height": 182,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p006",
+              "name": "박세혁",
+              "uniformNumber": 20,
+              "batterType": "우투우타",
+              "birthDate": "1991-05-20",
+              "position": "포수",
+              "height": 180,
+              "weight": 82,
+              "status": "등록",
+              "currentLevel": "2군"
+            }
+          ],
+          "내야수": [
+            {
+              "id": "p007",
+              "name": "김재호",
+              "uniformNumber": 52,
+              "batterType": "우투우타",
+              "birthDate": "1990-02-28",
+              "position": "내야수",
+              "height": 180,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p008",
+              "name": "정수빈",
+              "uniformNumber": 31,
+              "batterType": "좌투좌타",
+              "birthDate": "1994-01-15",
+              "position": "내야수",
+              "height": 177,
+              "weight": 78,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p009",
+              "name": "허경민",
+              "uniformNumber": 13,
+              "batterType": "우투우타",
+              "birthDate": "1992-08-10",
+              "position": "내야수",
+              "height": 178,
+              "weight": 80,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "외야수": [
+            {
+              "id": "p010",
+              "name": "김현수",
+              "uniformNumber": 7,
+              "batterType": "우투우타",
+              "birthDate": "1999-03-15",
+              "position": "외야수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p011",
+              "name": "정수빈",
+              "uniformNumber": 31,
+              "batterType": "좌투좌타",
+              "birthDate": "1994-01-15",
+              "position": "외야수",
+              "height": 177,
+              "weight": 78,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ]
+        },
+        "신규등록": {},
+        "신규말소": {}
+      },
+      "LG 트윈스": {
+        "기존선수": {
+          "감독/코치": [
+            {
+              "id": "p014",
+              "name": "염경엽",
+              "uniformNumber": 1,
+              "position": "감독",
+              "birthDate": "1969-08-25",
+              "height": 175,
+              "weight": 75,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "투수": [
+            {
+              "id": "p015",
+              "name": "윤성환",
+              "uniformNumber": 18,
+              "batterType": "우투우타",
+              "birthDate": "1995-04-12",
+              "position": "투수",
+              "height": 188,
+              "weight": 92,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p016",
+              "name": "켈리",
+              "uniformNumber": 19,
+              "batterType": "우투우타",
+              "birthDate": "1990-03-15",
+              "position": "투수",
+              "height": 190,
+              "weight": 95,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "포수": [
+            {
+              "id": "p017",
+              "name": "유강남",
+              "uniformNumber": 27,
+              "batterType": "우투우타",
+              "birthDate": "1992-07-15",
+              "position": "포수",
+              "height": 183,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "내야수": [
+            {
+              "id": "p018",
+              "name": "오지환",
+              "uniformNumber": 2,
+              "batterType": "우투우타",
+              "birthDate": "1990-03-12",
+              "position": "내야수",
+              "height": 178,
+              "weight": 80,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p019",
+              "name": "김민성",
+              "uniformNumber": 14,
+              "batterType": "우투우타",
+              "birthDate": "1988-12-20",
+              "position": "내야수",
+              "height": 180,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "외야수": [
+            {
+              "id": "p020",
+              "name": "김현수",
+              "uniformNumber": 29,
+              "batterType": "우투우타",
+              "birthDate": "1983-01-12",
+              "position": "외야수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p021",
+              "name": "박용택",
+              "uniformNumber": 33,
+              "batterType": "좌투좌타",
+              "birthDate": "1985-04-05",
+              "position": "외야수",
+              "height": 178,
+              "weight": 80,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ]
+        },
+        "신규등록": {},
+        "신규말소": {}
+      },
+      "키움 히어로즈": {
+        "기존선수": {},
+        "신규등록": {
+          "감독/코치": [
+            {
+              "id": "p014",
+              "name": "홍원기",
+              "uniformNumber": 1,
+              "position": "감독",
+              "birthDate": "1970-06-15",
+              "height": 178,
+              "weight": 80,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "외야수": [
+            {
+              "id": "p015",
+              "name": "이정후",
+              "uniformNumber": 51,
+              "batterType": "좌투좌타",
+              "birthDate": "1996-08-20",
+              "position": "외야수",
+              "height": 180,
+              "weight": 82,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "내야수": [
+            {
+              "id": "p016",
+              "name": "김하성",
+              "uniformNumber": 7,
+              "batterType": "우투우타",
+              "birthDate": "2000-10-17",
+              "position": "내야수",
+              "height": 175,
+              "weight": 75,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ]
+        },
+        "신규말소": {
+          "내야수": [
+            {
+              "id": "p017",
+              "name": "박병호",
+              "uniformNumber": 52,
+              "batterType": "우투우타",
+              "birthDate": "1982-01-23",
+              "position": "내야수",
+              "height": 188,
+              "weight": 95,
+              "status": "말소",
+              "currentLevel": "2군",
+              "removalReason": "은퇴"
+            }
+          ]
+        }
+      }
     },
-    {
-      "id": "p002",
-      "name": "이정후",
-      "team": "키움 히어로즈",
-      "uniformNumber": 51,
-      "batterType": "좌투좌타",
-      "birthDate": "1996-08-20",
-      "position": "외야수",
-      "height": 180,
-      "weight": 82,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p003",
-      "name": "박병호",
-      "team": "KT 위즈",
-      "uniformNumber": 25,
-      "batterType": "우투우타",
-      "birthDate": "1992-01-12",
-      "position": "내야수",
-      "height": 188,
-      "weight": 95,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p004",
-      "name": "최정",
-      "team": "SSG 랜더스",
-      "uniformNumber": 14,
-      "batterType": "우투우타",
-      "birthDate": "1989-02-28",
-      "position": "내야수",
-      "height": 183,
-      "weight": 90,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p005",
-      "name": "양의지",
-      "team": "두산 베어스",
-      "uniformNumber": 47,
-      "batterType": "우투우타",
-      "birthDate": "1993-07-15",
-      "position": "포수",
-      "height": 182,
-      "weight": 85,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p006",
-      "name": "구자욱",
-      "team": "삼성 라이온즈",
-      "uniformNumber": 8,
-      "batterType": "좌투좌타",
-      "birthDate": "1998-05-22",
-      "position": "외야수",
-      "height": 178,
-      "weight": 80,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p007",
-      "name": "김하성",
-      "team": "키움 히어로즈",
-      "uniformNumber": 7,
-      "batterType": "우투우타",
-      "birthDate": "2000-10-17",
-      "position": "내야수",
-      "height": 175,
-      "weight": 75,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p008",
-      "name": "오재일",
-      "team": "두산 베어스",
-      "uniformNumber": 36,
-      "batterType": "우투우타",
-      "birthDate": "1995-03-08",
-      "position": "내야수",
-      "height": 185,
-      "weight": 88,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "2군"
-    },
-    {
-      "id": "p009",
-      "name": "정수빈",
-      "team": "두산 베어스",
-      "uniformNumber": 31,
-      "batterType": "좌투좌타",
-      "birthDate": "1994-01-15",
-      "position": "외야수",
-      "height": 177,
-      "weight": 78,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p010",
-      "name": "박민우",
-      "team": "NC 다이노스",
-      "uniformNumber": 12,
-      "batterType": "우투우타",
-      "birthDate": "1997-06-25",
-      "position": "내야수",
-      "height": 175,
-      "weight": 72,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "2군"
-    },
-    {
-      "id": "p011",
-      "name": "강민호",
-      "team": "삼성 라이온즈",
-      "uniformNumber": 65,
-      "batterType": "우투우타",
-      "birthDate": "2002-11-03",
-      "position": "포수",
-      "height": 180,
-      "weight": 85,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "2군"
-    },
-    {
-      "id": "p012",
-      "name": "윤성환",
-      "team": "LG 트윈스",
-      "uniformNumber": 18,
-      "batterType": "우투우타",
-      "birthDate": "1995-04-12",
-      "position": "투수",
-      "height": 188,
-      "weight": 92,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p013",
-      "name": "김재환",
-      "team": "두산 베어스",
-      "uniformNumber": 22,
-      "batterType": "좌투좌타",
-      "birthDate": "1993-01-03",
-      "position": "외야수",
-      "height": 183,
-      "weight": 85,
-      "registrationDate": "2024-03-01",
-      "status": "말소",
-      "currentLevel": "1군",
-      "removalDate": "2024-05-15",
-      "removalReason": "부상"
-    },
-    {
-      "id": "p014",
-      "name": "박해민",
-      "team": "삼성 라이온즈",
-      "uniformNumber": 1,
-      "batterType": "우투우타",
-      "birthDate": "1990-02-08",
-      "position": "외야수",
-      "height": 175,
-      "weight": 75,
-      "registrationDate": "2024-03-01",
-      "status": "말소",
-      "currentLevel": "1군",
-      "removalDate": "2024-04-20",
-      "removalReason": "성적 부진"
-    },
-    {
-      "id": "p015",
-      "name": "이승엽",
-      "team": "삼성 라이온즈",
-      "uniformNumber": 36,
-      "batterType": "좌투좌타",
-      "birthDate": "1976-05-18",
-      "position": "내야수",
-      "height": 183,
-      "weight": 95,
-      "registrationDate": "2024-03-01",
-      "status": "말소",
-      "currentLevel": "1군",
-      "removalDate": "2024-06-01",
-      "removalReason": "은퇴"
-    },
-    {
-      "id": "p016",
-      "name": "손아섭",
-      "team": "롯데 자이언츠",
-      "uniformNumber": 31,
-      "batterType": "좌투좌타",
-      "birthDate": "1988-03-18",
-      "position": "외야수",
-      "height": 180,
-      "weight": 80,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p017",
-      "name": "김광현",
-      "team": "SSG 랜더스",
-      "uniformNumber": 29,
-      "batterType": "좌투우타",
-      "birthDate": "1988-07-22",
-      "position": "투수",
-      "height": 188,
-      "weight": 95,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p018",
-      "name": "류현진",
-      "team": "한화 이글스",
-      "uniformNumber": 99,
-      "batterType": "우투우타",
-      "birthDate": "1987-03-25",
-      "position": "투수",
-      "height": 188,
-      "weight": 95,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p019",
-      "name": "오승환",
-      "team": "삼성 라이온즈",
-      "uniformNumber": 21,
-      "batterType": "우투우타",
-      "birthDate": "1982-07-15",
-      "position": "투수",
-      "height": 180,
-      "weight": 80,
-      "registrationDate": "2024-03-01",
-      "status": "등록",
-      "currentLevel": "1군"
-    },
-    {
-      "id": "p020",
-      "name": "이대호",
-      "team": "롯데 자이언츠",
-      "uniformNumber": 10,
-      "batterType": "우투우타",
-      "birthDate": "1982-06-15",
-      "position": "내야수",
-      "height": 194,
-      "weight": 110,
-      "registrationDate": "2024-03-01",
-      "status": "말소",
-      "currentLevel": "1군",
-      "removalDate": "2024-05-30",
-      "removalReason": "은퇴"
+    "2025-08-15": {
+      "두산 베어스": {
+        "기존선수": {
+          "감독/코치": [
+            {
+              "id": "p001",
+              "name": "이승엽",
+              "uniformNumber": 36,
+              "position": "감독",
+              "birthDate": "1976-05-18",
+              "height": 183,
+              "weight": 95,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "투수": [
+            {
+              "id": "p002",
+              "name": "김광현",
+              "uniformNumber": 29,
+              "batterType": "좌투좌타",
+              "birthDate": "1988-07-22",
+              "position": "투수",
+              "height": 188,
+              "weight": 95,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p003",
+              "name": "정재훈",
+              "uniformNumber": 17,
+              "batterType": "우투우타",
+              "birthDate": "1990-03-15",
+              "position": "투수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p004",
+              "name": "이영하",
+              "uniformNumber": 11,
+              "batterType": "우투우타",
+              "birthDate": "1989-05-12",
+              "position": "투수",
+              "height": 183,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "포수": [
+            {
+              "id": "p005",
+              "name": "양의지",
+              "uniformNumber": 47,
+              "batterType": "우투우타",
+              "birthDate": "1993-07-15",
+              "position": "포수",
+              "height": 182,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p006",
+              "name": "박세혁",
+              "uniformNumber": 20,
+              "batterType": "우투우타",
+              "birthDate": "1991-05-20",
+              "position": "포수",
+              "height": 180,
+              "weight": 82,
+              "status": "등록",
+              "currentLevel": "2군"
+            }
+          ],
+          "내야수": [
+            {
+              "id": "p007",
+              "name": "김재호",
+              "uniformNumber": 52,
+              "batterType": "우투우타",
+              "birthDate": "1990-02-28",
+              "position": "내야수",
+              "height": 180,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p008",
+              "name": "정수빈",
+              "uniformNumber": 31,
+              "batterType": "좌투좌타",
+              "birthDate": "1994-01-15",
+              "position": "내야수",
+              "height": 177,
+              "weight": 78,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p009",
+              "name": "허경민",
+              "uniformNumber": 13,
+              "batterType": "우투우타",
+              "birthDate": "1992-08-10",
+              "position": "내야수",
+              "height": 178,
+              "weight": 80,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "외야수": [
+            {
+              "id": "p010",
+              "name": "김현수",
+              "uniformNumber": 7,
+              "batterType": "우투우타",
+              "birthDate": "1999-03-15",
+              "position": "외야수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p011",
+              "name": "정수빈",
+              "uniformNumber": 31,
+              "batterType": "좌투좌타",
+              "birthDate": "1994-01-15",
+              "position": "외야수",
+              "height": 177,
+              "weight": 78,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ]
+        },
+        "신규등록": {
+          "투수": [
+            {
+              "id": "p022",
+              "name": "김원중",
+              "uniformNumber": 25,
+              "batterType": "우투우타",
+              "birthDate": "1995-08-15",
+              "position": "투수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "2군"
+            }
+          ]
+        },
+        "신규말소": {
+          "투수": [
+            {
+              "id": "p012",
+              "name": "박정준",
+              "uniformNumber": 23,
+              "batterType": "우투우타",
+              "birthDate": "1992-08-10",
+              "position": "투수",
+              "height": 182,
+              "weight": 82,
+              "status": "말소",
+              "currentLevel": "2군",
+              "removalReason": "부상"
+            }
+          ],
+          "내야수": [
+            {
+              "id": "p013",
+              "name": "오재일",
+              "uniformNumber": 36,
+              "batterType": "우투우타",
+              "birthDate": "1995-03-08",
+              "position": "내야수",
+              "height": 185,
+              "weight": 88,
+              "status": "말소",
+              "currentLevel": "2군",
+              "removalReason": "성적 부진"
+            }
+          ]
+        }
+      },
+      "KIA 타이거즈": {
+        "기존선수": {},
+        "신규등록": {
+          "감독/코치": [
+            {
+              "id": "p023",
+              "name": "김기태",
+              "uniformNumber": 1,
+              "position": "감독",
+              "birthDate": "1969-12-07",
+              "height": 180,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "투수": [
+            {
+              "id": "p024",
+              "name": "양현종",
+              "uniformNumber": 54,
+              "batterType": "좌투좌타",
+              "birthDate": "1988-03-01",
+              "position": "투수",
+              "height": 185,
+              "weight": 88,
+              "status": "등록",
+              "currentLevel": "1군"
+            },
+            {
+              "id": "p025",
+              "name": "임기영",
+              "uniformNumber": 23,
+              "batterType": "우투우타",
+              "birthDate": "1990-06-15",
+              "position": "투수",
+              "height": 183,
+              "weight": 85,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ],
+          "외야수": [
+            {
+              "id": "p026",
+              "name": "나성범",
+              "uniformNumber": 47,
+              "batterType": "우투우타",
+              "birthDate": "1989-10-03",
+              "position": "외야수",
+              "height": 183,
+              "weight": 90,
+              "status": "등록",
+              "currentLevel": "1군"
+            }
+          ]
+        },
+        "신규말소": {}
+      }
     }
-  ],
+  },
   "registrationStatus": {
     "등록": "현재 1군 또는 2군에 등록된 상태",
     "말소": "등록이 해제된 상태 (부상, 성적 부진, 은퇴 등)"
