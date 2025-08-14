@@ -93,6 +93,12 @@ const PlayerInput = () => {
       name: "SSG 랜더스",
       shortName: "SSG",
     },
+    {
+      id: "sangmoo",
+      logo: "/team-logos/sangmoo.png",
+      name: "상무",
+      shortName: "상무",
+    },
   ];
 
   const handleTeamSelect = async (teamId) => {

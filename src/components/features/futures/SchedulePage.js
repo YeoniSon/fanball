@@ -5,7 +5,7 @@ import {
 } from "../../../styles/schedules/SchedulePageStyled";
 import AllSchedule from "./AllSchedule";
 import TodayGame from "./TodayGame";
-import PlayerInput from "./PlayerInput";
+import PlayerInput from "./FuturesPlayerInput";
 import Ranking from "./Ranking";
 
 const SchedulePage = () => {

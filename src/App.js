@@ -15,7 +15,7 @@ import SignupPage from "./components/pages/user/SignupPage";
 import LeagueSchedulePage from "./components/pages/schedule/LeagueSchedulePage";
 import LiveChat from "./components/features/LiveChat/LiveChat";
 import FuturesSchedulePage from "./components/pages/schedule/FuturesSchedulePage";
-import PlayerInput from "./components/features/\bfutures/PlayerInput";
+import PlayerInput from "./components/pages/PlayerInput";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
