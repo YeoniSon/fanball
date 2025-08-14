@@ -1,7 +1,8 @@
 import { tab } from "@testing-library/user-event/dist/tab";
 import { useState } from "react";
 import TeamRanking from "./TeamRanking";
-import PlayerRankings from "./PlayerRankings";
+import BatterRanking from "./BatterRanking";
+import PitcherRanking from "./PitcherRanking";
 import {
   SelectContainer,
   Select,
@@ -18,8 +19,10 @@ const SelectSection = () => {
     switch (activeTab) {
       case "team":
         return <TeamRanking />;
-      case "player":
-        return <PlayerRankings />;
+      case "batter":
+        return <BatterRanking />;
+      case "pitcher":
+        return <PitcherRanking />;
       default:
         return null;
     }
@@ -35,10 +38,16 @@ const SelectSection = () => {
           팀 순위
         </Select>
         <Select
-          isActive={activeTab === "player"}
-          onClick={() => handleTabClick("player")}
+          isActive={activeTab === "batter"}
+          onClick={() => handleTabClick("batter")}
         >
-          선수 순위
+          타자 순위
+        </Select>
+        <Select
+          isActive={activeTab === "pitcher"}
+          onClick={() => handleTabClick("pitcher")}
+        >
+          투수 순위
         </Select>
       </SelectContainer>
       <div>{renderContent()}</div>

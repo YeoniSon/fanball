@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   TeamRankingContainer,
   TeamRankingHeader,
-  TeamRankingTitle,
-  YearControls,
-  ArrowButton,
-  YearText,
   TeamRankingTable,
   TableHeader,
   TableHeaderCell,
@@ -17,10 +13,11 @@ import {
   StatCell,
   NoData,
   Loading,
+  TeamRankingTitle,
 } from "../../../styles/ranking/TeamRankingStyled";
 
 const TeamRanking = () => {
-  const [year, setYear] = useState(2025);
+  const [year, setYear] = useState(new Date().getFullYear());
   const [standings, setStandings] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -32,7 +29,7 @@ const TeamRanking = () => {
       const items = data.byYear?.[String(y)]?.standings || [];
       setStandings(items);
     } catch (e) {
-      console.error("연도별 팀 순위 데이터를 불러오지 못했습니다", e);
+      console.error("팀 순위 데이터를 불러오지 못했습니다", e);
       setStandings([]);
     } finally {
       setLoading(false);
@@ -41,25 +38,13 @@ const TeamRanking = () => {
 
   useEffect(() => {
     fetchStandings(year);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const changeYear = (delta) => {
-    const next = year + delta;
-    setYear(next);
-    fetchStandings(next);
-  };
+  }, [year]);
 
   return (
     <TeamRankingContainer>
       <TeamRankingHeader>
-        <YearControls>
-          <ArrowButton onClick={() => changeYear(-1)}>◀</ArrowButton>
-          <YearText>{year}</YearText>
-          <ArrowButton onClick={() => changeYear(1)}>▶</ArrowButton>
-        </YearControls>
+        <TeamRankingTitle>🏆 {year} KBO 리그 순위</TeamRankingTitle>
       </TeamRankingHeader>
-
       <TeamRankingTable>
         <TableHeader>
           <TableHeaderCell>순위</TableHeaderCell>
