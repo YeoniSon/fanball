@@ -69,7 +69,7 @@ const AllSchedule = () => {
   useEffect(() => {
     const fetchGames = async () => {
       try {
-        const response = await fetch("/mockGames.json");
+        const response = await fetch("/mockFuturesGames.json");
         const data = await response.json();
 
         // gamesByDate 구조를 평면 배열로 변환
@@ -352,23 +352,6 @@ const AllSchedule = () => {
                         <GameTime>{formatTime(game.time)}</GameTime>
                         <GameStadium>{game.stadium || "구장 미정"}</GameStadium>
                       </GameInfo>
-                      {/* 진행중인 경기일 때 추가 정보 표시 */}
-                      {(game.status === "live" || game.status === "live") && (
-                        <div
-                          style={{
-                            marginTop: "12px",
-                            padding: "8px 12px",
-                            backgroundColor: "#dc2626",
-                            color: "white",
-                            borderRadius: "6px",
-                            fontSize: "12px",
-                            fontWeight: "600",
-                            textAlign: "center",
-                          }}
-                        >
-                          실시간 채팅 참여하기
-                        </div>
-                      )}
                     </GameCard>
                   ))}
                 </GamesListBox>

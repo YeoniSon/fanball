@@ -18,8 +18,6 @@ import {
   TodayHeaderTitle,
   TodayHeaderCount,
   TodayGamesListBox,
-  LiveChatButton,
-  ScheduledGameMessage,
   FinishedGameMessage,
   VS,
 } from "../../../styles/schedules/TodayGameStyled";
@@ -71,29 +69,6 @@ const TodayGame = () => {
     const filtered = games.filter((game) => game.date === todayString);
     setTodayGames(filtered);
   }, [games]);
-
-  // 경기 클릭 핸들러
-  const handleGameClick = (game) => {
-    if (game.status === "live") {
-      // 실시간 경기인 경우 채팅 페이지로 이동
-      navigate(`/live-chat/${game.id}`, {
-        state: {
-          game: game,
-          homeTeam: game.homeTeam,
-          awayTeam: game.awayTeam,
-          homeScore: game.homeScore,
-          awayScore: game.awayScore,
-          stadium: game.stadium,
-          time: game.time,
-          currentInning: game.currentInning,
-          inningHalf: game.inningHalf,
-        },
-      });
-    } else {
-      // 예정이거나 종료된 경기는 상세 정보 페이지로 이동 (선택사항)
-      console.log("경기 상세 정보:", game);
-    }
-  };
 
   // 게임 상태 텍스트 반환
   const getStatusText = (status) => {
@@ -192,21 +167,6 @@ const TodayGame = () => {
                   <GameTime>{formatTime(game.time)}</GameTime>
                   <GameStadium>{game.stadium || "구장 미정"}</GameStadium>
                 </GameInfo>
-
-                {/* 진행중인 경기일 때 실시간 채팅 버튼 */}
-                {game.status === "live" && (
-                  <LiveChatButton onClick={() => handleGameClick(game)}>
-                    🎯 실시간 채팅 참여하기
-                  </LiveChatButton>
-                )}
-
-                {/* 예정된 경기일 때 카운트다운 표시 */}
-                {game.status === "scheduled" && (
-                  <ScheduledGameMessage>
-                    ⏰ 경기 시작까지 대기 중
-                  </ScheduledGameMessage>
-                )}
-
                 {/* 종료된 경기일 때 결과 요약 */}
                 {(game.status === "finished" ||
                   game.status === "completed") && (

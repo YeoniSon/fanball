@@ -1,25 +1,5 @@
 import styled from "styled-components";
 
-export const SelectContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 10px 0;
-  background-color: rgb(181, 181, 185);
-  border-radius: 1.5rem;
-  padding: 3px;
-`;
-
-export const MonthlyScheduleButton = styled.button`
-  flex: 1;
-  border: transparent;
-  border-radius: 1.5rem;
-  background: ${(props) => (props.isActive ? "white" : "transparent")};
-  color: ${(props) => (props.isActive ? "black" : "white")};
-  font-weight: 600;
-  color: #1f2937;
-`;
-
 // SchedulePage 스타일들
 export const ScheduleContainer = styled.div`
   padding: 24px;
@@ -78,49 +58,11 @@ export const FilterResetButton = styled.button`
   }
 `;
 
-export const CurrentFilterSection = styled.div`
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid #e5e7eb;
-`;
-
-export const CurrentFilterText = styled.p`
-  font-size: 14px;
-  color: #6b7280;
-`;
-
 export const FilterResultSection = styled.div`
   background-color: white;
   border-radius: 8px;
   border: 1px solid #e5e7eb;
   padding: 16px;
-`;
-
-export const FilterResultTitle = styled.h4`
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  color: #1f2937;
-`;
-
-export const FilterResultMessage = styled.p`
-  color: #6b7280;
-  text-align: center;
-  padding: 32px 16px;
-`;
-
-export const TodayGamesContainer = styled.div`
-  padding: 24px;
-`;
-
-export const TodayGamesTitle = styled.h2`
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
-`;
-
-export const TodayGamesDescription = styled.p`
-  color: #6b7280;
 `;
 
 // 게시글 관련 스타일들
@@ -261,78 +203,4 @@ export const VS = styled.span`
 export const LoadingMessage = styled.div`
   text-align: center;
   padding: 40px 20px;
-`;
-
-// TodayGame 스타일들
-export const TodayHeaderBox = styled.div`
-  padding: 16px 20px;
-  background-color: #ffffff;
-  border: 2px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px;
-`;
-
-export const TodayHeaderTitle = styled.h3`
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 8px;
-`;
-
-export const TodayHeaderCount = styled.p`
-  margin: 0;
-  font-size: 14px;
-  color: #6b7280;
-  font-weight: 500;
-`;
-
-export const TodayGamesListBox = styled.div`
-  background-color: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 16px;
-`;
-
-export const LiveChatButton = styled.button`
-  margin-top: 16px;
-  width: 100%;
-  border: none;
-  padding: 8px 12px;
-  background-color: rgba(239, 68, 68, 0.1);
-  color: #6b7280;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background-color: rgba(239, 68, 68, 0.2);
-    color: #dc2626;
-  }
-`;
-
-export const ScheduledGameMessage = styled.div`
-  margin-top: 16px;
-  padding: 8px 12px;
-  background-color: #f3f4f6;
-  color: #6b7280;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-`;
-
-export const FinishedGameMessage = styled.div`
-  margin-top: 16px;
-  padding: 8px 12px;
-  background-color: #ecfdf5;
-  color: #059669;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
 `;

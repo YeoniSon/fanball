@@ -1,0 +1,106 @@
+{
+  "northLeague": [
+    {
+      "rank": 1,
+      "team": "KIA 타이거즈 퓨처스",
+      "logo": "/team-logos/kia-tigers.png",
+      "wins": 45,
+      "losses": 30,
+      "ties": 2,
+      "winRate": 0.6
+    },
+    {
+      "rank": 2,
+      "team": "삼성 라이온즈 퓨처스",
+      "logo": "/team-logos/samsung-lions.png",
+      "wins": 42,
+      "losses": 32,
+      "ties": 3,
+      "winRate": 0.568
+    },
+    {
+      "rank": 3,
+      "team": "두산 베어스 퓨처스",
+      "logo": "/team-logos/doosan-bears.png",
+      "wins": 40,
+      "losses": 34,
+      "ties": 3,
+      "winRate": 0.541
+    },
+    {
+      "rank": 4,
+      "team": "LG 트윈스 퓨처스",
+      "logo": "/team-logos/lg-twins.png",
+      "wins": 38,
+      "losses": 36,
+      "ties": 3,
+      "winRate": 0.514
+    },
+    {
+      "rank": 5,
+      "team": "KT 위즈 퓨처스",
+      "logo": "/team-logos/kt-wiz.png",
+      "wins": 36,
+      "losses": 38,
+      "ties": 3,
+      "winRate": 0.486
+    },
+    {
+      "rank": 6,
+      "team": "상무",
+      "logo": "/team-logos/sangmoo.png",
+      "wins": 35,
+      "losses": 39,
+      "ties": 3,
+      "winRate": 0.473,
+      "isMilitary": true
+    }
+  ],
+  "southLeague": [
+    {
+      "rank": 1,
+      "team": "SSG 랜더스 퓨처스",
+      "logo": "/team-logos/ssg-landers.png",
+      "wins": 44,
+      "losses": 31,
+      "ties": 2,
+      "winRate": 0.587
+    },
+    {
+      "rank": 2,
+      "team": "키움 히어로즈 퓨처스",
+      "logo": "/team-logos/kiwoom-heroes.png",
+      "wins": 41,
+      "losses": 33,
+      "ties": 3,
+      "winRate": 0.554
+    },
+    {
+      "rank": 3,
+      "team": "롯데 자이언츠 퓨처스",
+      "logo": "/team-logos/lotte-giants.png",
+      "wins": 39,
+      "losses": 35,
+      "ties": 3,
+      "winRate": 0.527
+    },
+    {
+      "rank": 4,
+      "team": "한화 이글스 퓨처스",
+      "logo": "/team-logos/hanwha-eagles.png",
+      "wins": 37,
+      "losses": 37,
+      "ties": 3,
+      "winRate": 0.5
+    },
+    {
+      "rank": 5,
+      "team": "NC 다이노스 퓨처스",
+      "logo": "/team-logos/nc-dinos.png",
+      "wins": 34,
+      "losses": 40,
+      "ties": 3,
+      "winRate": 0.459
+    }
+  ]
+}
