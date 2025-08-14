@@ -41,7 +41,6 @@ const EraPitcher = () => {
 
   return (
     <div>
-      <h2>평균자책순 투수 순위</h2>
       <PlayerRankingTable>
         <TableHeader>
           <TableHeaderCell>순위</TableHeaderCell>
