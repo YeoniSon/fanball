@@ -11,7 +11,8 @@ import LiveChat from "./components/features/LiveChat/LiveChat";
 import FuturesSchedulePage from "./components/pages/schedule/FuturesSchedulePage";
 import PlayerInput from "./components/pages/PlayerInput";
 import Ranking from "./components/pages/RankingPage";
-import PlayerInfo from "./components/pages/PlayerInfoPage";
+import PlayerInfoPage from "./components/pages/PlayerInfo/PlayerInfoPage";
+import PlayerDetailPage from "./components/pages/PlayerInfo/PlayerDetailPage";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
@@ -49,9 +50,12 @@ function AppContent() {
                 <Route path="/schedule" element={<LeagueSchedulePage />} />
                 <Route path="/futures" element={<FuturesSchedulePage />} />
                 <Route path="/player-input" element={<PlayerInput />} />
-                <Route path="/live-chat/:gameId" element={<LiveChat />} />
                 <Route path="/standings" element={<Ranking />} />
-                <Route path="/players" element={<PlayerInfo />} />
+                <Route
+                  path="/players/detail/:playerId"
+                  element={<PlayerDetailPage />}
+                />
+                <Route path="/players" element={<PlayerInfoPage />} />
                 {/* 팀별 게시글 상세 페이지 라우트 */}
                 <Route
                   path="/:teamId/post/:postId"
