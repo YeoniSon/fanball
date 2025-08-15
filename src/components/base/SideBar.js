@@ -9,9 +9,8 @@ import TeamBoardMenu from "../features/sidebar/TeamBoardMenu";
 const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [activeMenuState, setActiveMenuState] = useState("home");
 
-  // 모든 메뉴 아이템 정의
+  // 모든 메뉴 아이템 정의 (helper에서 참조하므로 먼저 선언)
   const allMenuItems = [
     // 메인메뉴
     { id: "home", label: "홈", path: "/" },
@@ -66,39 +65,45 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
       color: "#FF6600",
     },
   ];
-
-  // 현재 경로에 따라 활성 메뉴 설정
-  useEffect(() => {
-    const currentPath = location.pathname;
-
+  const getActiveMenuIdForPath = (currentPath) => {
     // 실시간 채팅 페이지인 경우
     if (currentPath.includes("/live-chat/")) {
-      setActiveMenuState("community");
-      return;
+      return "community";
     }
 
     // 게시글 상세 페이지인 경우 팀 ID 추출
     if (currentPath.includes("/post/")) {
       const teamId = currentPath.split("/")[1]; // /{teamId}/post/{postId}에서 teamId 추출
-
-      // 팀 ID에 해당하는 메뉴 찾기
       const teamMenu = allMenuItems.find((item) => {
-        // item.path에서 / 제거하고 비교
         const itemPath = item.path.replace("/", "");
         return itemPath === teamId;
       });
-
-      if (teamMenu) {
-        setActiveMenuState(teamMenu.id);
-        return;
-      }
+      if (teamMenu) return teamMenu.id;
     }
 
-    // 일반 경로인 경우 기존 로직 사용
+    // 선수 상세 페이지 등 /players 하위 경로 처리
+    if (currentPath === "/players" || currentPath.startsWith("/players/")) {
+      return "players";
+    }
+
+    // 정확 일치 경로 처리
     const currentMenu = allMenuItems.find((item) => item.path === currentPath);
-    if (currentMenu) {
-      setActiveMenuState(currentMenu.id);
-    }
+    if (currentMenu) return currentMenu.id;
+
+    // 기본값
+    return "home";
+  };
+
+  const [activeMenuState, setActiveMenuState] = useState(() =>
+    getActiveMenuIdForPath(location.pathname)
+  );
+
+  // (기존 위치의 정의는 제거됨)
+
+  // 현재 경로에 따라 활성 메뉴 설정
+  useEffect(() => {
+    const currentPath = location.pathname;
+    setActiveMenuState(getActiveMenuIdForPath(currentPath));
   }, [location.pathname]);
 
   const handleMenuClick = (menuId, path) => {

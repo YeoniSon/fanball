@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, memo } from "react";
 import {
   FilterContainer,
   FilterRow,
@@ -26,6 +26,13 @@ const FilterSection = ({
   const [fetchedPositions, setFetchedPositions] = useState([]);
 
   useEffect(() => {
+    // If teams/positions are provided via props, skip fetching
+    if (
+      (teamsProp && teamsProp.length) ||
+      (positionsProp && positionsProp.length)
+    ) {
+      return;
+    }
     let isMounted = true;
     const fetchPlayers = async () => {
       try {
@@ -50,7 +57,7 @@ const FilterSection = ({
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [teamsProp, positionsProp]);
 
   // Debounce name input to reduce frequent emissions
   useEffect(() => {
@@ -140,7 +147,7 @@ const FilterSection = ({
           value={selectedTeam}
           onChange={(e) => setSelectedTeam(e.target.value)}
         >
-          <option value="">전체 팀</option>
+          <option value=""> 팀 선택</option>
           {normalizedTeams.map((t) => (
             <option key={t.value} value={t.value}>
               {t.label}
@@ -151,7 +158,7 @@ const FilterSection = ({
           value={selectedPosition}
           onChange={(e) => setSelectedPosition(e.target.value)}
         >
-          <option value="">전체 포지션</option>
+          <option value="">포지션 선택</option>
           {normalizedPositions.map((p) => (
             <option key={p.value} value={p.value}>
               {p.label}
@@ -164,4 +171,4 @@ const FilterSection = ({
   );
 };
 
-export default FilterSection;
+export default memo(FilterSection);
