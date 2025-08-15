@@ -10,7 +10,7 @@ export const BannerContainer = styled.div`
 export const BannerTitle = styled.h2`
   font-size: 2rem;
   font-weight: bold;
-  margin: 1rem;
+  margin: 0.5rem;
   color: ${(props) => props.titleColor || "white"};
 `;
 
