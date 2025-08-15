@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FilterSection from "./FilterSection";
 import {
@@ -32,6 +32,16 @@ const PlayerInfo = () => {
   const [players, setPlayers] = useState([]);
   const [filters, setFilters] = useState({ team: "", position: "", name: "" });
 
+  const handleFilterChange = useCallback((next) => {
+    setFilters((prev) => {
+      const isSame =
+        prev.team === next.team &&
+        prev.position === next.position &&
+        (prev.name || "") === (next.name || "");
+      return isSame ? prev : next;
+    });
+  }, []);
+
   useEffect(() => {
     const load = async () => {
       setLoading(true);
@@ -51,6 +61,10 @@ const PlayerInfo = () => {
 
   const filteredPlayers = useMemo(() => {
     const nameQuery = (filters.name || "").trim().toLowerCase();
+
+    if (!filters.team && !filters.position && !nameQuery) {
+      return [];
+    }
     return players
       .filter((p) => !filters.team || p.team === filters.team)
       .filter((p) => !filters.position || p.position === filters.position)
@@ -61,13 +75,13 @@ const PlayerInfo = () => {
   }, [players, filters]);
 
   const handleDetailButtonClick = (playerId) => {
-    navigate(`/players/${playerId}`);
+    navigate(`/players/detail/${playerId}`);
   };
 
   return (
     <div>
       <FilterSection
-        onFilterChange={(f) => setFilters(f)}
+        onFilterChange={handleFilterChange}
         onResetFilters={() => setFilters({ team: "", position: "", name: "" })}
       />
 
