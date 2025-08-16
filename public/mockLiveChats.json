@@ -1,0 +1,31 @@
+{
+  "game_001": {
+    "roomId": "game_001",
+    "title": "SSG 랜더스 vs KIA 타이거즈 실시간 채팅",
+    "status": "live",
+    "participants": 287,
+    "messages": [
+      {
+        "id": "1",
+        "user": "SSG팬",
+        "team": "SSG 랜더스",
+        "text": "최정 홈런 미쳤다!",
+        "timestamp": "2025-08-16T09:35:00Z"
+      },
+      {
+        "id": "m2",
+        "user": "KIA팬",
+        "team": "KIA 타이거즈",
+        "text": "김도영 다음 타석 기대합니다!",
+        "timestamp": "2025-08-16T09:36:10Z"
+      },
+      {
+        "id": "m3",
+        "user": "야구는9회말",
+        "team": null,
+        "text": "오늘 분위기 SSG가 좋네요",
+        "timestamp": "2025-08-16T09:37:45Z"
+      }
+    ]
+  }
+}

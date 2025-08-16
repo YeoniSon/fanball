@@ -7,7 +7,8 @@ import Homepage from "./components/pages/homepage/HomePage";
 import LoginPage from "./components/pages/user/LoginPage";
 import SignupPage from "./components/pages/user/SignupPage";
 import LeagueSchedulePage from "./components/pages/schedule/LeagueSchedulePage";
-import LiveChat from "./components/features/LiveChat/LiveChat";
+import LiveChatMainPage from "./components/pages/liveChat/LiveChatMainPage";
+import LiveChatRoomPage from "./components/pages/liveChat/LiveChatRoomPage";
 import FuturesSchedulePage from "./components/pages/schedule/FuturesSchedulePage";
 import PlayerInput from "./components/pages/PlayerInput";
 import Ranking from "./components/pages/RankingPage";
@@ -54,6 +55,11 @@ function AppContent() {
                 <Route
                   path="/players/detail/:playerId"
                   element={<PlayerDetailPage />}
+                />
+                <Route path="/live-chat" element={<LiveChatMainPage />} />
+                <Route
+                  path="/live-chat/:gameId"
+                  element={<LiveChatRoomPage />}
                 />
                 <Route path="/players" element={<PlayerInfoPage />} />
                 {/* 팀별 게시글 상세 페이지 라우트 */}
