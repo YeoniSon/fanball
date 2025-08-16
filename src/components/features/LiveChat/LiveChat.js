@@ -1,317 +1,237 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useLocation, useNavigate } from "react-router-dom";
-import styled from "styled-components";
-
-const LiveChatContainer = styled.div`
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-`;
-
-const GameHeader = styled.div`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 24px;
-  border-radius: 12px;
-  margin-bottom: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-`;
-
-const GameTitle = styled.h1`
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0 0 16px 0;
-  text-align: center;
-`;
-
-const GameInfo = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-`;
-
-const TeamInfo = styled.div`
-  text-align: center;
-  flex: 1;
-  min-width: 200px;
-`;
-
-const TeamName = styled.div`
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 8px;
-`;
-
-const TeamScore = styled.div`
-  font-size: 32px;
-  font-weight: 700;
-  color: #fbbf24;
-`;
-
-const VS = styled.div`
-  font-size: 24px;
-  font-weight: 700;
-  color: #f3f4f6;
-`;
-
-const GameDetails = styled.div`
-  text-align: center;
-  flex: 1;
-  min-width: 200px;
-`;
-
-const DetailText = styled.div`
-  font-size: 14px;
-  margin-bottom: 4px;
-  opacity: 0.9;
-`;
-
-const ChatSection = styled.div`
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-`;
-
-const ChatHeader = styled.div`
-  background-color: #f8fafc;
-  padding: 16px 20px;
-  border-bottom: 1px solid #e5e7eb;
-`;
-
-const ChatTitle = styled.h2`
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f2937;
-`;
-
-const ChatMessages = styled.div`
-  height: 400px;
-  overflow-y: auto;
-  padding: 20px;
-  background-color: #f9fafb;
-`;
-
-const Message = styled.div`
-  margin-bottom: 16px;
-  padding: 12px 16px;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-`;
-
-const MessageHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-`;
-
-const MessageAuthor = styled.span`
-  font-weight: 600;
-  color: #1f2937;
-`;
-
-const MessageTime = styled.span`
-  font-size: 12px;
-  color: #6b7280;
-`;
-
-const MessageContent = styled.div`
-  color: #374151;
-  line-height: 1.5;
-`;
-
-const ChatInput = styled.div`
-  padding: 20px;
-  border-top: 1px solid #e5e7eb;
-  background: white;
-`;
-
-const InputContainer = styled.div`
-  display: flex;
-  gap: 12px;
-`;
-
-const MessageInput = styled.input`
-  flex: 1;
-  padding: 12px 16px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 14px;
-  outline: none;
-
-  &:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-  }
-`;
-
-const SendButton = styled.button`
-  padding: 12px 24px;
-  background-color: #3b82f6;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #2563eb;
-  }
-
-  &:disabled {
-    background-color: #9ca3af;
-    cursor: not-allowed;
-  }
-`;
-
-const BackButton = styled.button`
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 8px 16px;
-  background-color: #6b7280;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #4b5563;
-  }
-`;
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useParams } from "react-router-dom";
+import {
+  ChatContainer,
+  ChatHeader,
+  ChatTitle,
+  Participants,
+  Hr,
+  ChatMessageContainer,
+  UserIcon,
+  UserNickName,
+  UserFavoriteTeam,
+  ChatTime,
+  ChatMessage,
+  MessageWrapper,
+  MessageColumn,
+  MetaRow,
+  ContentRow,
+  MessagesList,
+  ChatInputBar,
+  ChatTextInput,
+  SendButton,
+} from "../../../styles/liveChat/LiveChatStyled";
 
 const LiveChat = () => {
   const { gameId } = useParams();
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [message, setMessage] = useState("");
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      author: "야구팬123",
-      content: "안녕하세요! 실시간 채팅에 참여했습니다!",
-      time: "방금 전",
-    },
-    {
-      id: 2,
-      author: "KIA맨",
-      content: "KIA 화이팅! 오늘은 이길 수 있어요!",
-      time: "1분 전",
-    },
-    {
-      id: 3,
-      author: "SSG서포터",
-      content: "최정 홈런 기대하고 있어요!",
-      time: "2분 전",
-    },
-  ]);
-
-  const game = location.state?.game;
-
-  const handleSendMessage = () => {
-    if (message.trim()) {
-      const newMessage = {
-        id: messages.length + 1,
-        author: "나",
-        content: message,
-        time: "방금 전",
-      };
-      setMessages([...messages, newMessage]);
-      setMessage("");
+  const [chat, setChat] = useState({ participants: 0, messages: [] });
+  const [loading, setLoading] = useState(false);
+  const currentUser = useMemo(() => {
+    try {
+      const raw = localStorage.getItem("user");
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
     }
-  };
+  }, []);
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      handleSendMessage();
+  const teamIcon = [
+    {
+      id: "SSG",
+      shortName: "SSG",
+      label: "SSG 랜더스",
+      logo: "/team-logos/ssg-landers.png",
+      path: "/ssgLanders",
+      color: "#CE0E2D",
+    },
+    {
+      id: "NC",
+      shortName: "NC",
+      label: "NC 다이노스",
+      logo: "/team-logos/nc-dinos.png",
+      path: "/ncDinos",
+      color: "#315288",
+    },
+    {
+      id: "KIA",
+      shortName: "KIA",
+      label: "KIA 타이거즈",
+      logo: "/team-logos/kia-tigers.png",
+      path: "/kiaTigers",
+      color: "#EA0029",
+    },
+    {
+      id: "LG",
+      shortName: "LG",
+      label: "LG 트윈스",
+      logo: "/team-logos/lg-twins.png",
+      path: "/lgTwins",
+      color: "#C30452",
+    },
+    {
+      id: "KT",
+      shortName: "KT",
+      label: "KT 위즈",
+      logo: "/team-logos/kt-wiz.png",
+      path: "/ktWiz",
+      color: "#000000",
+    },
+    {
+      id: "DOOSAN",
+      shortName: "두산",
+      label: "두산 베어스",
+      logo: "/team-logos/doosan-bears.png",
+      path: "/doosanBears",
+      color: "#131230",
+    },
+    {
+      id: "SAMSUNG",
+      shortName: "삼성",
+      label: "삼성 라이온즈",
+      logo: "/team-logos/samsung-lions.png",
+      path: "/samsungLions",
+      color: "#074CA1",
+    },
+    {
+      id: "LOTTE",
+      shortName: "롯데",
+      label: "롯데 자이언츠",
+      logo: "/team-logos/lotte-giants.png",
+      path: "/lotteGiants",
+      color: "#041E42",
+    },
+    {
+      id: "KIWOOM",
+      shortName: "키움",
+      label: "키움 히어로즈",
+      logo: "/team-logos/kiwoom-heroes.png",
+      path: "/kiwoomHeroes",
+      color: "#570514",
+    },
+    {
+      id: "HANWHA",
+      shortName: "한화",
+      label: "한화 이글스",
+      logo: "/team-logos/hanwha-eagles.png",
+      path: "/hanhwaEagles",
+      color: "#FF6600",
+    },
+  ];
+
+  useEffect(() => {
+    const fetchMessages = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch(`/mockLiveChats.json`);
+        const data = await res.json();
+        const room = data?.[gameId] || { participants: 0, messages: [] };
+        setChat({
+          participants: room.participants ?? 0,
+          messages: Array.isArray(room.messages) ? room.messages : [],
+        });
+      } catch (error) {
+        setChat({ participants: 0, messages: [] });
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchMessages();
+  }, [gameId]);
+
+  // 스크롤을 항상 하단으로 유지
+  const containerRef = useRef(null);
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }
+  }, [chat.messages.length]);
+
+  const getTeamColor = (teamName) => {
+    const color = teamIcon.find((t) => t.label === teamName)?.color;
+    if (!color) return "black";
+    return `${color}`;
   };
 
-  const handleBack = () => {
-    navigate(-1);
-  };
+  const formatTime = (ts) => ts?.slice(11, 16) || "";
 
-  if (!game) {
-    return (
-      <LiveChatContainer>
-        <div>경기 정보를 찾을 수 없습니다.</div>
-      </LiveChatContainer>
-    );
-  }
+  const SendIcon = () => (
+    <svg
+      width="25"
+      height="25"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"
+      />
+    </svg>
+  );
 
   return (
-    <LiveChatContainer>
-      <BackButton onClick={handleBack}>← 뒤로가기</BackButton>
+    <div>
+      {loading ? (
+        <h1>Loading...</h1>
+      ) : (
+        <div>
+          <ChatContainer>
+            <ChatHeader>
+              <ChatTitle># 실시간 채팅</ChatTitle>
+              <Participants>{chat.participants} 명 참여중</Participants>
+            </ChatHeader>
 
-      <GameHeader>
-        <GameTitle>
-          {game.awayTeam} vs {game.homeTeam}
-        </GameTitle>
-        <GameInfo>
-          <TeamInfo>
-            <TeamName>{game.awayTeam}</TeamName>
-            <TeamScore>{game.awayScore || 0}</TeamScore>
-          </TeamInfo>
-          <VS>VS</VS>
-          <TeamInfo>
-            <TeamName>{game.homeTeam}</TeamName>
-            <TeamScore>{game.homeScore || 0}</TeamScore>
-          </TeamInfo>
-          <GameDetails>
-            <DetailText>구장: {game.stadium}</DetailText>
-            <DetailText>시간: {game.time}</DetailText>
-            {game.currentInning && (
-              <DetailText>
-                {game.inningHalf === "top" ? "초" : "말"} {game.currentInning}회
-              </DetailText>
-            )}
-          </GameDetails>
-        </GameInfo>
-      </GameHeader>
+            <Hr />
+            <MessagesList ref={containerRef}>
+              {chat.messages.map((msg, index) => {
+                const isMine = String(msg.id) === String(currentUser?.id ?? "");
+                const nickMine = currentUser?.nickname || currentUser?.name;
+                const nickOther = msg.user || "익명";
 
-      <ChatSection>
-        <ChatHeader>
-          <ChatTitle>실시간 채팅 💬</ChatTitle>
-        </ChatHeader>
+                return (
+                  <MessageWrapper key={index} $isMine={isMine}>
+                    <ChatMessageContainer>
+                      <MessageColumn>
+                        <MetaRow $isMine={isMine}>
+                          {isMine ? (
+                            <>
+                              <ChatTime>{formatTime(msg.timestamp)}</ChatTime>
+                              <UserNickName>{nickMine}</UserNickName>
+                            </>
+                          ) : (
+                            <>
+                              <UserNickName>{nickOther}</UserNickName>
+                              <ChatTime>{formatTime(msg.timestamp)}</ChatTime>
+                            </>
+                          )}
+                        </MetaRow>
 
-        <ChatMessages>
-          {messages.map((msg) => (
-            <Message key={msg.id}>
-              <MessageHeader>
-                <MessageAuthor>{msg.author}</MessageAuthor>
-                <MessageTime>{msg.time}</MessageTime>
-              </MessageHeader>
-              <MessageContent>{msg.content}</MessageContent>
-            </Message>
-          ))}
-        </ChatMessages>
-
-        <ChatInput>
-          <InputContainer>
-            <MessageInput
-              type="text"
-              placeholder="메시지를 입력하세요..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              onKeyPress={handleKeyPress}
-            />
-            <SendButton onClick={handleSendMessage} disabled={!message.trim()}>
-              전송
-            </SendButton>
-          </InputContainer>
-        </ChatInput>
-      </ChatSection>
-    </LiveChatContainer>
+                        <ContentRow $reverse={isMine}>
+                          <UserIcon
+                            style={{ backgroundColor: getTeamColor(msg?.team) }}
+                          >
+                            {(isMine ? nickMine : nickOther).charAt(0)}
+                          </UserIcon>
+                          <ChatMessage>{msg.text}</ChatMessage>
+                        </ContentRow>
+                      </MessageColumn>
+                    </ChatMessageContainer>
+                  </MessageWrapper>
+                );
+              })}
+            </MessagesList>
+            <ChatInputBar>
+              <ChatTextInput placeholder="메세지를 입력하세요..." />
+              <SendButton>
+                <SendIcon />
+              </SendButton>
+            </ChatInputBar>
+          </ChatContainer>
+        </div>
+      )}
+    </div>
   );
 };
 
