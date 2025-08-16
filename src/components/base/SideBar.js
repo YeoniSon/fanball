@@ -67,7 +67,12 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   ];
   const getActiveMenuIdForPath = (currentPath) => {
     // 실시간 채팅 페이지인 경우
-    if (currentPath.includes("/live-chat/")) {
+    if (currentPath === "/live-chat" || currentPath.startsWith("/live-chat/")) {
+      return "community";
+    }
+
+    // 커뮤니티(실시간 채팅) 경로 처리
+    if (currentPath === "/community" || currentPath.startsWith("/community/")) {
       return "community";
     }
 
