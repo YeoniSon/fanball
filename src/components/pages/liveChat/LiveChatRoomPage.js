@@ -37,7 +37,7 @@ const LiveChatRoomPage = () => {
       label: "NC 다이노스",
       logo: "/team-logos/nc-dinos.png",
       path: "/ncDinos",
-      color: "3115288",
+      color: "315288",
     },
     {
       id: "KIA",
@@ -53,6 +53,7 @@ const LiveChatRoomPage = () => {
       label: "LG 트윈스",
       logo: "/team-logos/lg-twins.png",
       path: "/lgTwins",
+      color: "C30452",
     },
     {
       id: "KT",
@@ -60,6 +61,7 @@ const LiveChatRoomPage = () => {
       label: "KT 위즈",
       logo: "/team-logos/kt-wiz.png",
       path: "/ktWiz",
+      color: "000000",
     },
     {
       id: "DOOSAN",
