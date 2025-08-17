@@ -13,9 +13,9 @@
       "price": 45000,
       "originalPrice": 50000,
       "seller": {
-        "id": "U001",
-        "name": "김야구",
-        "nickname": "야구팬1",
+        "id": "1",
+        "name": "테스터",
+        "nickname": "테스터",
         "rating": 4.8,
         "verified": true
       },
@@ -68,6 +68,14 @@
         "verified": false
       },
       "status": "reserved",
+      "buyer": {
+        "id": "B101",
+        "name": "구매자1",
+        "nickname": "사전예약자",
+        "rating": 4.3,
+        "verified": true
+      },
+      "reservedAt": "2024-04-13T10:00:00Z",
       "description": "중앙석 B열 12번. 삼성 라이온즈 홈 경기 티켓입니다.",
       "createdAt": "2024-04-12T09:15:00Z",
       "expiresAt": "2024-04-16T23:59:59Z"
@@ -143,6 +151,118 @@
       "description": "3루석 A열 10번. KT 위즈 홈 경기 티켓입니다.",
       "createdAt": "2024-04-15T13:10:00Z",
       "expiresAt": "2024-04-19T23:59:59Z"
+    },
+    {
+      "id": "T007",
+      "team": "NC 다이노스",
+      "opponent": "SSG 랜더스",
+      "date": "2024-04-21",
+      "time": "17:00",
+      "stadium": "창원NC파크",
+      "section": "외야석",
+      "row": "F",
+      "seat": "22",
+      "price": 25000,
+      "originalPrice": 28000,
+      "seller": {
+        "id": "U007",
+        "name": "조야구",
+        "nickname": "NC열혈",
+        "rating": 4.4,
+        "verified": false
+      },
+      "status": "sold",
+      "buyer": {
+        "id": "B202",
+        "name": "구매자2",
+        "nickname": "NC직관러",
+        "rating": 4.6,
+        "verified": false
+      },
+      "purchasedAt": "2024-04-18T15:20:00Z",
+      "description": "외야석 F열 22번. 분위기 좋은 외야에서 직관!",
+      "createdAt": "2024-04-16T10:00:00Z",
+      "expiresAt": "2024-04-20T23:59:59Z"
+    },
+    {
+      "id": "T008",
+      "team": "롯데 자이언츠",
+      "opponent": "한화 이글스",
+      "date": "2024-04-22",
+      "time": "18:30",
+      "stadium": "사직야구장",
+      "section": "VIP석",
+      "row": "V",
+      "seat": "3",
+      "price": 120000,
+      "originalPrice": 150000,
+      "seller": {
+        "id": "U008",
+        "name": "문야구",
+        "nickname": "사직VIP",
+        "rating": 5.0,
+        "verified": true
+      },
+      "status": "available",
+      "description": "VIP석 V열 3번. 라운지 이용 가능, 프리미엄 좌석",
+      "createdAt": "2024-04-17T12:00:00Z",
+      "expiresAt": "2024-04-21T23:59:59Z"
+    },
+    {
+      "id": "T009",
+      "team": "키움 히어로즈",
+      "opponent": "두산 베어스",
+      "date": "2024-04-23",
+      "time": "18:30",
+      "stadium": "고척스카이돔",
+      "section": "중앙석",
+      "row": "G",
+      "seat": "9",
+      "price": 60000,
+      "originalPrice": 70000,
+      "seller": {
+        "id": "U009",
+        "name": "배야구",
+        "nickname": "고척매니아",
+        "rating": 4.2,
+        "verified": false
+      },
+      "status": "reserved",
+      "buyer": {
+        "id": "B303",
+        "name": "구매자3",
+        "nickname": "고척예약",
+        "rating": 4.0,
+        "verified": true
+      },
+      "reservedAt": "2024-04-19T11:30:00Z",
+      "description": "중앙석 G열 9번. 시야 매우 좋습니다.",
+      "createdAt": "2024-04-18T09:45:00Z",
+      "expiresAt": "2024-04-22T23:59:59Z"
+    },
+    {
+      "id": "T010",
+      "team": "한화 이글스",
+      "opponent": "삼성 라이온즈",
+      "date": "2024-04-24",
+      "time": "18:30",
+      "stadium": "대전한화생명이글스파크",
+      "section": "2루석",
+      "row": "B",
+      "seat": "14",
+      "price": 30000,
+      "originalPrice": 35000,
+      "seller": {
+        "id": "U010",
+        "name": "손야구",
+        "nickname": "한화직관러",
+        "rating": 4.1,
+        "verified": true
+      },
+      "status": "available",
+      "description": "2루석 B열 14번. 응원석과 가까워요!",
+      "createdAt": "2024-04-19T08:20:00Z",
+      "expiresAt": "2024-04-23T23:59:59Z"
     }
   ],
   "teams": [
