@@ -176,7 +176,9 @@ const MainLiveChat = () => {
       {loading ? (
         <div>불러오는 중...</div>
       ) : games.length === 0 ? (
-        <div>오늘 예정된 경기가 없습니다.</div>
+        <div>
+          <LiveChatContainer>오늘 예정된 경기가 없습니다.</LiveChatContainer>
+        </div>
       ) : (
         games.map((g) => (
           <div key={g.id}>
