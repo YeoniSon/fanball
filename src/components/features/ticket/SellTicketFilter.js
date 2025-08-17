@@ -11,6 +11,7 @@ import {
   HeaderRight,
 } from "../../../styles/ticket/SellTicketFilterStyled";
 import SellTicketContent from "./SellTicketContent";
+import { PlusIcon } from "../../common/Icons";
 
 const SellTicketFilter = () => {
   const [ticketStatus, setTicketStatus] = useState("all");
@@ -31,23 +32,6 @@ const SellTicketFilter = () => {
     }
     navigate("/ticket/ticketRegister");
   };
-
-  const PlusIcon = () => (
-    <svg
-      width="25"
-      height="25"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M6 12H18M12 6V18"
-      />
-    </svg>
-  );
 
   return (
     <div>

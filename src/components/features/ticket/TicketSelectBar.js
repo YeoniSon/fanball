@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BuyTicketContent from "./BuyTicketContent";
+import BuyTicketFilter from "./BuyTicketFilter";
 import {
   SelectContainer,
   Select,
@@ -21,7 +21,7 @@ const TicketSelectBar = () => {
       case "sellTicket":
         return <SellTicketFilter />;
       case "buyTicket":
-        return <BuyTicketContent />;
+        return <BuyTicketFilter />;
       default:
         return null;
     }
