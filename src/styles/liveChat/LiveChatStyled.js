@@ -6,7 +6,7 @@ export const ChatContainer = styled.div`
   background: rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   border: 1px solid #9c9a9a58;
-  height: 600px;
+  height: 70vh;
   overflow: hidden;
   margin-top: 30px;
 `;
