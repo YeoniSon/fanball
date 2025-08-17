@@ -14,6 +14,7 @@
       "originalPrice": 50000,
       "views": 128,
       "inquiries": 7,
+      "unreadInquiries": 3,
       "seller": {
         "id": "1",
         "name": "테스터",
@@ -40,10 +41,11 @@
       "originalPrice": 40000,
       "views": 96,
       "inquiries": 3,
+      "unreadInquiries": 0,
       "seller": {
-        "id": "U002",
-        "name": "이야구",
-        "nickname": "LG팬",
+        "id": "1",
+        "name": "테스터",
+        "nickname": "테스터",
         "rating": 4.9,
         "verified": true
       },
@@ -66,6 +68,7 @@
       "originalPrice": 60000,
       "views": 77,
       "inquiries": 12,
+      "unreadInquiries": 2,
       "seller": {
         "id": "U003",
         "name": "박야구",
@@ -100,6 +103,7 @@
       "originalPrice": 45000,
       "views": 45,
       "inquiries": 2,
+      "unreadInquiries": 1,
       "seller": {
         "id": "U004",
         "name": "최야구",
@@ -126,6 +130,7 @@
       "originalPrice": 42000,
       "views": 64,
       "inquiries": 5,
+      "unreadInquiries": 0,
       "seller": {
         "id": "U005",
         "name": "정야구",
@@ -152,6 +157,7 @@
       "originalPrice": 35000,
       "views": 22,
       "inquiries": 1,
+      "unreadInquiries": 1,
       "seller": {
         "id": "U006",
         "name": "강야구",
@@ -178,6 +184,7 @@
       "originalPrice": 28000,
       "views": 81,
       "inquiries": 9,
+      "unreadInquiries": 0,
       "seller": {
         "id": "U007",
         "name": "조야구",
@@ -212,6 +219,7 @@
       "originalPrice": 150000,
       "views": 210,
       "inquiries": 18,
+      "unreadInquiries": 5,
       "seller": {
         "id": "U008",
         "name": "문야구",
@@ -238,6 +246,7 @@
       "originalPrice": 70000,
       "views": 53,
       "inquiries": 4,
+      "unreadInquiries": 0,
       "seller": {
         "id": "U009",
         "name": "배야구",
@@ -272,6 +281,7 @@
       "originalPrice": 35000,
       "views": 31,
       "inquiries": 2,
+      "unreadInquiries": 0,
       "seller": {
         "id": "U010",
         "name": "손야구",

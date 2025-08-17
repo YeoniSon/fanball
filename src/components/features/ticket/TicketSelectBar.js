@@ -1,12 +1,11 @@
 import { useState } from "react";
-
-import SellTicketContent from "./SellTicketContent";
 import BuyTicketContent from "./BuyTicketContent";
 import {
   SelectContainer,
   Select,
 } from "../../../styles/ranking/SelectSectionStyled";
 import TicketFilter from "./TicketFilter";
+import SellTicketFilter from "./SellTicketFilter";
 
 const TicketSelectBar = () => {
   const [activeTab, setActiveTab] = useState("ticket");
@@ -20,7 +19,7 @@ const TicketSelectBar = () => {
       case "ticket":
         return <TicketFilter />;
       case "sellTicket":
-        return <SellTicketContent />;
+        return <SellTicketFilter />;
       case "buyTicket":
         return <BuyTicketContent />;
       default:

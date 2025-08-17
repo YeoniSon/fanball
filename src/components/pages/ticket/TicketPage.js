@@ -1,5 +1,5 @@
 import CommonBanner from "../../common/Banner";
-import TicketFilter from "../../features/ticket/TicketFilter";
+
 import TicketSelectBar from "../../features/ticket/TicketSelectBar";
 
 const TicketPage = () => {

@@ -1,0 +1,136 @@
+// Centralized SVG icon components
+
+export const LocationIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M12 21s7.5-3 7.5-10.5S16.142 3 12 3 4.5 6.358 4.5 10.5 12 21 12 21Z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M12 12.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
+    />
+  </svg>
+);
+
+export const TimeIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M12 6v6l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+    />
+  </svg>
+);
+
+export const ChatIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M3 7.8C3 6.12 3 5.28 3.327 4.638c.287-.564.746-1.023 1.31-1.31C5.28 3 6.12 3 7.8 3h8.4c1.68 0 2.52 0 3.162.327.565.287 1.024.746 1.311 1.31C21 5.28 21 6.12 21 7.8v5.4c0 1.68 0 2.52-.327 3.162-.287.564-.746 1.024-1.31 1.311C18.72 18 17.88 18 16.2 18H9.684c-.624 0-.936 0-1.234.061-.265.054-.521.144-.762.267-.271.139-.514.334-1.001.724L4.3 20.96c-.416.333-.624.499-.799.499a.5.5 0 0 1-.391-.188C3 21.135 3 20.868 3 20.335V7.8Z"
+    />
+  </svg>
+);
+
+export const SendIcon = ({ width = 25, height = 25, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="m3.5 5.5 17 6.5-17 6.5 4.5-6.5-4.5-6.5Zm4.5 6.5 12.5 0"
+    />
+  </svg>
+);
+
+export const MessageIcon = ({ width = 20, height = 20, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M9.163 5h6.675c2.038.015 3.677 1.679 3.662 3.717v4.513a3.74 3.74 0 0 1-1.062 2.617A3.73 3.73 0 0 1 15.837 16.947H9.163L5.5 19V8.717c-.007-.978.375-1.919 1.062-2.616A3.73 3.73 0 0 1 9.163 5Z"
+    />
+  </svg>
+);
+
+export const PersonIcon = ({
+  width = 230,
+  height = 230,
+  strokeWidth = 0.6,
+}) => (
+  <svg
+    width={`${width}px`}
+    height={`${height}px`}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M12 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M4 20c0-4 4-6 8-6s8 2 8 6"
+    />
+  </svg>
+);
+
+export const TicketIcon = ({ width = 20, height = 20, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 0 0-2 2v3a2 2 0 1 1 0 4v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3a2 2 0 1 1 0-4V7a2 2 0 0 0-2-2H5Z"
+    />
+  </svg>
+);

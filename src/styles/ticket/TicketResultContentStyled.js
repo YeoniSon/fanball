@@ -237,31 +237,6 @@ export const SellerRate = styled.div`
   color: #4b5563;
 `;
 
-export const Pagination = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 0 16px 0;
-  margin-top: 16px;
-`;
-
-export const PageButton = styled.button`
-  min-width: 32px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: none;
-  background: ${(p) => (p.$active ? "#111827" : "#ffffff")};
-  color: ${(p) => (p.$active ? "#ffffff" : "#111827")};
-  cursor: pointer;
-  transition: background 0.15s ease-in-out;
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-`;
-
 export const StatsRow = styled.div`
   display: flex;
   align-items: center;
@@ -281,6 +256,10 @@ export const DdayBadge = styled.span`
   font-size: 12px;
   font-weight: 500;
   color: black;
+  line-height: 1;
+  & > svg {
+    display: block;
+  }
 `;
 
 export const StatItem = styled.span`
@@ -292,4 +271,22 @@ export const StatItem = styled.span`
   background: transparent;
   color: #111827;
   font-size: 12px;
+  line-height: 1;
+  & > svg {
+    display: block;
+  }
+`;
+
+export const UnreadBadge = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
 `;

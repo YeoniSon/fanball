@@ -91,6 +91,11 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
       return "players";
     }
 
+    // 티켓 거래 하위 경로 처리 (예: /ticket/ticketRegister 등)
+    if (currentPath === "/ticket" || currentPath.startsWith("/ticket/")) {
+      return "ticket";
+    }
+
     // 정확 일치 경로 처리
     const currentMenu = allMenuItems.find((item) => item.path === currentPath);
     if (currentMenu) return currentMenu.id;
