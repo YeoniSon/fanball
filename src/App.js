@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/base/Header";
 import SideBar from "./components/base/SideBar";
@@ -14,6 +13,7 @@ import PlayerInput from "./components/pages/PlayerInput";
 import Ranking from "./components/pages/RankingPage";
 import PlayerInfoPage from "./components/pages/PlayerInfo/PlayerInfoPage";
 import PlayerDetailPage from "./components/pages/PlayerInfo/PlayerDetailPage";
+import TicketPage from "./components/pages/ticket/TicketPage";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
@@ -62,6 +62,7 @@ function AppContent() {
                   element={<LiveChatRoomPage />}
                 />
                 <Route path="/players" element={<PlayerInfoPage />} />
+                <Route path="/ticket" element={<TicketPage />} />
                 {/* 팀별 게시글 상세 페이지 라우트 */}
                 <Route
                   path="/:teamId/post/:postId"
