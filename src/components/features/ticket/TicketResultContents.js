@@ -90,8 +90,11 @@ const TicketResultContents = ({ team = "ALL" }) => {
   }, []);
 
   const filteredTickets = useMemo(() => {
-    if (team === "ALL") return tickets;
-    return tickets.filter((t) => t.team === team || t.opponent === team);
+    const isOpen = (t) => t.status === "available" || t.status === "reserved";
+    if (team === "ALL") return tickets.filter(isOpen);
+    return tickets.filter(
+      (t) => isOpen(t) && (t.team === team || t.opponent === team)
+    );
   }, [tickets, team]);
 
   const [page, setPage] = useState(1);
