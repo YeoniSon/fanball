@@ -156,12 +156,11 @@ export const TicketButton = styled.button`
 export const StatusBadge = styled.span`
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 3.25rem;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 600;
-  margin-right: 1rem;
   text-transform: uppercase;
 
   ${(props) => {
@@ -181,9 +180,8 @@ export const StatusBadge = styled.span`
 export const EditButton = styled.button`
   position: absolute;
   top: 0.8rem;
-  right: 0.8rem;
-  transform: translateX(-90px); /* 상태배지와 겹치지 않도록 왼쪽으로 이동 */
-  border: 1px solid #d1d5db;
+  right: 1rem;
+  border: transparent;
   background: #ffffff;
   color: #111827;
   border-radius: 8px;
@@ -194,8 +192,7 @@ export const EditButton = styled.button`
 export const EditMenu = styled.div`
   position: absolute;
   top: 2.2rem;
-  right: 0.8rem;
-  transform: translateX(-90px);
+  right: 1rem;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
