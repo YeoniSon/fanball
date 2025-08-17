@@ -134,3 +134,20 @@ export const TicketIcon = ({ width = 20, height = 20, strokeWidth = 2 }) => (
     />
   </svg>
 );
+
+export const PlusIcon = () => (
+  <svg
+    width="25"
+    height="25"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M6 12H18M12 6V18"
+    />
+  </svg>
+);
