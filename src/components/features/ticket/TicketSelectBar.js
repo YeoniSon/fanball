@@ -1,11 +1,12 @@
 import { useState } from "react";
-import TicketMainContent from "./TicketMaincontent";
+
 import SellTicketContent from "./SellTicketContent";
 import BuyTicketContent from "./BuyTicketContent";
 import {
-  Select,
   SelectContainer,
+  Select,
 } from "../../../styles/ranking/SelectSectionStyled";
+import TicketFilter from "./TicketFilter";
 
 const TicketSelectBar = () => {
   const [activeTab, setActiveTab] = useState("ticket");
@@ -17,7 +18,7 @@ const TicketSelectBar = () => {
   const renderContent = () => {
     switch (activeTab) {
       case "ticket":
-        return <TicketMainContent />;
+        return <TicketFilter />;
       case "sellTicket":
         return <SellTicketContent />;
       case "buyTicket":
@@ -40,16 +41,16 @@ const TicketSelectBar = () => {
           isActive={activeTab === "sellTicket"}
           onClick={() => handleTabClick("sellTicket")}
         >
-          내 판매 내역
+          티켓 판매
         </Select>
         <Select
           isActive={activeTab === "buyTicket"}
           onClick={() => handleTabClick("buyTicket")}
         >
-          내 구매 내역
+          티켓 구매
         </Select>
       </SelectContainer>
-      <div>{renderContent()}</div>
+      {renderContent()}
     </div>
   );
 };

@@ -4,7 +4,7 @@
       "id": "T001",
       "team": "SSG 랜더스",
       "opponent": "KIA 타이거즈",
-      "date": "2024-04-15",
+      "date": "2025-08-19",
       "time": "18:30",
       "stadium": "인천SSG랜더스필드",
       "section": "1루석",
@@ -12,6 +12,8 @@
       "seat": "15",
       "price": 45000,
       "originalPrice": 50000,
+      "views": 128,
+      "inquiries": 7,
       "seller": {
         "id": "1",
         "name": "테스터",
@@ -28,7 +30,7 @@
       "id": "T002",
       "team": "LG 트윈스",
       "opponent": "두산 베어스",
-      "date": "2024-04-16",
+      "date": "2025-08-17",
       "time": "19:00",
       "stadium": "잠실야구장",
       "section": "3루석",
@@ -36,6 +38,8 @@
       "seat": "8",
       "price": 35000,
       "originalPrice": 40000,
+      "views": 96,
+      "inquiries": 3,
       "seller": {
         "id": "U002",
         "name": "이야구",
@@ -43,7 +47,7 @@
         "rating": 4.9,
         "verified": true
       },
-      "status": "available",
+      "status": "done",
       "description": "3루석 C열 8번 좌석. 잠실야구장에서 LG 트윈스 응원하세요!",
       "createdAt": "2024-04-11T14:30:00Z",
       "expiresAt": "2024-04-15T23:59:59Z"
@@ -60,6 +64,8 @@
       "seat": "12",
       "price": 55000,
       "originalPrice": 60000,
+      "views": 77,
+      "inquiries": 12,
       "seller": {
         "id": "U003",
         "name": "박야구",
@@ -92,6 +98,8 @@
       "seat": "5",
       "price": 40000,
       "originalPrice": 45000,
+      "views": 45,
+      "inquiries": 2,
       "seller": {
         "id": "U004",
         "name": "최야구",
@@ -116,6 +124,8 @@
       "seat": "20",
       "price": 38000,
       "originalPrice": 42000,
+      "views": 64,
+      "inquiries": 5,
       "seller": {
         "id": "U005",
         "name": "정야구",
@@ -140,6 +150,8 @@
       "seat": "10",
       "price": 32000,
       "originalPrice": 35000,
+      "views": 22,
+      "inquiries": 1,
       "seller": {
         "id": "U006",
         "name": "강야구",
@@ -164,6 +176,8 @@
       "seat": "22",
       "price": 25000,
       "originalPrice": 28000,
+      "views": 81,
+      "inquiries": 9,
       "seller": {
         "id": "U007",
         "name": "조야구",
@@ -196,6 +210,8 @@
       "seat": "3",
       "price": 120000,
       "originalPrice": 150000,
+      "views": 210,
+      "inquiries": 18,
       "seller": {
         "id": "U008",
         "name": "문야구",
@@ -220,6 +236,8 @@
       "seat": "9",
       "price": 60000,
       "originalPrice": 70000,
+      "views": 53,
+      "inquiries": 4,
       "seller": {
         "id": "U009",
         "name": "배야구",
@@ -252,6 +270,8 @@
       "seat": "14",
       "price": 30000,
       "originalPrice": 35000,
+      "views": 31,
+      "inquiries": 2,
       "seller": {
         "id": "U010",
         "name": "손야구",
