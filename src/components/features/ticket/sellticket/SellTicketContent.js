@@ -37,7 +37,7 @@ import {
   Hr,
   UserIcon,
   UnreadBadge,
-} from "../../../../styles/ticket/SellTicketContentStyled";
+} from "../../../../styles/ticket/sellTicket/SellTicketContentStyled";
 
 const SellTicketContent = ({ option }) => {
   const [ticketData, setTicketData] = useState([]);

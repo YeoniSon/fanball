@@ -15,14 +15,14 @@ import {
   StatsRow,
   VS,
   Hr,
-} from "../../../../styles/ticket/SellTicketContentStyled";
+} from "../../../../styles/ticket/sellTicket/SellTicketContentStyled";
 import {
   PurchaseCode,
   PurchaseDay,
   PurchasePrice,
   StatusBadge,
   SellerName,
-} from "../../../../styles/ticket/BuyTicketContentStyled";
+} from "../../../../styles/ticket/buyTicket/BuyTicketContentStyled";
 
 const BuyTicketContent = ({ ticketStatus = "all" }) => {
   const [ticketData, setTicketData] = useState([]);

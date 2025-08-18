@@ -9,7 +9,7 @@ import {
   FilterOption,
   NewTicketButton,
   HeaderRight,
-} from "../../../../styles/ticket/SellTicketFilterStyled";
+} from "../../../../styles/ticket/sellTicket/SellTicketFilterStyled";
 import SellTicketContent from "./SellTicketContent";
 import { PlusIcon } from "../../../common/Icons";
 
