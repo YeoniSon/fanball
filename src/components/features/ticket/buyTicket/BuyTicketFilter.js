@@ -4,11 +4,11 @@ import {
   FilterOption,
   HeaderRight,
   MainTitle,
-} from "../../../styles/ticket/SellTicketFilterStyled";
+} from "../../../../styles/ticket/SellTicketFilterStyled";
 import {
   BuyTicketContainer,
   BuyTicketHeader,
-} from "../../../styles/ticket/BuyTicketFilterStyled";
+} from "../../../../styles/ticket/BuyTicketFilterStyled";
 import BuyTicketContent from "./BuyTicketContent";
 
 const BuyTicketFilter = () => {

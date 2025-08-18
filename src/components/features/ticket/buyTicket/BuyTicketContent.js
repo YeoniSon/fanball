@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { PersonIcon, LocationIcon, ChatIcon } from "../../common/Icons";
+import { PersonIcon, LocationIcon, ChatIcon } from "../../../common/Icons";
 import {
   NoLoginMessage,
   Title,
@@ -15,14 +15,14 @@ import {
   StatsRow,
   VS,
   Hr,
-} from "../../../styles/ticket/SellTicketContentStyled";
+} from "../../../../styles/ticket/SellTicketContentStyled";
 import {
   PurchaseCode,
   PurchaseDay,
   PurchasePrice,
   StatusBadge,
   SellerName,
-} from "../../../styles/ticket/BuyTicketContentStyled";
+} from "../../../../styles/ticket/BuyTicketContentStyled";
 
 const BuyTicketContent = ({ ticketStatus = "all" }) => {
   const [ticketData, setTicketData] = useState([]);
