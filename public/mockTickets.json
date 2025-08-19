@@ -39,17 +39,14 @@
       "seat": "8",
       "price": 35000,
       "originalPrice": 40000,
-      "views": 96,
-      "inquiries": 3,
-      "unreadInquiries": 0,
       "seller": {
-        "id": "1",
-        "name": "테스터",
-        "nickname": "테스터",
+        "id": "U002",
+        "name": "이야구",
+        "nickname": "LG팬",
         "rating": 4.9,
         "verified": true
       },
-      "status": "done",
+      "status": "available",
       "description": "3루석 C열 8번 좌석. 잠실야구장에서 LG 트윈스 응원하세요!",
       "createdAt": "2024-04-11T14:30:00Z",
       "expiresAt": "2024-04-15T23:59:59Z"
