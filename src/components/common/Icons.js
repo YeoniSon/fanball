@@ -151,3 +151,37 @@ export const PlusIcon = () => (
     />
   </svg>
 );
+
+export const ArrowLeftIcon = () => (
+  <svg
+    width="15"
+    height="15"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M21 12H3M3 12L10 19M3 12L10 5"
+    />
+  </svg>
+);
+
+export const ExclamationMarkIcon = () => (
+  <svg
+    width="15"
+    height="15"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 7h1v7h-1zm1.5 9.5a1 1 0 1 0-1 1 1.002 1.002 0 0 0 1-1zm9.3-4A10.3 10.3 0 1 1 12.5 2.2a10.297 10.297 0 0 1 10.3 10.3zm-1 0a9.3 9.3 0 1 0-9.3 9.3 9.31 9.31 0 0 0 9.3-9.3z"
+    />
+  </svg>
+);
