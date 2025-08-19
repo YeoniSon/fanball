@@ -1,11 +1,11 @@
 import { useState } from "react";
-import BuyTicketFilter from "./BuyTicketFilter";
+import BuyTicketFilter from "./buyTicket/BuyTicketFilter";
 import {
   SelectContainer,
   Select,
 } from "../../../styles/ranking/SelectSectionStyled";
 import TicketFilter from "./TicketFilter";
-import SellTicketFilter from "./SellTicketFilter";
+import SellTicketFilter from "./sellticket/SellTicketFilter";
 
 const TicketSelectBar = () => {
   const [activeTab, setActiveTab] = useState("ticket");
