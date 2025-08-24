@@ -131,21 +131,22 @@ export const SellerName = styled.div`
 `;
 
 export const TicketButton = styled.button`
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   background: #f42c09ff;
   gap: 0.5rem;
   text-align: center;
   color: white;
   border: none;
   border-radius: 0.5rem;
-  padding: 10px;
+  padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin-left: auto;
+  margin-left: 8px;
+  vertical-align: middle;
 
   &:hover {
     background: #1d4ed8;
@@ -289,4 +290,23 @@ export const UnreadBadge = styled.span`
   color: #ffffff;
   font-size: 11px;
   font-weight: 700;
+`;
+
+export const DetailButton = styled.div`
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-top: 0;
+  margin-left: auto;
+  vertical-align: middle;
+  font-size: 13px;
+
+  &:hover {
+    background: #f3f4f6;
+  }
 `;

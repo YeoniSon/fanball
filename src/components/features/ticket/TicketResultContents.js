@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { LocationIcon, TimeIcon, ChatIcon } from "../../common/Icons";
 import {
   TicketGrid,
@@ -25,6 +26,7 @@ import {
   DdayBadge,
   StatItem,
   UnreadBadge,
+  DetailButton,
 } from "../../../styles/ticket/TicketResultContentStyled";
 import Pagination from "../../common/Pagination";
 
@@ -62,6 +64,7 @@ const getDdayInfo = (dateString) => {
 };
 
 const TicketResultContents = ({ team = "ALL" }) => {
+  const navigate = useNavigate();
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -100,6 +103,15 @@ const TicketResultContents = ({ team = "ALL" }) => {
   const [page, setPage] = useState(1);
   const pageSize = 6;
   const pageCount = Math.max(1, Math.ceil(filteredTickets.length / pageSize));
+
+  const handleClickDetail = (ticketId) => {
+    if (!currentUser) {
+      alert("로그인이 필요합니다.");
+      navigate("/login");
+      return;
+    }
+    navigate(`/ticket/detail/${ticketId}`);
+  };
 
   useEffect(() => {
     // 팀 변경 시 첫 페이지로 이동
@@ -183,6 +195,10 @@ const TicketResultContents = ({ team = "ALL" }) => {
                 </StatItem>
                 <StatItem>조회 {ticket.views ?? 0}</StatItem>
               </div>
+
+              <DetailButton onClick={() => handleClickDetail(ticket.id)}>
+                상세보기
+              </DetailButton>
 
               <TicketButton disabled={ticket.status !== "available"}>
                 <ChatIcon />
