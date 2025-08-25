@@ -14,6 +14,9 @@ import Ranking from "./components/pages/RankingPage";
 import PlayerInfoPage from "./components/pages/PlayerInfo/PlayerInfoPage";
 import PlayerDetailPage from "./components/pages/PlayerInfo/PlayerDetailPage";
 import TicketPage from "./components/pages/ticket/TicketPage";
+import TicketEditPage from "./components/pages/ticket/TicketEditPage";
+import TicketRegisterPage from "./components/pages/ticket/TicketRegisterPage";
+import TicketDetailPage from "./components/pages/ticket/TicketDetailPage";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
@@ -63,7 +66,19 @@ function AppContent() {
                 />
                 <Route path="/players" element={<PlayerInfoPage />} />
                 <Route path="/ticket" element={<TicketPage />} />
-                {/* 팀별 게시글 상세 페이지 라우트 */}
+                <Route
+                  path="/ticket/edit/:ticketId"
+                  element={<TicketEditPage />}
+                />
+                <Route
+                  path="/ticket/ticketRegister"
+                  element={<TicketRegisterPage />}
+                />
+                <Route
+                  path="/ticket/detail/:ticketId"
+                  element={<TicketDetailPage />}
+                />
+                "{/* 팀별 게시글 상세 페이지 라우트 */}
                 <Route
                   path="/:teamId/post/:postId"
                   // element={<PostDetailPage />}

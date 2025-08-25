@@ -1,0 +1,227 @@
+{
+  "stadiums": [
+    {
+      "name": "인천SSG랜더스필드",
+      "sections": [
+        {
+          "code": "1루석",
+          "price": 40000,
+          "rows": [
+            { "row": "A", "seats": 30 },
+            { "row": "B", "seats": 32 },
+            { "row": "C", "seats": 34 },
+            { "row": "D", "seats": 34 }
+          ]
+        },
+        {
+          "code": "3루석",
+          "price": 38000,
+          "rows": [
+            { "row": "A", "seats": 30 },
+            { "row": "B", "seats": 30 },
+            { "row": "C", "seats": 32 }
+          ]
+        },
+        {
+          "code": "중앙석",
+          "price": 60000,
+          "rows": [
+            { "row": "A", "seats": 20 },
+            { "row": "B", "seats": 20 },
+            { "row": "C", "seats": 22 }
+          ]
+        },
+        {
+          "code": "외야석",
+          "price": 25000,
+          "rows": [
+            { "row": "F", "seats": 40 },
+            { "row": "G", "seats": 42 }
+          ]
+        },
+        {
+          "code": "VIP석",
+          "price": 120000,
+          "rows": [{ "row": "V", "seats": 15 }]
+        }
+      ]
+    },
+    {
+      "name": "잠실야구장",
+      "sections": [
+        {
+          "code": "1루석",
+          "price": 42000,
+          "rows": [
+            { "row": "A", "seats": 35 },
+            { "row": "B", "seats": 35 },
+            { "row": "C", "seats": 36 }
+          ]
+        },
+        {
+          "code": "3루석",
+          "price": 42000,
+          "rows": [
+            { "row": "A", "seats": 35 },
+            { "row": "B", "seats": 36 }
+          ]
+        },
+        {
+          "code": "중앙석",
+          "price": 65000,
+          "rows": [
+            { "row": "A", "seats": 24 },
+            { "row": "B", "seats": 24 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "창원NC파크",
+      "sections": [
+        {
+          "code": "1루석",
+          "price": 39000,
+          "rows": [
+            { "row": "A", "seats": 28 },
+            { "row": "B", "seats": 30 }
+          ]
+        },
+        {
+          "code": "3루석",
+          "price": 39000,
+          "rows": [
+            { "row": "A", "seats": 28 },
+            { "row": "B", "seats": 30 }
+          ]
+        },
+        {
+          "code": "외야석",
+          "price": 24000,
+          "rows": [{ "row": "F", "seats": 44 }]
+        }
+      ]
+    },
+    {
+      "name": "광주기아챔피언스필드",
+      "sections": [
+        {
+          "code": "2루석",
+          "price": 38000,
+          "rows": [
+            { "row": "A", "seats": 30 },
+            { "row": "B", "seats": 32 },
+            { "row": "C", "seats": 32 }
+          ]
+        },
+        {
+          "code": "중앙석",
+          "price": 59000,
+          "rows": [
+            { "row": "A", "seats": 20 },
+            { "row": "B", "seats": 22 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "수원KT위즈파크",
+      "sections": [
+        {
+          "code": "3루석",
+          "price": 38000,
+          "rows": [
+            { "row": "A", "seats": 28 },
+            { "row": "B", "seats": 28 }
+          ]
+        },
+        {
+          "code": "외야석",
+          "price": 23000,
+          "rows": [
+            { "row": "F", "seats": 40 },
+            { "row": "G", "seats": 42 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "대구삼성라이온즈파크",
+      "sections": [
+        {
+          "code": "1루석",
+          "price": 39000,
+          "rows": [
+            { "row": "A", "seats": 30 },
+            { "row": "B", "seats": 32 }
+          ]
+        },
+        {
+          "code": "3루석",
+          "price": 39000,
+          "rows": [
+            { "row": "A", "seats": 30 },
+            { "row": "B", "seats": 32 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "부산사직야구장",
+      "sections": [
+        {
+          "code": "외야석",
+          "price": 22000,
+          "rows": [
+            { "row": "F", "seats": 45 },
+            { "row": "G", "seats": 45 }
+          ]
+        },
+        {
+          "code": "VIP석",
+          "price": 105000,
+          "rows": [{ "row": "V", "seats": 12 }]
+        }
+      ]
+    },
+    {
+      "name": "고척스카이돔",
+      "sections": [
+        {
+          "code": "중앙석",
+          "price": 68000,
+          "rows": [
+            { "row": "A", "seats": 24 },
+            { "row": "B", "seats": 24 }
+          ]
+        },
+        {
+          "code": "내야지정석",
+          "price": 50000,
+          "rows": [
+            { "row": "D", "seats": 30 },
+            { "row": "E", "seats": 30 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "대전한화생명이글스파크",
+      "sections": [
+        {
+          "code": "2루석",
+          "price": 36000,
+          "rows": [
+            { "row": "A", "seats": 28 },
+            { "row": "B", "seats": 28 }
+          ]
+        },
+        {
+          "code": "외야석",
+          "price": 21000,
+          "rows": [{ "row": "F", "seats": 40 }]
+        }
+      ]
+    }
+  ]
+}

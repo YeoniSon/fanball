@@ -30,6 +30,12 @@ export const PurchasePrice = styled.div`
   gap: 10px;
 `;
 
+export const PurchaseDescription = styled.p`
+  font-size: 13px;
+  color: #666;
+  margin: 8px 1.5rem 0 1.5rem;
+`;
+
 export const StatusBadge = styled.span`
   position: absolute;
   top: 1rem;

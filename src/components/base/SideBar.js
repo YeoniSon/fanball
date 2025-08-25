@@ -21,6 +21,7 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
     { id: "players", label: "선수정보", path: "/players" },
     // 티켓 메뉴
     { id: "ticket", label: "티켓 거래", path: "/ticket" },
+    { id: "message", label: "메세지", path: "/message" },
     // 커뮤니티 메뉴
     { id: "community", label: "실시간 채팅", path: "/community" },
     //팀별 게시판
@@ -74,6 +75,11 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
     // 커뮤니티(실시간 채팅) 경로 처리
     if (currentPath === "/community" || currentPath.startsWith("/community/")) {
       return "community";
+    }
+
+    //메시지 경로 처리
+    if (currentPath === "/message" || currentPath.startsWith("/message/")) {
+      return "message";
     }
 
     // 게시글 상세 페이지인 경우 팀 ID 추출

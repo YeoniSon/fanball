@@ -135,10 +135,65 @@ export const TicketIcon = ({ width = 20, height = 20, strokeWidth = 2 }) => (
   </svg>
 );
 
-export const PlusIcon = () => (
+export const PlusIcon = ({ width = 25, height = 25, strokeWidth = 2 }) => (
   <svg
-    width="25"
-    height="25"
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M6 12H18M12 6V18"
+    />
+  </svg>
+);
+
+export const ArrowLeftIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M21 12H3M3 12L10 19M3 12L10 5"
+    />
+  </svg>
+);
+
+export const ExclamationMarkIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M12 7h1v7h-1zm1.5 9.5a1 1 0 1 0-1 1 1.002 1.002 0 0 0 1-1zm9.3-4A10.3 10.3 0 1 1 12.5 2.2a10.297 10.297 0 0 1 10.3 10.3zm-1 0a9.3 9.3 0 1 0-9.3 9.3 9.31 9.31 0 0 0 9.3-9.3z"
+    />
+  </svg>
+);
+
+export const CalenderIcon = () => (
+  <svg
+    width="20"
+    height="20"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -147,7 +202,24 @@ export const PlusIcon = () => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M6 12H18M12 6V18"
+      d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z"
+    />
+  </svg>
+);
+
+export const ClockIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+      d="M12 7V12L13.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
     />
   </svg>
 );

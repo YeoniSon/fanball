@@ -1,12 +1,13 @@
 import { useState, useEffect, useMemo } from "react";
-import Pagination from "../../common/Pagination";
+import { useNavigate } from "react-router-dom";
+import Pagination from "../../../common/Pagination";
 import {
   LocationIcon,
   ChatIcon,
   TimeIcon,
   MessageIcon,
   PersonIcon,
-} from "../../common/Icons";
+} from "../../../common/Icons";
 import {
   NoLoginMessage,
   Title,
@@ -36,10 +37,11 @@ import {
   Hr,
   UserIcon,
   UnreadBadge,
-} from "../../../styles/ticket/SellTicketContentStyled";
+} from "../../../../styles/ticket/sellTicket/SellTicketContentStyled";
 
 const SellTicketContent = ({ option }) => {
   const [ticketData, setTicketData] = useState([]);
+  const navigate = useNavigate();
   const currentUser = useMemo(() => {
     try {
       const raw = localStorage.getItem("user");
@@ -156,7 +158,9 @@ const SellTicketContent = ({ option }) => {
             </div>
             {openMenuId === ticket.id && (
               <EditMenu>
-                <EditMenuItem onClick={() => alert("수정 페이지로 이동 예정")}>
+                <EditMenuItem
+                  onClick={() => navigate(`/ticket/edit/${ticket.id}`)}
+                >
                   수정
                 </EditMenuItem>
                 <EditMenuItem onClick={() => alert("삭제 확인 모달 예정")}>

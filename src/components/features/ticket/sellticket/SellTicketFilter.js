@@ -9,9 +9,9 @@ import {
   FilterOption,
   NewTicketButton,
   HeaderRight,
-} from "../../../styles/ticket/SellTicketFilterStyled";
+} from "../../../../styles/ticket/sellTicket/SellTicketFilterStyled";
 import SellTicketContent from "./SellTicketContent";
-import { PlusIcon } from "../../common/Icons";
+import { PlusIcon } from "../../../common/Icons";
 
 const SellTicketFilter = () => {
   const [ticketStatus, setTicketStatus] = useState("all");
