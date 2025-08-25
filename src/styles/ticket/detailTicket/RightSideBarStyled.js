@@ -160,3 +160,55 @@ export const TicketValue = styled.div`
   font-size: 14px;
   color: black;
 `;
+
+// Compose message modal
+export const ModalOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+`;
+
+export const ModalCard = styled.div`
+  width: 90%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+`;
+
+export const ModalTitle = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+`;
+
+export const ModalTextarea = styled.textarea`
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+`;
+
+export const ModalActions = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+`;
+
+export const ModalButton = styled.button`
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: ${(p) => (p.$primary ? "#0e6f04" : "#f3f4f6")};
+  color: ${(p) => (p.$primary ? "#ffffff" : "#111827")};
+  cursor: pointer;
+`;
