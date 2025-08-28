@@ -27,7 +27,7 @@ import {
 } from "../../styles/playerInput/playerInputStyled";
 
 const PlayerInput = () => {
-  const [selectedTeam, setSelectedTeam] = useState("lg-twins");
+  const [selectedTeam, setSelectedTeam] = useState("doosan-bears");
   const [playerData, setPlayerData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
