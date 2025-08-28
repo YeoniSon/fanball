@@ -22,6 +22,16 @@ import {
 
 const RightSideBar = ({ gameData }) => {
   const [sellerMeta, setSellerMeta] = useState(null);
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  const currentUser = (() => {
+    try {
+      const raw = localStorage.getItem("currentUser");
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
+    }
+  })();
 
   useEffect(() => {
     const fetchSellerData = async () => {
@@ -49,6 +59,38 @@ const RightSideBar = ({ gameData }) => {
     fetchSellerData();
   }, [gameData?.seller?.id, gameData?.sellerId]);
 
+  useEffect(() => {
+    const loadUnread = async () => {
+      try {
+        if (!currentUser?.id) return;
+        const res = await fetch("/mockMessages.json");
+        const data = await res.json();
+        const threads = Array.isArray(data?.threads) ? data.threads : [];
+        const sellerId =
+          sellerMeta?.id || (gameData?.seller?.id ?? gameData?.sellerId);
+        if (!sellerId) return;
+        // find a thread including both participants
+        const thread = threads.find(
+          (t) =>
+            Array.isArray(t.participants) &&
+            t.participants.includes(Number(currentUser.id)) &&
+            t.participants.includes(Number(sellerId))
+        );
+        if (!thread) return;
+        const unread = thread.unread?.[String(currentUser.id)] ?? 0;
+        setUnreadCount(Number(unread) || 0);
+      } catch (e) {
+        setUnreadCount(0);
+      }
+    };
+    loadUnread();
+  }, [
+    currentUser?.id,
+    sellerMeta?.id,
+    gameData?.seller?.id,
+    gameData?.sellerId,
+  ]);
+
   const statusLabel = (() => {
     const s = gameData?.status;
     if (s === "available") return "판매중";
@@ -56,10 +98,6 @@ const RightSideBar = ({ gameData }) => {
     else if (s === "canceled") return "취소";
     else return "판매불가";
   })();
-
-  const handleClickMessage = () => {
-    // TODO: 메시지 전송 연결
-  };
 
   const sellerInitial = (
     gameData?.seller?.nickname ||
@@ -72,9 +110,8 @@ const RightSideBar = ({ gameData }) => {
   const displayRating =
     gameData?.seller?.rating != null ? gameData.seller.rating : "-";
 
-  const formatDate = (dateString) => {
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    return new Date(dateString).toLocaleDateString("ko-KR", options);
+  const handleClickMessage = () => {
+    // TODO: 메시지 전송 연결
   };
 
   return (
@@ -91,7 +128,7 @@ const RightSideBar = ({ gameData }) => {
         ) : null}
 
         <SellerMessageButton onClick={handleClickMessage}>
-          구매문의
+          구매문의{unreadCount > 0 ? ` (${unreadCount})` : ""}
         </SellerMessageButton>
       </PriceContainer>
 
@@ -122,7 +159,11 @@ const RightSideBar = ({ gameData }) => {
         <TicketTitle>게시글 정보</TicketTitle>
         <TicketInfoDetail>
           <TicketLabel>등록일</TicketLabel>
-          <TicketValue>{formatDate(gameData?.createdAt) || "-"}</TicketValue>
+          <TicketValue>
+            {gameData?.createdAt
+              ? new Date(gameData.createdAt).toLocaleString()
+              : "-"}
+          </TicketValue>
         </TicketInfoDetail>
         <TicketInfoDetail>
           <TicketLabel>조회</TicketLabel>
