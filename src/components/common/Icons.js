@@ -57,13 +57,18 @@ export const ChatIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
   </svg>
 );
 
-export const SendIcon = ({ width = 25, height = 25, strokeWidth = 2 }) => (
+export const SendIcon = ({
+  width = 25,
+  height = 25,
+  strokeWidth = 2,
+  viewBox = "0 0 25 25",
+}) => (
   <svg
     width={width}
     height={height}
     fill="none"
     stroke="currentColor"
-    viewBox="0 0 24 24"
+    viewBox={viewBox}
   >
     <path
       strokeLinecap="round"
