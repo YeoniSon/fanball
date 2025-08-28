@@ -18,6 +18,7 @@ import TicketRegisterPage from "./components/pages/ticket/TicketRegisterPage";
 import TicketDetailPage from "./components/pages/ticket/TicketDetailPage";
 import MessagePage from "./components/pages/message/MessagePage";
 import PlayerInputPage from "./components/pages/PlayerInputPage";
+import TeamBoard from "./components/pages/teamBoard/TeamBoard";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
@@ -82,6 +83,9 @@ function AppContent() {
 
                 {/* 메시지 페이지 라우트 */}
                 <Route path="/message" element={<MessagePage />} />
+
+                {/* 팀별 게시글 목록 페이지 라우트 */}
+                <Route path="/:teamId" element={<TeamBoard />} />
 
                 {/* 팀별 게시글 상세 페이지 라우트 */}
                 <Route
