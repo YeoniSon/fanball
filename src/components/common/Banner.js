@@ -1,17 +1,36 @@
-import React from "react";
 import {
   BannerContainer,
   BannerTitle,
   BannerContents,
+  BannerRow,
+  BannerLogo,
+  BannerTextGroup,
 } from "../../styles/BannerStyled";
 
-const CommonBanner = ({ title, subtitle, bgColor, titleColor, textColor }) => {
+const CommonBanner = ({
+  title,
+  subtitle,
+  bgColor,
+  titleColor,
+  textColor,
+  icon,
+}) => {
   return (
     <BannerContainer bgColor={bgColor}>
-      <BannerContents textColor={textColor}>
-        <BannerTitle titleColor={titleColor}>{title}</BannerTitle>
-        {subtitle}
-      </BannerContents>
+      {icon ? (
+        <BannerRow>
+          <BannerLogo>{icon}</BannerLogo>
+          <BannerTextGroup textColor={textColor}>
+            <BannerTitle titleColor={titleColor}>{title}</BannerTitle>
+            <BannerContents textColor={textColor}>{subtitle}</BannerContents>
+          </BannerTextGroup>
+        </BannerRow>
+      ) : (
+        <BannerContents textColor={textColor}>
+          <BannerTitle titleColor={titleColor}>{title}</BannerTitle>
+          {subtitle}
+        </BannerContents>
+      )}
     </BannerContainer>
   );
 };

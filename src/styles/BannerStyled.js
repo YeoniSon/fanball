@@ -20,3 +20,21 @@ export const BannerContents = styled.p`
   color: ${(props) => props.textColor || "white"};
   margin-bottom: 1.3rem;
 `;
+
+export const BannerRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+`;
+
+export const BannerLogo = styled.div`
+  display: inline-flex;
+  align-items: center;
+`;
+
+export const BannerTextGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: ${(props) => props.textColor || "white"};
+`;
