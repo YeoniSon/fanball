@@ -2,7 +2,7 @@ import CommonBanner from "../../common/Banner";
 import { useParams } from "react-router-dom";
 import TeamInfo from "../../common/TeamInfo";
 import PostListPage from "../../features/teamBoard/PostListPage";
-import { TitleRow, LogoImage } from "../../../styles/teamBoard/TeamBoardStyled";
+import { LogoImage } from "../../../styles/teamBoard/TeamBoardStyled";
 
 const TeamBoard = () => {
   const { teamId } = useParams();
