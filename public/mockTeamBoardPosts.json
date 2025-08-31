@@ -6,91 +6,104 @@
       "team": "ssgLanders",
       "category": "free",
       "title": "랜더스 팬들 모여요! 이번 주 응원 계획 공유",
-      "author": "야구사랑SSG",
+      "author": "테스터",
+      "authorId": 1,
       "createdAt": "2025-08-01T10:05:00.000Z",
-      "likes": 24,
+      "likes": 2,
+      "likedUserIds": [1, 2],
       "views": 512,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_free_ssg_001",
-          "author": "랜더스짱",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "토요일 1루 응원석으로 갑니다!",
           "createdAt": "2025-08-01T10:20:00.000Z",
           "likes": 3
         },
         {
           "id": "c_free_ssg_002",
-          "author": "인천직관러",
+          "author": "테스터",
+          "authorId": 1,
           "content": "응원가 리스트 공유 부탁드려요!",
           "createdAt": "2025-08-01T10:32:00.000Z",
           "likes": 1
         }
       ],
-      "content": "이번 주 인천 직관 예정인 분들 응원 계획 같이 맞춰봐요! 깃발, 응원봉, 응원가 준비!"
+      "content": "이번 주 인천 직관 예정인 분들 응원 계획 같이 맞춰봐요! 깃발, 응원봉, 응원가 준비!\n자세한 집결 시간과 동선, 준비물 체크리스트도 공유합니다.\n초행이신 분들을 위한 좌석 선택 팁과 입장 대기 요령도 함께 나눠요."
     },
     {
       "id": "post_review_ssg_001",
       "team": "ssgLanders",
       "category": "review",
       "title": "어제 경기 후기: 불펜이 흐름을 잡았다",
-      "author": "경기분석가",
+      "author": "야구팬",
+      "authorId": 2,
       "createdAt": "2025-08-02T02:40:00.000Z",
-      "likes": 41,
+      "likes": 2,
+      "likedUserIds": [2, 3],
       "views": 893,
       "commentCount": 3,
       "comments": [
         {
           "id": "c_review_ssg_001",
-          "author": "직관러",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "7회 교체 타이밍이 신의 한 수였어요",
           "createdAt": "2025-08-02T03:00:00.000Z",
           "likes": 5
         },
         {
           "id": "c_review_ssg_002",
-          "author": "볼넷OUT",
+          "author": "테스터",
+          "authorId": 1,
           "content": "초반 제구 흔들렸는데 잘 버텼습니다",
           "createdAt": "2025-08-02T03:10:00.000Z",
           "likes": 2
         },
         {
           "id": "c_review_ssg_003",
-          "author": "랜디",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
           "content": "수비 집중력도 좋았어요",
           "createdAt": "2025-08-02T03:18:00.000Z",
           "likes": 0
         }
       ],
-      "content": "선발이 흔든 초반을 불펜이 막아낸 경기. 타선은 찬스 때 집중력으로 점수를 뽑아냈습니다."
+      "content": "선발이 흔든 초반을 불펜이 막아낸 경기. 타선은 찬스 때 집중력으로 점수를 뽑아냈습니다.\n특히 중후반 교체 카드와 수비 포메이션 전환이 주효했습니다.\n세부 지표와 이닝별 흐름을 첨부해 더 깊게 분석해봅니다."
     },
     {
       "id": "post_player_ssg_001",
       "team": "ssgLanders",
       "category": "player",
       "title": "최정 타격 폼 분석과 최근 핫존 변화",
-      "author": "스탯덕후",
+      "author": "야구팬",
+      "authorId": 2,
       "createdAt": "2025-08-03T07:15:00.000Z",
-      "likes": 58,
+      "likes": 2,
+      "likedUserIds": [1, 3],
       "views": 1044,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_player_ssg_001",
-          "author": "연속홈런가즈아",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "레그킥 타이밍이 확실히 안정됐어요",
           "createdAt": "2025-08-03T07:30:00.000Z",
           "likes": 6
         },
         {
           "id": "c_player_ssg_002",
-          "author": "분석러",
+          "author": "테스터",
+          "authorId": 1,
           "content": "체인지업 대응이 좋아진 듯합니다",
           "createdAt": "2025-08-03T07:45:00.000Z",
           "likes": 4
         }
       ],
-      "content": "발사각과 타구속도를 기준으로 7월 이후 타격 지표가 반등. 바깥쪽 승부에 대한 적응이 눈에 띕니다."
+      "content": "발사각과 타구속도를 기준으로 7월 이후 타격 지표가 반등. 바깥쪽 승부에 대한 적응이 눈에 띕니다.\n콘택트 품질, 체인지업 대응, 투구수 대비 스윙 수 등 세부 수치를 통해 변화의 지속 가능성도 점검합니다."
     },
 
     {
@@ -98,84 +111,96 @@
       "team": "lgTwins",
       "category": "free",
       "title": "잠실 원정 응원 모임 구합니다",
-      "author": "엘지영원히",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
       "createdAt": "2025-08-01T11:10:00.000Z",
-      "likes": 19,
+      "likes": 1,
+      "likedUserIds": [3],
       "views": 377,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_free_lg_001",
-          "author": "트윈스파이팅",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
           "content": "3루 외야로 가요!",
           "createdAt": "2025-08-01T11:25:00.000Z",
           "likes": 2
         },
         {
           "id": "c_free_lg_002",
-          "author": "엘린이",
+          "author": "테스터",
+          "authorId": 1,
           "content": "응원도구 같이 준비해요",
           "createdAt": "2025-08-01T11:40:00.000Z",
           "likes": 1
         }
       ],
-      "content": "원정 버스 타실 분 모집합니다. 응원가 연습도 함께!"
+      "content": "원정 버스 타실 분 모집합니다. 응원가 연습도 함께!\n\n집결 위치와 시간, 예매 좌석 구역을 안내드리고, 초행자분들을 위한 준비물 체크리스트도 공유합니다."
     },
     {
       "id": "post_review_lg_001",
       "team": "lgTwins",
       "category": "review",
       "title": "선발-불펜 완벽 계승, 깔끔한 승리",
-      "author": "엘지분석",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
       "createdAt": "2025-08-02T03:20:00.000Z",
-      "likes": 33,
+      "likes": 2,
+      "likedUserIds": [3, 2],
       "views": 640,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_review_lg_001",
-          "author": "엘레강스",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
           "content": "수비 실책이 없어서 더 좋았음",
           "createdAt": "2025-08-02T03:40:00.000Z",
           "likes": 2
         },
         {
           "id": "c_review_lg_002",
-          "author": "직관의힘",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "타선이 초반부터 몰아치니 편했네요",
           "createdAt": "2025-08-02T03:55:00.000Z",
           "likes": 1
         }
       ],
-      "content": "선발이 6이닝 무실점, 불펜도 무난하게 이어감. 중심타선이 제 몫을 해줬습니다."
+      "content": "선발이 6이닝 무실점, 불펜도 무난하게 이어감. 중심타선이 제 몫을 해줬습니다.\n\n수비 집중력과 주루 판단이 안정적이었고, 상대 투수의 패턴 파악도 빨랐습니다.\n\n주요 승부처를 하이라이트 캡처와 함께 정리했습니다."
     },
     {
       "id": "post_player_lg_001",
       "team": "lgTwins",
       "category": "player",
       "title": "문보경 최근 타격감과 수비 포지셔닝",
-      "author": "데이터트윈스",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
       "createdAt": "2025-08-03T08:05:00.000Z",
-      "likes": 27,
+      "likes": 2,
+      "likedUserIds": [2, 3],
       "views": 502,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_player_lg_001",
-          "author": "잠실라인드라이브",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
           "content": "라인드라이브 타구 비율이 올랐어요",
           "createdAt": "2025-08-03T08:20:00.000Z",
           "likes": 2
         },
         {
           "id": "c_player_lg_002",
-          "author": "수비덕후",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "3루 수비 범위가 생각보다 넓음",
           "createdAt": "2025-08-03T08:30:00.000Z",
           "likes": 1
         }
       ],
-      "content": "볼넷/삼진 비율이 개선됐고, 코너 워크가 좋아졌습니다. 수비에선 초동 포지셔닝이 안정적."
+      "content": "볼넷/삼진 비율이 개선됐고, 코너 워크가 좋아졌습니다. 수비에선 초동 포지셔닝이 안정적.\n타구 질과 스윙 경로 분석을 통해 향후 상대의 대응 전략까지 예측해봅니다."
     },
 
     {
@@ -183,84 +208,96 @@
       "team": "kiaTigers",
       "category": "free",
       "title": "광주 홈 응원석 자리 추천 좀",
-      "author": "호랑이심장",
+      "author": "야구팬",
+      "authorId": 2,
       "createdAt": "2025-08-01T09:55:00.000Z",
-      "likes": 14,
+      "likes": 1,
+      "likedUserIds": [2],
       "views": 290,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_free_kia_001",
-          "author": "응원하자타이거즈",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "1루 응원석 분위기 최고!",
           "createdAt": "2025-08-01T10:05:00.000Z",
           "likes": 1
         },
         {
           "id": "c_free_kia_002",
-          "author": "광주토박이",
+          "author": "테스터",
+          "authorId": 1,
           "content": "그늘 생각하면 3루 추천합니다",
           "createdAt": "2025-08-01T10:15:00.000Z",
           "likes": 0
         }
       ],
-      "content": "처음 직관 가는 친구를 데려갑니다. 보기 좋은 자리 추천 부탁!"
+      "content": "처음 직관 가는 친구를 데려갑니다. 보기 좋은 자리 추천 부탁!\n\n구장별 시야, 그늘, 동선, 화장실/매점 접근성까지 고려한 상세 팁을 모읍니다.\n\n추천 이유와 사진 있으면 더 좋아요."
     },
     {
       "id": "post_review_kia_001",
       "team": "kiaTigers",
       "category": "review",
       "title": "타선 폭발! 장단 12안타로 대승",
-      "author": "호랑이분석",
+      "author": "야구팬",
+      "authorId": 2,
       "createdAt": "2025-08-02T04:10:00.000Z",
-      "likes": 36,
+      "likes": 2,
+      "likedUserIds": [2, 1],
       "views": 721,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_review_kia_001",
-          "author": "직관성공",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "초반 빅이닝으로 분위기 잡았죠",
           "createdAt": "2025-08-02T04:25:00.000Z",
           "likes": 2
         },
         {
           "id": "c_review_kia_002",
-          "author": "응원가자",
+          "author": "테스터",
+          "authorId": 1,
           "content": "중간 불펜도 안정적이었음",
           "createdAt": "2025-08-02T04:40:00.000Z",
           "likes": 1
         }
       ],
-      "content": "상위 타선이 연속 출루로 달아났고, 하위 타선도 기회 때 한 방씩. 투타 밸런스 완벽."
+      "content": "상위 타선이 연속 출루로 달아났고, 하위 타선도 기회 때 한 방씩. 투타 밸런스 완벽.\n\n이닝별 득점 과정과 상대 실책 유도 장면을 정리했고, 대타·대주자 카드의 타이밍도 함께 짚어봅니다."
     },
     {
       "id": "post_player_kia_001",
       "team": "kiaTigers",
       "category": "player",
       "title": "나성범 복귀 후 스윙 궤적과 타구질",
-      "author": "스윙리서치",
+      "author": "야구팬",
+      "authorId": 2,
       "createdAt": "2025-08-03T06:55:00.000Z",
-      "likes": 22,
+      "likes": 2,
+      "likedUserIds": [1, 2],
       "views": 468,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_player_kia_001",
-          "author": "강한호랑이",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "역시 타구속도 미쳤습니다",
           "createdAt": "2025-08-03T07:00:00.000Z",
           "likes": 3
         },
         {
           "id": "c_player_kia_002",
-          "author": "데이터덕",
+          "author": "테스터",
+          "authorId": 1,
           "content": "볼넷 비율이 점점 올라가네요",
           "createdAt": "2025-08-03T07:10:00.000Z",
           "likes": 1
         }
       ],
-      "content": "컨택 퀄리티가 빠르게 회복. 실투 대처 능력도 여전합니다."
+      "content": "컨택 퀄리티가 빠르게 회복. 실투 대처 능력도 여전합니다.\n\n타석 접근 변화와 파울 커팅 능력, 카운트별 선택지를 지표와 함께 살펴봅니다."
     },
 
     {
@@ -268,84 +305,96 @@
       "team": "doosanBears",
       "category": "free",
       "title": "두산 직관 가는 길, 맛집 추천 받습니다",
-      "author": "베어스러버",
+      "author": "테스터",
+      "authorId": 1,
       "createdAt": "2025-08-01T12:15:00.000Z",
-      "likes": 12,
+      "likes": 1,
+      "likedUserIds": [1],
       "views": 255,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_free_ds_001",
-          "author": "잠실맛객",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "경기 전엔 덮밥집 강추",
           "createdAt": "2025-08-01T12:30:00.000Z",
           "likes": 1
         },
         {
           "id": "c_free_ds_002",
-          "author": "두산은사랑",
+          "author": "테스터",
+          "authorId": 1,
           "content": "근처 카페도 좋아요",
           "createdAt": "2025-08-01T12:42:00.000Z",
           "likes": 0
         }
       ],
-      "content": "경기 전/후로 먹기 좋은 곳 추천 부탁드립니다!"
+      "content": "경기 전/후로 먹기 좋은 곳 추천 부탁드립니다!\n\n도보/대중교통 기준 이동 동선과 웨이팅 시간, 메뉴 추천까지 구체적으로 공유해 주세요.\n\n가족/친구/연인 동반 추천 코스도 환영합니다."
     },
     {
       "id": "post_review_ds_001",
       "team": "doosanBears",
       "category": "review",
       "title": "집중력 있는 경기 운영으로 연승 달성",
-      "author": "두산분석",
+      "author": "야구팬",
+      "authorId": 2,
       "createdAt": "2025-08-02T05:05:00.000Z",
-      "likes": 29,
+      "likes": 1,
+      "likedUserIds": [2],
       "views": 580,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_review_ds_001",
-          "author": "연승가자",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "투수 교체 타이밍이 딱이었음",
           "createdAt": "2025-08-02T05:15:00.000Z",
           "likes": 2
         },
         {
           "id": "c_review_ds_002",
-          "author": "응원열기",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
           "content": "응원석 열기가 선수들에 힘이 됐네요",
           "createdAt": "2025-08-02T05:22:00.000Z",
           "likes": 1
         }
       ],
-      "content": "수비 실수 최소화, 주루에서 과감함이 돋보였습니다."
+      "content": "수비 실수 최소화, 주루에서 과감함이 돋보였습니다.\n\n번트·히트앤런 등 세트플레이 완성도와 포수의 리드/프레이밍 기여도를 함께 평가합니다.\n\n핵심 장면의 데이터와 함께 복기합니다."
     },
     {
       "id": "post_player_ds_001",
       "team": "doosanBears",
       "category": "player",
       "title": "양의지 리드와 타석 접근 변화",
-      "author": "리드연구소",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
       "createdAt": "2025-08-03T09:10:00.000Z",
-      "likes": 31,
+      "likes": 1,
+      "likedUserIds": [3],
       "views": 612,
       "commentCount": 2,
       "comments": [
         {
           "id": "c_player_ds_001",
-          "author": "포수장인",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
           "content": "볼 배합이 경기마다 다채롭네요",
           "createdAt": "2025-08-03T09:20:00.000Z",
           "likes": 3
         },
         {
           "id": "c_player_ds_002",
-          "author": "컨택장인",
+          "author": "야구팬",
+          "authorId": 2,
           "content": "찬스에서 배트 컨트롤이 여전합니다",
           "createdAt": "2025-08-03T09:35:00.000Z",
           "likes": 2
         }
       ],
-      "content": "리드에서 카운트별 유도구 활용이 인상적. 타석에서도 초구 선택이 유연해졌습니다."
+      "content": "리드에서 카운트별 유도구 활용이 인상적. 타석에서도 초구 선택이 유연해졌습니다.\n\n투수와의 호흡, 수비 시프트 호출, 주자 견제 시그널 등 보이지 않는 공헌도까지 종합적으로 살펴봅니다."
     }
   ]
 }
