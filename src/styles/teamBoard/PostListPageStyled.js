@@ -40,6 +40,11 @@ export const PostContainer = styled.div`
   border: 1px solid #cdcdcdff;
   border-radius: 10px;
   margin: 15px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
 `;
 
 export const PostAuthorIcon = styled.div`
@@ -81,13 +86,14 @@ export const Likes = styled.div`
   align-items: center;
   gap: 4px;
   font-size: 14px;
-  color: #888;
+  color: ${(props) => (props.$active ? "#ef4444" : "#888")};
   line-height: 1;
 
   svg {
     width: 16px;
     height: 16px;
     display: block;
+    color: ${(props) => (props.$active ? "#ef4444" : "currentColor")};
   }
 `;
 
@@ -144,6 +150,7 @@ export const Content = styled.div`
   font-size: 14px;
   color: #333;
   margin-bottom: 12px;
+  white-space: pre-wrap;
 `;
 
 export const PostInfo = styled.div`

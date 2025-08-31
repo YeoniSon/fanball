@@ -12,7 +12,6 @@ import {
   Category,
   Time,
   Title,
-  Content,
   PostInfo,
   Author,
   Likes,
@@ -90,8 +89,8 @@ const PostListPage = () => {
   if (isLoading) return <div>불러오는 중…</div>;
   if (error) return <div>{error}</div>;
 
-  const handlePostClick = (postId) => {
-    navigate(`/${teamId}/post/${postId}`);
+  const handlePostClick = (post) => {
+    navigate(`/${teamId}/post/${post.id}`, { state: { post } });
   };
 
   return (
@@ -112,10 +111,7 @@ const PostListPage = () => {
           <div>게시글이 없습니다.</div>
         ) : (
           filteredPosts.map((post) => (
-            <PostContainer
-              key={post.id}
-              onClick={() => handlePostClick(post.id)}
-            >
+            <PostContainer key={post.id} onClick={() => handlePostClick(post)}>
               <PostAuthorIcon>{post.author.charAt(0)}</PostAuthorIcon>
               <PostInfoContainer>
                 <Header>
@@ -123,7 +119,7 @@ const PostListPage = () => {
                   <Time>{getTimeBefore(post.createdAt)}</Time>
                 </Header>
                 <Title>{post.title}</Title>
-                <Content>{post.content}</Content>
+
                 <PostInfo>
                   <Author>{post.author}</Author>
                   <div
