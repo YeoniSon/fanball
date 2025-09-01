@@ -33,6 +33,23 @@ export const SelectOption = styled.option`
   }
 `;
 
+export const NewPostButton = styled.div`
+  padding: 6px 10px;
+  background-color: ${(props) => props.color || "#007bff"};
+  text-align: center;
+  display: inline-flex;
+  gap: 8px;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: row;
