@@ -108,7 +108,7 @@ const PostListPage = () => {
           </SelectOptions>
         </BoardHeader>
         {filteredPosts.length === 0 ? (
-          <div>게시글이 없습니다.</div>
+          <PostContainer>게시글이 없습니다.</PostContainer>
         ) : (
           filteredPosts.map((post) => (
             <PostContainer key={post.id} onClick={() => handlePostClick(post)}>
