@@ -67,7 +67,10 @@ const PostComment = ({ post }) => {
           <CommentBody>
             <CommentForm>
               <CommentIcon>{currentUser.nickname.charAt(0)}</CommentIcon>
-              <CommentTextArea placeholder="댓글을 입력하세요..." />
+              <CommentTextArea
+                placeholder="댓글을 입력하세요..."
+                maxLength={100}
+              />
               <CommentButton onClick={handleCommentSubmit}>
                 댓글 작성
               </CommentButton>
@@ -89,6 +92,7 @@ const PostComment = ({ post }) => {
                     value={editingText}
                     onChange={(e) => setEditingText(e.target.value)}
                     placeholder="댓글을 입력하세요..."
+                    maxLength={100}
                   />
                   <EditActions>
                     <CommentButton
