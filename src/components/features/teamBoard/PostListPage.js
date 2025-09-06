@@ -12,14 +12,20 @@ import {
   Category,
   Time,
   Title,
-  Content,
   PostInfo,
   Author,
   Likes,
   Comments,
   Views,
+  NewPostButton,
 } from "../../../styles/teamBoard/PostListPageStyled";
-import { MessageIcon, ViewsIcon, LikesIcon } from "../../common/Icons";
+import {
+  MessageIcon,
+  ViewsIcon,
+  LikesIcon,
+  PlusIcon,
+} from "../../common/Icons";
+import TeamInfo from "../../common/TeamInfo";
 
 const PostListPage = () => {
   const { teamId } = useParams();
@@ -90,8 +96,16 @@ const PostListPage = () => {
   if (isLoading) return <div>불러오는 중…</div>;
   if (error) return <div>{error}</div>;
 
-  const handlePostClick = (postId) => {
-    navigate(`/${teamId}/post/${postId}`);
+  const team = (TeamInfo?.teamIcon || []).find((t) => t.id === teamId) || {
+    shortName: "",
+  };
+
+  const handlePostClick = (post) => {
+    navigate(`/${teamId}/post/${post.id}`, { state: { post } });
+  };
+
+  const handleNewPostClick = () => {
+    navigate(`/${teamId}/post/newPost`);
   };
 
   return (
@@ -107,15 +121,17 @@ const PostListPage = () => {
             <SelectOption value="review">경기 후기</SelectOption>
             <SelectOption value="player">선수</SelectOption>
           </SelectOptions>
+
+          <NewPostButton onClick={handleNewPostClick} color={team.color}>
+            <PlusIcon width={20} height={20} />
+            글쓰기
+          </NewPostButton>
         </BoardHeader>
         {filteredPosts.length === 0 ? (
-          <div>게시글이 없습니다.</div>
+          <PostContainer>게시글이 없습니다.</PostContainer>
         ) : (
           filteredPosts.map((post) => (
-            <PostContainer
-              key={post.id}
-              onClick={() => handlePostClick(post.id)}
-            >
+            <PostContainer key={post.id} onClick={() => handlePostClick(post)}>
               <PostAuthorIcon>{post.author.charAt(0)}</PostAuthorIcon>
               <PostInfoContainer>
                 <Header>
@@ -123,7 +139,7 @@ const PostListPage = () => {
                   <Time>{getTimeBefore(post.createdAt)}</Time>
                 </Header>
                 <Title>{post.title}</Title>
-                <Content>{post.content}</Content>
+
                 <PostInfo>
                   <Author>{post.author}</Author>
                   <div
