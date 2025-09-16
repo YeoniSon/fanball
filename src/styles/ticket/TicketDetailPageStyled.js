@@ -240,25 +240,3 @@ export const SeatInfo = styled.span`
   color: #4b5563;
   gap: 0.5rem;
 `;
-
-export const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem 0 1rem;
-  background: transparent;
-`;
-
-export const BookmarkButton = styled.button`
-  display: flex;
-  align-items: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: #ddd;
-  }
-`;

@@ -83,7 +83,7 @@ const MenuButton = styled.button`
   gap: 0.7rem;
   padding: 0.7rem 1rem;
   background: ${(props) => (props.active ? "#3b82f6" : "transparent")};
-  color: ${(props) => (props.active ? "white" : "black")};
+  color: ${(props) => (props.active ? "black" : "black")};
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
