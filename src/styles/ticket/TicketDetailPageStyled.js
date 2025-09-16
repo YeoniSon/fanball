@@ -300,4 +300,8 @@ export const EditMenuItem = styled.button`
   border-bottom: 1px solid #f3f4f6;
   text-align: left;
   cursor: pointer;
+
+  &:hover {
+    background: #f3f4f6;
+  }
 `;
