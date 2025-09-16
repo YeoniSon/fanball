@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import TeamInfo from "../../../common/TeamInfo";
+import Pagination from "../../../common/Pagination";
+import { FilledHeart, HeartIcon } from "../../../common/Icons";
 import {
   Container,
   GameContainer,
@@ -11,17 +14,9 @@ import {
   PriceBox,
   Price,
   SellBadge,
-<<<<<<< HEAD
-  Buttons,
-  EditButton,
-  DeleteButton,
-=======
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
 } from "../../../../styles/myPage/PostStyled";
-import Pagination from "../../../common/Pagination";
-import TeamInfo from "../../../common/TeamInfo";
 
-const MyTickets = ({ myId: myIdFromParent }) => {
+const BookMarks = ({ myId: myIdFromParent }) => {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -29,10 +24,11 @@ const MyTickets = ({ myId: myIdFromParent }) => {
   const navigate = useNavigate();
 
   const myId = useMemo(() => {
-    return myIdFromParent != null ? String(Number(myIdFromParent)) : null;
+    return myIdFromParent != null ? Number(myIdFromParent) : null;
   }, [myIdFromParent]);
 
   const teams = TeamInfo?.teamIcon || [];
+  const [bookmarkById, setBookmarkById] = useState({});
 
   useEffect(() => {
     const load = async () => {
@@ -42,7 +38,7 @@ const MyTickets = ({ myId: myIdFromParent }) => {
         const json = await res.json();
         setTickets(Array.isArray(json?.tickets) ? json.tickets : []);
       } catch (e) {
-        setError("내 티켓을 불러오지 못했습니다.");
+        setError("즐겨찾기 데이터를 불러오지 못했습니다.");
         setTickets([]);
       } finally {
         setLoading(false);
@@ -51,56 +47,61 @@ const MyTickets = ({ myId: myIdFromParent }) => {
     load();
   }, []);
 
-  const myTickets = useMemo(() => {
-    if (!myId) return [];
-    const normalize = (val) => {
-      if (val == null) return "";
-      const m = String(val).match(/\d+/g);
-      return m ? String(Number(m.join(""))) : String(val);
-    };
-    return tickets.filter((t) => normalize(t?.seller?.id) === myId);
+  const bookmarkedTickets = useMemo(() => {
+    if (myId == null) return [];
+    return tickets.filter(
+      (t) =>
+        Array.isArray(t?.bookmark) &&
+        t.bookmark.map((v) => Number(v)).includes(Number(myId))
+    );
+  }, [tickets, myId]);
+
+  useEffect(() => {
+    if (myId == null) return;
+    setBookmarkById((prev) => {
+      const next = { ...prev };
+      for (const t of tickets) {
+        if (next[t.id] == null) {
+          const included = Array.isArray(t?.bookmark)
+            ? t.bookmark.map((v) => Number(v)).includes(Number(myId))
+            : false;
+          next[t.id] = included;
+        }
+      }
+      return next;
+    });
   }, [tickets, myId]);
 
   const pageSize = 3;
-  const pageCount = Math.max(1, Math.ceil(myTickets.length / pageSize));
+  const pageCount = Math.max(1, Math.ceil(bookmarkedTickets.length / pageSize));
 
   useEffect(() => {
     setPage(1);
-  }, [myTickets.length]);
+  }, [bookmarkedTickets.length]);
 
   const pageItems = useMemo(() => {
     const start = (page - 1) * pageSize;
-    return myTickets.slice(start, start + pageSize);
-  }, [myTickets, page]);
+    return bookmarkedTickets.slice(start, start + pageSize);
+  }, [bookmarkedTickets, page]);
 
   const handleClick = (ticketId) => {
     navigate(`/ticket/detail/${ticketId}`);
   };
 
-<<<<<<< HEAD
-  const handleEdit = (ticketId) => {
-    navigate(`/ticket/edit/${ticketId}`);
-  };
-
-=======
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
   if (loading) return <div>불러오는 중...</div>;
   if (error) return <div>{error}</div>;
-  if (!pageItems.length) return <div>등록한 티켓이 없습니다.</div>;
+  if (myId == null) return <div>로그인이 필요합니다.</div>;
+  if (!pageItems.length) return <div>즐겨찾기한 항목이 없습니다.</div>;
 
   return (
     <>
       {pageItems.map((t) => {
         const home = teams.find((x) => x.label === t.team);
         const away = teams.find((x) => x.label === t.opponent);
+        const isBookmarked = bookmarkById?.[t.id] ?? false;
         return (
-<<<<<<< HEAD
-          <Container key={t.id}>
-            <GameContainer onClick={() => handleClick(t.id)}>
-=======
           <Container key={t.id} onClick={() => handleClick(t.id)}>
             <GameContainer>
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
               <Teams style={{ fontWeight: 600, color: "#222" }}>
                 <Home>
                   <TeamIcon width={35} height={25} src={home?.logo} />
@@ -120,10 +121,34 @@ const MyTickets = ({ myId: myIdFromParent }) => {
               </Stadium>
             </GameContainer>
             <PriceBox>
-              <Price style={{ fontWeight: 700 }}>
-                {t.price?.toLocaleString()}원
-              </Price>
-              <SellBadge style={{ color: "#999", fontSize: 12, marginTop: 4 }}>
+              <Price>{t.price?.toLocaleString()}원</Price>
+              {isBookmarked ? (
+                <FilledHeart
+                  width={18}
+                  height={18}
+                  color="#FF3B30"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setBookmarkById((prev) => ({
+                      ...prev,
+                      [t.id]: false,
+                    }));
+                  }}
+                />
+              ) : (
+                <HeartIcon
+                  width={18}
+                  height={18}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setBookmarkById((prev) => ({
+                      ...prev,
+                      [t.id]: true,
+                    }));
+                  }}
+                />
+              )}
+              <SellBadge>
                 {t.status === "available"
                   ? "판매중"
                   : t.status === "reserved"
@@ -132,15 +157,6 @@ const MyTickets = ({ myId: myIdFromParent }) => {
                   ? "판매완료"
                   : "판매불가"}
               </SellBadge>
-<<<<<<< HEAD
-              <Buttons>
-                <EditButton onClick={() => handleEdit(t.id)}>수정</EditButton>
-                <DeleteButton onClick={() => alert("삭제하시겠습니까?")}>
-                  삭제
-                </DeleteButton>
-              </Buttons>
-=======
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
             </PriceBox>
           </Container>
         );
@@ -150,4 +166,4 @@ const MyTickets = ({ myId: myIdFromParent }) => {
   );
 };
 
-export default MyTickets;
+export default BookMarks;

@@ -262,6 +262,7 @@ export const BookmarkButton = styled.button`
     background-color: #ddd;
   }
 `;
+<<<<<<< HEAD
 
 export const EditButton = styled.button`
   display: flex;
@@ -301,3 +302,5 @@ export const EditMenuItem = styled.button`
   text-align: left;
   cursor: pointer;
 `;
+=======
+>>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
