@@ -5,7 +5,6 @@ import MainMenu from "../features/sidebar/MainMenu";
 import TicketMenu from "../features/sidebar/TicketMenu";
 import CommunityMenu from "../features/sidebar/CommunityMenu";
 import TeamBoardMenu from "../features/sidebar/TeamBoardMenu";
-import MyPageMenu from "../features/sidebar/MyPageMenu";
 
 const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   const navigate = useNavigate();
@@ -25,8 +24,6 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
     { id: "message", label: "메세지", path: "/message" },
     // 커뮤니티 메뉴
     { id: "community", label: "실시간 채팅", path: "/community" },
-    // 개인 메뉴
-    { id: "mypage", label: "마이페이지", path: "/mypage" },
     //팀별 게시판
     {
       id: "SSG",
@@ -83,11 +80,6 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
     //메시지 경로 처리
     if (currentPath === "/message" || currentPath.startsWith("/message/")) {
       return "message";
-    }
-
-    // 개인 메뉴 경로 처리
-    if (currentPath === "/myPage" || currentPath.startsWith("/myPage/")) {
-      return "myPage";
     }
 
     // 게시글 상세 페이지인 경우 팀 ID 추출
@@ -171,8 +163,6 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
         activeMenu={activeMenuState}
         onMenuClick={handleMenuClick}
       />
-      <Bar />
-      <MyPageMenu activeMenu={activeMenuState} onMenuClick={handleMenuClick} />
       <Bar />
       <TeamBoardMenu
         activeMenu={activeMenuState}
