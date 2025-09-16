@@ -240,3 +240,64 @@ export const SeatInfo = styled.span`
   color: #4b5563;
   gap: 0.5rem;
 `;
+
+export const Header = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  background: transparent;
+`;
+
+export const BookmarkButton = styled.button`
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #ddd;
+  }
+`;
+
+export const EditButton = styled.button`
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 5px;
+  top: 30px;
+
+  &:hover {
+    color: blue;
+  }
+`;
+
+export const EditMenu = styled.div`
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 20;
+  min-width: 120px;
+`;
+
+export const EditMenuItem = styled.button`
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid #f3f4f6;
+  text-align: left;
+  cursor: pointer;
+`;
