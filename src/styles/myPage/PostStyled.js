@@ -132,6 +132,37 @@ export const PriceBox = styled.div`
   gap: 4px;
 `;
 
+export const Buttons = styled.div`
+  display: flex;
+  margin: 3px 0;
+  gap: 8px;
+`;
+
+export const EditButton = styled.button`
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  color: #007bff;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+`;
+
+export const DeleteButton = styled.button`
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  color: #dc3545;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+`;
+
 export const Price = styled.div`
   font-size: 14px;
   font-weight: bold;
