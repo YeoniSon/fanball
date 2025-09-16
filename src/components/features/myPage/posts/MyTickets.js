@@ -11,12 +11,9 @@ import {
   PriceBox,
   Price,
   SellBadge,
-<<<<<<< HEAD
   Buttons,
   EditButton,
   DeleteButton,
-=======
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
 } from "../../../../styles/myPage/PostStyled";
 import Pagination from "../../../common/Pagination";
 import TeamInfo from "../../../common/TeamInfo";
@@ -77,13 +74,10 @@ const MyTickets = ({ myId: myIdFromParent }) => {
     navigate(`/ticket/detail/${ticketId}`);
   };
 
-<<<<<<< HEAD
   const handleEdit = (ticketId) => {
     navigate(`/ticket/edit/${ticketId}`);
   };
 
-=======
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
   if (loading) return <div>불러오는 중...</div>;
   if (error) return <div>{error}</div>;
   if (!pageItems.length) return <div>등록한 티켓이 없습니다.</div>;
@@ -94,13 +88,8 @@ const MyTickets = ({ myId: myIdFromParent }) => {
         const home = teams.find((x) => x.label === t.team);
         const away = teams.find((x) => x.label === t.opponent);
         return (
-<<<<<<< HEAD
           <Container key={t.id}>
             <GameContainer onClick={() => handleClick(t.id)}>
-=======
-          <Container key={t.id} onClick={() => handleClick(t.id)}>
-            <GameContainer>
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
               <Teams style={{ fontWeight: 600, color: "#222" }}>
                 <Home>
                   <TeamIcon width={35} height={25} src={home?.logo} />
@@ -132,15 +121,12 @@ const MyTickets = ({ myId: myIdFromParent }) => {
                   ? "판매완료"
                   : "판매불가"}
               </SellBadge>
-<<<<<<< HEAD
               <Buttons>
                 <EditButton onClick={() => handleEdit(t.id)}>수정</EditButton>
                 <DeleteButton onClick={() => alert("삭제하시겠습니까?")}>
                   삭제
                 </DeleteButton>
               </Buttons>
-=======
->>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
             </PriceBox>
           </Container>
         );
