@@ -132,6 +132,7 @@ export const PriceBox = styled.div`
   gap: 4px;
 `;
 
+<<<<<<< HEAD
 export const Buttons = styled.div`
   display: flex;
   margin: 3px 0;
@@ -163,6 +164,8 @@ export const DeleteButton = styled.button`
   }
 `;
 
+=======
+>>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
 export const Price = styled.div`
   font-size: 14px;
   font-weight: bold;

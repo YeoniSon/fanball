@@ -1,19 +1,26 @@
 import { useState, useEffect, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+<<<<<<< HEAD
 import {
   ArrowLeftIcon,
   HeartIcon,
   FilledHeart,
   DotsIcon,
 } from "../../common/Icons";
+=======
+import { ArrowLeftIcon, HeartIcon, FilledHeart } from "../../common/Icons";
+>>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
 import {
   BackButton,
   PageLayout,
   Header,
   BookmarkButton,
+<<<<<<< HEAD
   EditButton,
   EditMenu,
   EditMenuItem,
+=======
+>>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
 } from "../../../styles/ticket/TicketDetailPageStyled";
 import DetailGame from "../../features/ticket/detail/DetailGame";
 import RightSideBar from "../../features/ticket/detail/RightSideBar";
@@ -97,6 +104,7 @@ const TicketDetailPage = () => {
         <BackButton onClick={handleBack}>
           <ArrowLeftIcon /> 뒤로가기
         </BackButton>
+<<<<<<< HEAD
         <div
           style={{
             display: "flex",
@@ -141,6 +149,15 @@ const TicketDetailPage = () => {
             </EditMenu>
           )}
         </div>
+=======
+        <BookmarkButton>
+          {bookmark ? (
+            <FilledHeart onClick={handleBookmark} width={20} height={20} />
+          ) : (
+            <HeartIcon onClick={handleBookmark} width={20} height={20} />
+          )}
+        </BookmarkButton>
+>>>>>>> parent of 733d851 (Revert "[17-MYPAGE] 마이페이지 구현")
       </Header>
 
       <PageLayout>
