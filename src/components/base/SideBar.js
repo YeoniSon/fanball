@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { SideBarContainer, Bar } from "../../styles/SideBarStyled";
 import MainMenu from "../features/sidebar/MainMenu";
@@ -6,6 +6,7 @@ import TicketMenu from "../features/sidebar/TicketMenu";
 import CommunityMenu from "../features/sidebar/CommunityMenu";
 import TeamBoardMenu from "../features/sidebar/TeamBoardMenu";
 import MyPageMenu from "../features/sidebar/MyPageMenu";
+import AdminMenu from "../features/sidebar/AdminMenu";
 
 const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   const navigate = useNavigate();
@@ -69,6 +70,26 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
       color: "#FF6600",
     },
   ];
+  const isLoggedIn = useMemo(() => {
+    try {
+      const raw =
+        localStorage.getItem("user") || localStorage.getItem("currentUser");
+      const parsed = raw ? JSON.parse(raw) : null;
+      return !!parsed?.id;
+    } catch {
+      return false;
+    }
+  }, []);
+  const isAdmin = useMemo(() => {
+    try {
+      const raw =
+        localStorage.getItem("user") || localStorage.getItem("currentUser");
+      const parsed = raw ? JSON.parse(raw) : null;
+      return parsed?.role === "admin";
+    } catch {
+      return false;
+    }
+  }, []);
   const getActiveMenuIdForPath = (currentPath) => {
     // 실시간 채팅 페이지인 경우
     if (currentPath === "/live-chat" || currentPath.startsWith("/live-chat/")) {
@@ -85,9 +106,14 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
       return "message";
     }
 
-    // 개인 메뉴 경로 처리
-    if (currentPath === "/myPage" || currentPath.startsWith("/myPage/")) {
-      return "myPage";
+    // 관리자 페이지 경로 처리
+    if (currentPath === "/admin" || currentPath.startsWith("/admin/")) {
+      return "admin";
+    }
+
+    // 개인 마이페이지 경로 처리
+    if (currentPath === "/mypage" || currentPath.startsWith("/mypage/")) {
+      return "mypage";
     }
 
     // 게시글 상세 페이지인 경우 팀 ID 추출
@@ -121,8 +147,6 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
   const [activeMenuState, setActiveMenuState] = useState(() =>
     getActiveMenuIdForPath(location.pathname)
   );
-
-  // (기존 위치의 정의는 제거됨)
 
   // 현재 경로에 따라 활성 메뉴 설정
   useEffect(() => {
@@ -172,8 +196,24 @@ const SideBar = ({ showHeader, activeMenu, onMenuClick }) => {
         onMenuClick={handleMenuClick}
       />
       <Bar />
-      <MyPageMenu activeMenu={activeMenuState} onMenuClick={handleMenuClick} />
-      <Bar />
+      {isLoggedIn &&
+        (isAdmin ? (
+          <>
+            <AdminMenu
+              activeMenu={activeMenuState}
+              onMenuClick={handleMenuClick}
+            />
+            <Bar />
+          </>
+        ) : (
+          <>
+            <MyPageMenu
+              activeMenu={activeMenuState}
+              onMenuClick={handleMenuClick}
+            />
+            <Bar />
+          </>
+        ))}
       <TeamBoardMenu
         activeMenu={activeMenuState}
         onMenuClick={handleMenuClick}

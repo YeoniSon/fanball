@@ -26,8 +26,7 @@ import {
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
-  // 알림 및 메시지 상태
-  const [notifications, setNotifications] = useState(3);
+  // 메시지 상태
   const [unreadMessages, setUnreadMessages] = useState(5);
   // 스크롤 상태
   const [isVisible, setIsVisible] = useState(true);
@@ -143,7 +142,11 @@ const Header = () => {
                 </IconButton>
 
                 {/* 사용자 프로필 */}
-                <ProfileButton onClick={() => handlePageChange("mypage")}>
+                <ProfileButton
+                  onClick={() =>
+                    handlePageChange(user.role === "admin" ? "admin" : "mypage")
+                  }
+                >
                   <Avatar>{user.name.charAt(0)}</Avatar>
                   <UserInfo>
                     <div className="user-name">{user.name}</div>
