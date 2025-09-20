@@ -13,6 +13,9 @@
       "joinDate": "2024-01-15",
       "favoriteTeam": "SSG 랜더스",
       "profileImage": null,
+      "blocked": false,
+      "tradeCount": 12,
+      "reportCount": 1,
       "postCount": 2,
       "commentCount": 8,
       "likesReceived": 13,
@@ -31,28 +34,13 @@
       "joinDate": "2024-01-10",
       "favoriteTeam": "SSG 랜더스",
       "profileImage": null,
+      "blocked": true,
+      "tradeCount": 7,
+      "reportCount": 1,
       "postCount": 6,
       "commentCount": 11,
       "likesReceived": 37,
       "likesGiven": 8
-    },
-    {
-      "id": 3,
-      "email": "admin@fanball.com",
-      "password": "admin123",
-      "name": "홍길동",
-      "role": "admin",
-      "nickname": "FANBALL 관리자",
-      "reputation": 100,
-      "completedDeals": 42,
-      "responseRate": 99,
-      "joinDate": "2024-01-01",
-      "favoriteTeam": "LG 트윈스",
-      "profileImage": null,
-      "postCount": 4,
-      "commentCount": 6,
-      "likesReceived": 16,
-      "likesGiven": 6
     }
   ]
 }

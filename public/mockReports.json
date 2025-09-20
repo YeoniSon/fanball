@@ -1,0 +1,19 @@
+{
+  "reports": [
+    {
+      "id": "rpt_001",
+      "reportedUserId": 2,
+      "reason": "부적절한 언어",
+      "status": "pending",
+      "createdAt": "2025-08-10T09:00:00.000Z"
+    },
+    {
+      "id": "rpt_002",
+      "reportedUserId": 1,
+      "reason": "스팸 홍보",
+      "status": "resolved",
+      "createdAt": "2025-08-09T14:30:00.000Z",
+      "resolvedAt": "2025-08-09T16:00:00.000Z"
+    }
+  ]
+}

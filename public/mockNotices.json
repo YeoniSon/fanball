@@ -1,0 +1,24 @@
+{
+  "notices": [
+    {
+      "id": "ntc_001",
+      "author": "운영자",
+      "authorId": 4,
+      "title": "서비스 점검 안내",
+      "category": "시스템",
+      "pinned": true,
+      "content": "8/20(화) 02:00~03:00 시스템 점검",
+      "createdAt": "2025-08-15T03:00:00.000Z"
+    },
+    {
+      "id": "ntc_002",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "title": "커뮤니티 가이드라인 변경",
+      "category": "정책",
+      "pinned": false,
+      "content": "신고 처리 기준이 강화되었습니다.",
+      "createdAt": "2025-08-12T07:10:00.000Z"
+    }
+  ]
+}
