@@ -2,15 +2,23 @@
   "reports": [
     {
       "id": "rpt_001",
+      "reporterId": 1,
+      "reporterNickname": "테스터",
       "reportedUserId": 2,
       "reason": "부적절한 언어",
+      "title": "부적절한 언어 사용",
+      "content": "채팅에서 욕설을 사용했습니다.",
       "status": "pending",
       "createdAt": "2025-08-10T09:00:00.000Z"
     },
     {
       "id": "rpt_002",
+      "reporterId": 2,
+      "reporterNickname": "야구팬",
       "reportedUserId": 1,
       "reason": "스팸 홍보",
+      "title": "스팸 홍보 게시물",
+      "content": "동일한 홍보 글을 반복적으로 게시했습니다.",
       "status": "resolved",
       "createdAt": "2025-08-09T14:30:00.000Z",
       "resolvedAt": "2025-08-09T16:00:00.000Z"
