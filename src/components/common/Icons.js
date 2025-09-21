@@ -745,3 +745,91 @@ export const MegaphoneIcon = ({
     ></path>
   </svg>
 );
+
+export const FindIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="11"
+      cy="11"
+      r="7"
+      stroke={color}
+      strokeWidth={strokeWidth}
+    ></circle>
+    <path
+      d="M21 21l-4.35-4.35"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const PersonAddIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M21 6h-1V5a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0V8h1a1 1 0 0 0 0-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    ></path>
+    <path
+      d="M10 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+    <path
+      d="M10 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+  </svg>
+);
+
+export const DotIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="10"
+      stroke={strokeWidth}
+      strokeWidth={strokeWidth}
+      fill={color}
+    />
+  </svg>
+);
