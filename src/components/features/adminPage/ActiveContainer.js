@@ -5,6 +5,8 @@ import {
 } from "../../../styles/ranking/SelectSectionStyled";
 import UserContent from "./posts/UserContent";
 import AdminContent from "./posts/AdminContent";
+import ReportContent from "./posts/ReportContent";
+import NoticeContent from "./posts/NoticeContent";
 
 const ActiveContainer = ({ user, reports, notices, admin }) => {
   const [activeTab, setActiveTab] = useState("users");
@@ -18,9 +20,9 @@ const ActiveContainer = ({ user, reports, notices, admin }) => {
       case "users":
         return <UserContent user={user} reports={reports} />;
       case "reports":
-        return;
+        return <ReportContent reports={reports} />;
       case "notices":
-        return;
+        return <NoticeContent notices={notices} />;
       case "admins":
         return <AdminContent admin={admin} />;
       default:
