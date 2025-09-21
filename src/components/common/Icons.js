@@ -594,3 +594,154 @@ export const FilledHeart = ({
     <path d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" />
   </svg>
 );
+
+export const PeopleIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+    <path
+      d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const CrownIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const ForbidenIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 32 32"
+  >
+    <path
+      d="M16,4C9.373,4,4,9.373,4,16c0,6.627,5.373,12,12,12s12-5.373,12-12C28,9.373,22.627,4,16,4z M16,6c2.398,0,4.6,0.85,6.324,2.262L8.262,22.324C6.85,20.6,6,18.398,6,16C6,10.486,10.486,6,16,6z M16,26 c-2.398,0-4.6-0.85-6.324-2.262L23.738,9.676C25.15,11.4,26,13.602,26,16C26,21.514,21.514,26,16,26z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const CautionIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+    <path
+      d="M12 9v4m0 4h.01"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const ResolveIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 20 20"
+  >
+    <path
+      d="M3 10a7 7 0 019.307-6.611 1 1 0 00.658-1.889 9 9 0 105.98 7.501 1 1 0 00-1.988.22A7 7 0 113 10zm14.75-5.338a1 1 0 00-1.5-1.324l-6.435 7.28-3.183-2.593a1 1 0 00-1.264 1.55l3.929 3.2a1 1 0 001.38-.113l7.072-8z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>{" "}
+  </svg>
+);
+
+export const MegaphoneIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M13 15V7M13 15L18.5039 18.1451C19.1705 18.526 20 18.0446 20 17.2768V14V8V4.72318C20 3.95536 19.1705 3.47399 18.5039 3.85494L13 7M13 15H10M13 7H7C4.79086 7 3 8.79086 3 11V11C3 13.2091 4.79086 15 7 15V15M7 15V19.5C7 20.3284 7.67157 21 8.5 21V21C9.32843 21 10 20.3284 10 19.5V15M7 15H10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    ></path>
+  </svg>
+);
