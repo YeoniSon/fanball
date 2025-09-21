@@ -15,7 +15,7 @@ const ActiveContainer = ({ user, reports, notices, admin }) => {
   const renderContent = () => {
     switch (activeTab) {
       case "users":
-        return <UserContent user={user} />;
+        return <UserContent user={user} reports={reports} />;
       case "reports":
         return;
       case "notices":
