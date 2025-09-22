@@ -95,7 +95,7 @@ const TicketDetailPage = () => {
     <>
       <Header>
         <BackButton onClick={handleBack}>
-          <ArrowLeftIcon /> 뒤로가기
+          <ArrowLeftIcon color="black" /> 뒤로가기
         </BackButton>
         <div
           style={{
