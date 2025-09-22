@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { ArrowLeftIcon, MegaphoneIcon } from "../../common/Icons";
-import NewNoticeForm from "../../features/adminPage/notices/NewNoticeForm";
 import {
   Title,
   TitleContainer,
@@ -8,13 +6,16 @@ import {
   SubTitle,
   BackButton,
 } from "../../../styles/adminPage/notice/NewNoticeStyled";
+import { ArrowLeftIcon, PencilIcon } from "../../common/Icons";
+import EditNoticeForm from "../../features/adminPage/notices/EditNoticeForm";
 
-const NewNotice = () => {
+const EditNotice = () => {
   const navigate = useNavigate();
 
   const handleBack = () => {
     navigate(-1);
   };
+
   return (
     <>
       <Banner>
@@ -23,17 +24,18 @@ const NewNotice = () => {
             <ArrowLeftIcon width={24} height={24} color="#fff" />
           </BackButton>
           <TitleContainer>
-            <Title>새 공지사항 작성</Title>
+            <Title>공지사항 수정</Title>
             <SubTitle>
-              FANBALL 사용자들에게 전달할 새로운 공지사항을 작성해주세요
+              기존 공지사항을 수정하여 FANBALL 사용자들에게 최신 정보를
+              제공하세요
             </SubTitle>
           </TitleContainer>
         </div>
 
-        <MegaphoneIcon width={30} height={30} color="#fff" />
+        <PencilIcon width={40} height={40} color="#fff" />
       </Banner>
-      <NewNoticeForm />
+      <EditNoticeForm />
     </>
   );
 };
-export default NewNotice;
+export default EditNotice;

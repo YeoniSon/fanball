@@ -57,6 +57,9 @@ export const Buttons = styled.div`
 `;
 
 export const FixButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background-color: #fff;
   color: #000;
   border: 1px solid #ccc;
@@ -64,7 +67,13 @@ export const FixButton = styled.button`
   padding: 4px 12px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  line-height: 1;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
 
   &:hover {
     background-color: #999a9aff;

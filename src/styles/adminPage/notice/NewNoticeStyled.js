@@ -11,6 +11,20 @@ export const Banner = styled.div`
   margin-bottom: 10px;
 `;
 
+export const BackButton = styled.button`
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -71,6 +85,8 @@ export const TextArea = styled.textarea`
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
+  resize: none;
+  overflow-y: auto;
 
   &:focus {
     border-color: #366cf4ff;

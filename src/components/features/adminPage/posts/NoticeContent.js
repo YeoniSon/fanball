@@ -8,7 +8,13 @@ import {
   SearchBar,
   SearchInput,
 } from "../../../../styles/adminPage/HeaderStyled";
-import { FindIcon, PinIcon, PlusIcon, PinOffIcon } from "../../../common/Icons";
+import {
+  FindIcon,
+  PinIcon,
+  PlusIcon,
+  PinOffIcon,
+  WriteIcon,
+} from "../../../common/Icons";
 import {
   NewNoticeButton,
   BadgeContainer,
@@ -134,6 +140,7 @@ const NoticeContent = ({ notices }) => {
 
               <Buttons>
                 <FixButton onClick={() => handleFixNotice(notice.id)}>
+                  <WriteIcon width={15} height={15} />
                   수정
                 </FixButton>
                 {notice.pinned ? (
