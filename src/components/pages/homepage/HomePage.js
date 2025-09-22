@@ -6,6 +6,7 @@ import TicketSection from "../../features/homepage/TicketSection";
 import TodayGameSection from "../../features/homepage/TodayGameSection";
 import FuturesGameSection from "../../features/homepage/FuturesGameSection";
 import PopularPostsSection from "../../features/homepage/PopularPostsSection";
+import NoticeSection from "../../features/homepage/NoticeSection";
 
 const HomePage = () => {
   const actionItem = [
@@ -39,6 +40,7 @@ const HomePage = () => {
       <WelcomeSection />
       <ActionSection actionItems={actionItem} />
 
+      <NoticeSection />
       <TicketSection />
       <div style={{ display: "flex" }}>
         <div style={{ flex: 1, marginRight: "1rem" }}>
