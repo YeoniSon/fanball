@@ -1,5 +1,3 @@
-// Centralized SVG icon components
-
 export const LocationIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
   <svg
     width={width}
@@ -180,12 +178,17 @@ export const PlusIcon = ({ width = 25, height = 25, strokeWidth = 2 }) => (
   </svg>
 );
 
-export const ArrowLeftIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+export const ArrowLeftIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#ffffff",
+}) => (
   <svg
     width={width}
     height={height}
     fill="none"
-    stroke="currentColor"
+    stroke={color}
     viewBox="0 0 24 24"
   >
     <path
@@ -831,5 +834,228 @@ export const DotIcon = ({
       strokeWidth={strokeWidth}
       fill={color}
     />
+  </svg>
+);
+
+export const RemovePersonIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <rect width="24" height="24" opacity="0"></rect>{" "}
+    <path
+      d="M21 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    ></path>
+    <path
+      d="M10 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+    <path
+      d="M10 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+  </svg>
+);
+
+export const PinIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M13.5538 2.66232C14.4174 1.85314 15.75 1.85663 16.6089 2.64211L16.7341 2.7658L21.4991 7.85135C21.6191 7.97942 21.7237 8.12108 21.8108 8.27345C22.4005 9.30545 22.0832 10.6078 21.1103 11.2587L20.9736 11.3433L16.0771 14.1413C15.9593 14.2086 15.8626 14.3062 15.7964 14.4232L15.7526 14.5144L13.9505 19.028C13.7641 19.4949 13.1888 19.6418 12.8033 19.3497L12.7237 19.2804L9.48597 16.0442L4.53489 21.0033L3.46997 21L3.47201 19.9449L8.42497 14.9832L5.22008 11.7804C4.86452 11.425 4.95639 10.8384 5.37685 10.5992L5.47194 10.5535L9.96721 8.7569C10.0987 8.70436 10.2119 8.61598 10.2946 8.50278L10.3506 8.4134L13.1069 3.24538C13.2229 3.02786 13.3739 2.83088 13.5538 2.66232ZM20.4045 8.87696L15.6395 3.7914C15.3563 3.48914 14.8817 3.4737 14.5794 3.75691C14.5394 3.79437 14.5037 3.83604 14.4729 3.88114L14.4304 3.95127L11.6742 9.11929C11.4521 9.53569 11.1055 9.87036 10.685 10.078L10.5239 10.1498L7.08541 11.524L12.9793 17.4151L14.3596 13.9582C14.5246 13.5449 14.8079 13.1911 15.172 12.9401L15.3329 12.8389L20.2293 10.0409C20.589 9.83544 20.7139 9.3773 20.5084 9.01766L20.4606 8.94427L20.4045 8.87696Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const PinOffIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M3.28034 2.21968C2.98745 1.92678 2.51257 1.92677 2.21968 2.21966C1.92678 2.51255 1.92677 2.98743 2.21966 3.28032L8.34462 9.4054L5.47194 10.5535L5.37685 10.5992C4.95639 10.8384 4.86452 11.425 5.22008 11.7804L8.42497 14.9832L3.47201 19.9449L3.46997 21L4.53489 21.0033L9.48597 16.0442L12.7237 19.2804L12.8033 19.3497C13.1888 19.6418 13.7641 19.4949 13.9505 19.0281L15.0966 16.1575L20.7194 21.7805C21.0123 22.0734 21.4872 22.0734 21.7801 21.7805C22.073 21.4876 22.073 21.0127 21.7801 20.7198L3.28034 2.21968ZM13.9423 15.0032L12.9793 17.4151L7.08541 11.524L9.49871 10.5595L13.9423 15.0032Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+    <path
+      d="M20.2293 10.041L15.7706 12.5888L16.87 13.6882L20.9736 11.3433L21.1103 11.2587C22.0832 10.6078 22.4005 9.30546 21.8108 8.27346C21.7237 8.12109 21.6191 7.97942 21.4991 7.85136L16.7341 2.76581L16.6089 2.64212C15.75 1.85664 14.4174 1.85315 13.5538 2.66233C13.3739 2.83089 13.2229 3.02787 13.1069 3.24539L10.7836 7.60169L11.8922 8.7104L14.4304 3.95127L14.4729 3.88115C14.5037 3.83605 14.5394 3.79438 14.5794 3.75692C14.8817 3.47371 15.3563 3.48915 15.6395 3.79141L20.4045 8.87697L20.4606 8.94428L20.5084 9.01767C20.7139 9.3773 20.589 9.83544 20.2293 10.041Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const InfoIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="9"
+      stroke={color}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></circle>
+    <path
+      d="M12 11V17"
+      stroke={color}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+    <path
+      d="M11.75 8V7H12.25V8H11.75Z"
+      stroke={color}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+  </svg>
+);
+
+export const CancelIcon = ({
+  width = 20,
+  height = 20,
+  strokeWidth = 3,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 32 32"
+  >
+    <line
+      className="cls-1"
+      x1="7"
+      x2="25"
+      y1="7"
+      y2="25"
+      strokeWidth={strokeWidth}
+    ></line>{" "}
+    <line
+      className="cls-1"
+      x1="7"
+      x2="25"
+      y1="25"
+      y2="7"
+      strokeWidth={strokeWidth}
+    ></line>{" "}
+  </svg>
+);
+
+export const WriteIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 1,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 18 18"
+  >
+    <path
+      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+    <path
+      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+  </svg>
+);
+
+export const PencilIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="m14 1c.8284271.82842712.8284271 2.17157288 0 3l-9.5 9.5-4 1 1-3.9436508 9.5038371-9.55252193c.7829896-.78700064 2.0312313-.82943964 2.864366-.12506788z"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+    <path
+      d="m6.5 14.5h8"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+    <path
+      d="m12.5 3.5 1 1"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
   </svg>
 );
