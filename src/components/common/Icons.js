@@ -1,5 +1,3 @@
-// Centralized SVG icon components
-
 export const LocationIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
   <svg
     width={width}
@@ -180,12 +178,17 @@ export const PlusIcon = ({ width = 25, height = 25, strokeWidth = 2 }) => (
   </svg>
 );
 
-export const ArrowLeftIcon = ({ width = 15, height = 15, strokeWidth = 2 }) => (
+export const ArrowLeftIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#ffffff",
+}) => (
   <svg
     width={width}
     height={height}
     fill="none"
-    stroke="currentColor"
+    stroke={color}
     viewBox="0 0 24 24"
   >
     <path
@@ -595,35 +598,492 @@ export const FilledHeart = ({
   </svg>
 );
 
-export const DotsIcon = ({
+export const PeopleIcon = ({
   width = 15,
   height = 15,
-  color = "#000",
   strokeWidth = 2,
-  ...props
+  color = "#000000",
 }) => (
   <svg
     width={width}
     height={height}
-    fill={color}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+    <path
+      d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const CrownIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const ForbidenIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 32 32"
+  >
+    <path
+      d="M16,4C9.373,4,4,9.373,4,16c0,6.627,5.373,12,12,12s12-5.373,12-12C28,9.373,22.627,4,16,4z M16,6c2.398,0,4.6,0.85,6.324,2.262L8.262,22.324C6.85,20.6,6,18.398,6,16C6,10.486,10.486,6,16,6z M16,26 c-2.398,0-4.6-0.85-6.324-2.262L23.738,9.676C25.15,11.4,26,13.602,26,16C26,21.514,21.514,26,16,26z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const CautionIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+    <path
+      d="M12 9v4m0 4h.01"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const ResolveIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 20 20"
+  >
+    <path
+      d="M3 10a7 7 0 019.307-6.611 1 1 0 00.658-1.889 9 9 0 105.98 7.501 1 1 0 00-1.988.22A7 7 0 113 10zm14.75-5.338a1 1 0 00-1.5-1.324l-6.435 7.28-3.183-2.593a1 1 0 00-1.264 1.55l3.929 3.2a1 1 0 001.38-.113l7.072-8z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>{" "}
+  </svg>
+);
+
+export const MegaphoneIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M13 15V7M13 15L18.5039 18.1451C19.1705 18.526 20 18.0446 20 17.2768V14V8V4.72318C20 3.95536 19.1705 3.47399 18.5039 3.85494L13 7M13 15H10M13 7H7C4.79086 7 3 8.79086 3 11V11C3 13.2091 4.79086 15 7 15V15M7 15V19.5C7 20.3284 7.67157 21 8.5 21V21C9.32843 21 10 20.3284 10 19.5V15M7 15H10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    ></path>
+  </svg>
+);
+
+export const FindIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
-    {...props}
+  >
+    <circle
+      cx="11"
+      cy="11"
+      r="7"
+      stroke={color}
+      strokeWidth={strokeWidth}
+    ></circle>
+    <path
+      d="M21 21l-4.35-4.35"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const PersonAddIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M21 6h-1V5a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0V8h1a1 1 0 0 0 0-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    ></path>
+    <path
+      d="M10 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+    <path
+      d="M10 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+  </svg>
+);
+
+export const DotsIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
   >
     <path
       d="M14 5C14 6.10457 13.1046 7 12 7C10.8954 7 10 6.10457 10 5C10 3.89543 10.8954 3 12 3C13.1046 3 14 3.89543 14 5Z"
       fill={color}
-      strokeWidth={strokeWidth}
     ></path>
     <path
       d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z"
       fill={color}
-      strokeWidth={strokeWidth}
     ></path>
     <path
       d="M12 21C13.1046 21 14 20.1046 14 19C14 17.8954 13.1046 17 12 17C10.8954 17 10 17.8954 10 19C10 20.1046 10.8954 21 12 21Z"
       fill={color}
+    ></path>
+  </svg>
+);
+
+export const DotIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="10"
+      stroke={strokeWidth}
+      strokeWidth={strokeWidth}
+      fill={color}
+    />
+  </svg>
+);
+
+export const RemovePersonIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <rect width="24" height="24" opacity="0"></rect>{" "}
+    <path
+      d="M21 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       strokeWidth={strokeWidth}
     ></path>
+    <path
+      d="M10 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+    <path
+      d="M10 13a7 7 0 0 0-7 7 1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 7 7 0 0 0-7-7z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+  </svg>
+);
+
+export const PinIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M13.5538 2.66232C14.4174 1.85314 15.75 1.85663 16.6089 2.64211L16.7341 2.7658L21.4991 7.85135C21.6191 7.97942 21.7237 8.12108 21.8108 8.27345C22.4005 9.30545 22.0832 10.6078 21.1103 11.2587L20.9736 11.3433L16.0771 14.1413C15.9593 14.2086 15.8626 14.3062 15.7964 14.4232L15.7526 14.5144L13.9505 19.028C13.7641 19.4949 13.1888 19.6418 12.8033 19.3497L12.7237 19.2804L9.48597 16.0442L4.53489 21.0033L3.46997 21L3.47201 19.9449L8.42497 14.9832L5.22008 11.7804C4.86452 11.425 4.95639 10.8384 5.37685 10.5992L5.47194 10.5535L9.96721 8.7569C10.0987 8.70436 10.2119 8.61598 10.2946 8.50278L10.3506 8.4134L13.1069 3.24538C13.2229 3.02786 13.3739 2.83088 13.5538 2.66232ZM20.4045 8.87696L15.6395 3.7914C15.3563 3.48914 14.8817 3.4737 14.5794 3.75691C14.5394 3.79437 14.5037 3.83604 14.4729 3.88114L14.4304 3.95127L11.6742 9.11929C11.4521 9.53569 11.1055 9.87036 10.685 10.078L10.5239 10.1498L7.08541 11.524L12.9793 17.4151L14.3596 13.9582C14.5246 13.5449 14.8079 13.1911 15.172 12.9401L15.3329 12.8389L20.2293 10.0409C20.589 9.83544 20.7139 9.3773 20.5084 9.01766L20.4606 8.94427L20.4045 8.87696Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const PinOffIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M3.28034 2.21968C2.98745 1.92678 2.51257 1.92677 2.21968 2.21966C1.92678 2.51255 1.92677 2.98743 2.21966 3.28032L8.34462 9.4054L5.47194 10.5535L5.37685 10.5992C4.95639 10.8384 4.86452 11.425 5.22008 11.7804L8.42497 14.9832L3.47201 19.9449L3.46997 21L4.53489 21.0033L9.48597 16.0442L12.7237 19.2804L12.8033 19.3497C13.1888 19.6418 13.7641 19.4949 13.9505 19.0281L15.0966 16.1575L20.7194 21.7805C21.0123 22.0734 21.4872 22.0734 21.7801 21.7805C22.073 21.4876 22.073 21.0127 21.7801 20.7198L3.28034 2.21968ZM13.9423 15.0032L12.9793 17.4151L7.08541 11.524L9.49871 10.5595L13.9423 15.0032Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+    <path
+      d="M20.2293 10.041L15.7706 12.5888L16.87 13.6882L20.9736 11.3433L21.1103 11.2587C22.0832 10.6078 22.4005 9.30546 21.8108 8.27346C21.7237 8.12109 21.6191 7.97942 21.4991 7.85136L16.7341 2.76581L16.6089 2.64212C15.75 1.85664 14.4174 1.85315 13.5538 2.66233C13.3739 2.83089 13.2229 3.02787 13.1069 3.24539L10.7836 7.60169L11.8922 8.7104L14.4304 3.95127L14.4729 3.88115C14.5037 3.83605 14.5394 3.79438 14.5794 3.75692C14.8817 3.47371 15.3563 3.48915 15.6395 3.79141L20.4045 8.87697L20.4606 8.94428L20.5084 9.01767C20.7139 9.3773 20.589 9.83544 20.2293 10.041Z"
+      stroke={color}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></path>
+  </svg>
+);
+
+export const InfoIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="9"
+      stroke={color}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></circle>
+    <path
+      d="M12 11V17"
+      stroke={color}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+    <path
+      d="M11.75 8V7H12.25V8H11.75Z"
+      stroke={color}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+  </svg>
+);
+
+export const CancelIcon = ({
+  width = 20,
+  height = 20,
+  strokeWidth = 3,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 32 32"
+  >
+    <line
+      className="cls-1"
+      x1="7"
+      x2="25"
+      y1="7"
+      y2="25"
+      strokeWidth={strokeWidth}
+    ></line>{" "}
+    <line
+      className="cls-1"
+      x1="7"
+      x2="25"
+      y1="25"
+      y2="7"
+      strokeWidth={strokeWidth}
+    ></line>{" "}
+  </svg>
+);
+
+export const WriteIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 1,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 18 18"
+  >
+    <path
+      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+    <path
+      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+  </svg>
+);
+
+export const PencilIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="m14 1c.8284271.82842712.8284271 2.17157288 0 3l-9.5 9.5-4 1 1-3.9436508 9.5038371-9.55252193c.7829896-.78700064 2.0312313-.82943964 2.864366-.12506788z"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+    <path
+      d="m6.5 14.5h8"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
+    <path
+      d="m12.5 3.5 1 1"
+      stroke={color}
+      stroke-width={strokeWidth}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>{" "}
   </svg>
 );
