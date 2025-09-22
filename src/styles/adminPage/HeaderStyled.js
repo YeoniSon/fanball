@@ -8,21 +8,21 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
 `;
 
 export const AboutBadge = styled.div`
   display: flex;
-  gap: 15px;
+  gap: 10px;
 `;
 
 export const Item = styled.div`
   background-color: ${(props) => props.color || "#f0f0f0"};
-  border-radius: 20px;
-  padding: 8px 16px;
-  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
   color: white;
 `;
 
