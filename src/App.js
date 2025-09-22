@@ -23,8 +23,8 @@ import PostDetailPage from "./components/pages/teamBoard/PostDetailPage";
 import NewPostPage from "./components/pages/teamBoard/NewPostPage";
 import MyPage from "./components/pages/Mypage";
 import AdminPage from "./components/pages/AdminPage";
-import EditNotice from "./components/features/adminPage/notices/EditNotice";
-import NewNotice from "./components/features/adminPage/notices/NewNotice";
+import EditNotice from "./components/pages/notice/EditNotice";
+import NewNotice from "./components/pages/notice/NewNotice";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
