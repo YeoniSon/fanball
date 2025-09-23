@@ -200,6 +200,28 @@ export const ArrowLeftIcon = ({
   </svg>
 );
 
+export const ArrowRightIcon = ({
+  width = 15,
+  height = 15,
+  strokeWidth = 2,
+  color = "#000000",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill="none"
+    stroke={color}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M6 12H18M18 12L13 7M18 12L13 17"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    />
+  </svg>
+);
+
 export const ExclamationMarkIcon = ({
   width = 15,
   height = 15,

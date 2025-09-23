@@ -25,6 +25,8 @@ import MyPage from "./components/pages/Mypage";
 import AdminPage from "./components/pages/AdminPage";
 import EditNotice from "./components/pages/notice/EditNotice";
 import NewNotice from "./components/pages/notice/NewNotice";
+import NoticesPage from "./components/pages/notice/NoticesPage";
+import NoticesDetailPage from "./components/pages/notice/NoticesDetailPage";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
@@ -111,6 +113,13 @@ function AppContent() {
                   element={<EditNotice />}
                 />
                 <Route path="/admin/newNotice" element={<NewNotice />} />
+
+                {/* 공지사항 목록 페이지 라우트 */}
+                <Route path="/notices" element={<NoticesPage />} />
+                <Route
+                  path="/notices/:noticeId"
+                  element={<NoticesDetailPage />}
+                />
               </Routes>
             </div>
           </div>

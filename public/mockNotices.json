@@ -21,6 +21,94 @@
       "pinned": false,
       "content": "신고 처리 기준이 강화되었습니다.",
       "createdAt": "2025-08-12T07:10:00.000Z"
+    },
+    {
+      "id": "ntc_003",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "active": true,
+      "title": "앱 업데이트 안내",
+      "category": "시스템",
+      "pinned": false,
+      "content": "v1.2.0 업데이트로 성능 개선 및 버그 수정이 반영됩니다.",
+      "createdAt": "2025-08-18T11:20:00.000Z"
+    },
+    {
+      "id": "ntc_004",
+      "author": "운영자",
+      "authorId": 4,
+      "active": true,
+      "title": "이벤트 당첨자 발표",
+      "category": "이벤트",
+      "pinned": true,
+      "content": "여름 이벤트 당첨자 명단을 공지합니다. 상세 내용은 본문 참조.",
+      "createdAt": "2025-08-16T09:30:00.000Z"
+    },
+    {
+      "id": "ntc_005",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "active": true,
+      "title": "야구장 매너 캠페인",
+      "category": "캠페인",
+      "pinned": false,
+      "content": "경기 관람 에티켓 준수를 위한 매너 캠페인을 진행합니다.",
+      "createdAt": "2025-08-14T15:45:00.000Z"
+    },
+    {
+      "id": "ntc_006",
+      "author": "운영자",
+      "authorId": 4,
+      "active": true,
+      "title": "보안 공지: 비밀번호 변경 권고",
+      "category": "보안",
+      "pinned": false,
+      "content": "계정 보안을 위해 비밀번호 변경을 권고드립니다.",
+      "createdAt": "2025-08-11T08:00:00.000Z"
+    },
+    {
+      "id": "ntc_007",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "active": true,
+      "title": "커뮤니티 신고 안내",
+      "category": "정책",
+      "pinned": false,
+      "content": "신고 방법과 처리 절차를 안내드립니다.",
+      "createdAt": "2025-08-13T10:30:00.000Z"
+    },
+    {
+      "id": "ntc_008",
+      "author": "운영자",
+      "authorId": 4,
+      "active": true,
+      "title": "티켓 거래 유의사항",
+      "category": "안내",
+      "pinned": false,
+      "content": "안전한 거래를 위해 반드시 에스크로를 이용해 주세요.",
+      "createdAt": "2025-08-17T12:00:00.000Z"
+    },
+    {
+      "id": "ntc_009",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "active": true,
+      "title": "앱 알림 개선 공지",
+      "category": "시스템",
+      "pinned": false,
+      "content": "푸시 알림 수신 설정이 세분화되었습니다.",
+      "createdAt": "2025-08-19T09:15:00.000Z"
+    },
+    {
+      "id": "ntc_010",
+      "author": "운영자",
+      "authorId": 4,
+      "active": true,
+      "title": "서버 확장 완료",
+      "category": "시스템",
+      "pinned": false,
+      "content": "트래픽 증가에 대비한 서버 확장을 완료했습니다.",
+      "createdAt": "2025-08-20T06:45:00.000Z"
     }
   ]
 }

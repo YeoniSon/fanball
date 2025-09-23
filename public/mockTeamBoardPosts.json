@@ -395,6 +395,188 @@
         }
       ],
       "content": "리드에서 카운트별 유도구 활용이 인상적. 타석에서도 초구 선택이 유연해졌습니다.\n\n투수와의 호흡, 수비 시프트 호출, 주자 견제 시그널 등 보이지 않는 공헌도까지 종합적으로 살펴봅니다."
+    },
+
+    {
+      "id": "post_free_ssg_002",
+      "team": "ssgLanders",
+      "category": "free",
+      "title": "랜더스 굿즈 구매처 공유",
+      "author": "야구팬",
+      "authorId": 2,
+      "createdAt": "2025-08-04T10:10:00.000Z",
+      "likes": 1,
+      "likedUserIds": [2],
+      "views": 210,
+      "commentCount": 1,
+      "comments": [
+        {
+          "id": "c_free_ssg_003",
+          "author": "테스터",
+          "authorId": 1,
+          "content": "오프라인 샵 위치도 알려주세요",
+          "createdAt": "2025-08-04T10:20:00.000Z",
+          "likes": 0
+        }
+      ],
+      "content": "온라인/오프라인 굿즈샵 링크와 할인 정보 공유합니다."
+    },
+    {
+      "id": "post_free_ssg_003",
+      "team": "ssgLanders",
+      "category": "free",
+      "title": "응원가 가사 PDF 배포",
+      "author": "테스터",
+      "authorId": 1,
+      "createdAt": "2025-08-05T09:05:00.000Z",
+      "likes": 3,
+      "likedUserIds": [1, 2, 3],
+      "views": 312,
+      "commentCount": 0,
+      "comments": [],
+      "content": "신규 응원가 포함 가사 PDF를 첨부했습니다."
+    },
+    {
+      "id": "post_free_ssg_004",
+      "team": "ssgLanders",
+      "category": "free",
+      "title": "인천 원정 동행 구합니다",
+      "author": "야구팬",
+      "authorId": 2,
+      "createdAt": "2025-08-06T12:30:00.000Z",
+      "likes": 0,
+      "likedUserIds": [],
+      "views": 145,
+      "commentCount": 0,
+      "comments": [],
+      "content": "같이 직관 가실 분 댓글 주세요."
+    },
+
+    {
+      "id": "post_review_ssg_002",
+      "team": "ssgLanders",
+      "category": "review",
+      "title": "선발이 길게 끌어준 경기",
+      "author": "테스터",
+      "authorId": 1,
+      "createdAt": "2025-08-04T22:10:00.000Z",
+      "likes": 2,
+      "likedUserIds": [1, 2],
+      "views": 620,
+      "commentCount": 1,
+      "comments": [
+        {
+          "id": "c_review_ssg_004",
+          "author": "야구팬",
+          "authorId": 2,
+          "content": "불펜 휴식이 큰 의미",
+          "createdAt": "2025-08-04T22:20:00.000Z",
+          "likes": 1
+        }
+      ],
+      "content": "타선은 조용했지만 마운드가 승리를 지켜낸 경기였습니다."
+    },
+    {
+      "id": "post_review_ssg_003",
+      "team": "ssgLanders",
+      "category": "review",
+      "title": "수비에서 흐름을 끊은 장면들",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "createdAt": "2025-08-05T21:40:00.000Z",
+      "likes": 1,
+      "likedUserIds": [3],
+      "views": 412,
+      "commentCount": 0,
+      "comments": [],
+      "content": "하이라이트 타임라인과 함께 수비 전개를 분석합니다."
+    },
+    {
+      "id": "post_review_ssg_004",
+      "team": "ssgLanders",
+      "category": "review",
+      "title": "집중력으로 잡은 접전",
+      "author": "야구팬",
+      "authorId": 2,
+      "createdAt": "2025-08-06T20:15:00.000Z",
+      "likes": 4,
+      "likedUserIds": [1, 2, 3],
+      "views": 701,
+      "commentCount": 2,
+      "comments": [
+        {
+          "id": "c_review_ssg_005",
+          "author": "테스터",
+          "authorId": 1,
+          "content": "대타 타이밍 굿",
+          "createdAt": "2025-08-06T20:25:00.000Z",
+          "likes": 0
+        },
+        {
+          "id": "c_review_ssg_006",
+          "author": "FANBALL 관리자",
+          "authorId": 3,
+          "content": "마무리 좋은 구위",
+          "createdAt": "2025-08-06T20:30:00.000Z",
+          "likes": 0
+        }
+      ],
+      "content": "결정적 순간 집중력이 돋보였습니다."
+    },
+
+    {
+      "id": "post_player_ssg_002",
+      "team": "ssgLanders",
+      "category": "player",
+      "title": "외야수 수비 지표 비교",
+      "author": "테스터",
+      "authorId": 1,
+      "createdAt": "2025-08-04T13:25:00.000Z",
+      "likes": 2,
+      "likedUserIds": [1, 2],
+      "views": 350,
+      "commentCount": 0,
+      "comments": [],
+      "content": "UZR, DRS 기준 외야 수비 지표를 비교합니다."
+    },
+    {
+      "id": "post_player_ssg_003",
+      "team": "ssgLanders",
+      "category": "player",
+      "title": "불펜 투수 구종 믹스 변화",
+      "author": "야구팬",
+      "authorId": 2,
+      "createdAt": "2025-08-05T14:05:00.000Z",
+      "likes": 1,
+      "likedUserIds": [2],
+      "views": 267,
+      "commentCount": 1,
+      "comments": [
+        {
+          "id": "c_player_ssg_003",
+          "author": "테스터",
+          "authorId": 1,
+          "content": "체인지업 비율 상승",
+          "createdAt": "2025-08-05T14:20:00.000Z",
+          "likes": 0
+        }
+      ],
+      "content": "스플리터/체인지업 비중을 중심으로 변화 추이를 확인합니다."
+    },
+    {
+      "id": "post_player_ssg_004",
+      "team": "ssgLanders",
+      "category": "player",
+      "title": "신인 타자의 타구 질",
+      "author": "FANBALL 관리자",
+      "authorId": 3,
+      "createdAt": "2025-08-06T16:40:00.000Z",
+      "likes": 0,
+      "likedUserIds": [],
+      "views": 190,
+      "commentCount": 0,
+      "comments": [],
+      "content": "신인 타자의 최근 타구 속도 및 발사각을 요약합니다."
     }
   ]
 }

@@ -11,7 +11,6 @@ import {
   ErrorMessage,
   LoginButton,
   SignupLink,
-  TestAccounts,
 } from "../../../styles/LoginPageStyled";
 
 const LoginPage = () => {
@@ -23,19 +22,27 @@ const LoginPage = () => {
 
   const navigate = useNavigate();
 
-  // JSON 파일에서 사용자 데이터 로드
+  // JSON 파일에서 사용자/관리자 데이터 동시 로드
   useEffect(() => {
-    const loadUsers = async () => {
+    const loadAccounts = async () => {
       try {
-        const response = await fetch("/mockUsers.json");
-        const data = await response.json();
-        setUsers(data.users);
+        const [usersRes, adminsRes] = await Promise.all([
+          fetch("/mockUsers.json"),
+          fetch("/mockAdmin.json"),
+        ]);
+        const usersData = await usersRes.json();
+        const adminsData = await adminsRes.json();
+        const userList = Array.isArray(usersData?.users) ? usersData.users : [];
+        const adminList = Array.isArray(adminsData?.admins)
+          ? adminsData.admins
+          : [];
+        setUsers([...userList, ...adminList]);
       } catch (error) {
-        console.error("사용자 데이터 로드 실패:", error);
+        console.error("계정 데이터 로드 실패:", error);
       }
     };
 
-    loadUsers();
+    loadAccounts();
   }, []);
 
   const handleSubmit = async (e) => {
@@ -50,9 +57,18 @@ const LoginPage = () => {
         return;
       }
 
-      // 목업 사용자 데이터에서 로그인 확인
+      // 목업 사용자/관리자 데이터에서 로그인 확인 (대소문자/공백 정규화, 키 차이 허용)
+      const normalizedEmail = String(email).trim().toLowerCase();
+      const normalizedPassword = String(password);
+      const pickEmail = (u) =>
+        String(u?.email ?? u?.adminEmail ?? "")
+          .trim()
+          .toLowerCase();
+      const pickPassword = (u) => String(u?.password ?? u?.adminPassword ?? "");
       const user = users.find(
-        (u) => u.email === email && u.password === password
+        (u) =>
+          pickEmail(u) === normalizedEmail &&
+          pickPassword(u) === normalizedPassword
       );
 
       if (user) {
