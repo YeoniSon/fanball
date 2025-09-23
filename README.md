@@ -10,8 +10,6 @@ FullStack
 
 → FrontEnd: React
 
-→ BackEnd : Java Spring Boot
-
 ## 목표
 
 ---
@@ -25,6 +23,7 @@ FullStack
 - 회원기능
 
   - 회원가입 / 로그인
+  - 비밀번호 변경 / 탈퇴
   - 응원 팀 설정
   - 프로필 수정
   - 마이페이지 (티켓 판매 내역, 응원팀 변경, 1:1 메시지, 거래내역, 게시판 작성 내역)
@@ -43,6 +42,7 @@ FullStack
     - 각 경기 채팅방 자동 개설
 - 팬 커뮤니티 기능
   - 팀별 게시판(응원게시판, 정보공유)
+  - 댓글
   - 경기별 실시간 채팅방
   - 신고/ 차단 기능
 - 티켓 거래 시스템
@@ -55,7 +55,8 @@ FullStack
   - 신고 기능
 - 관리자 기능
   - 유저 관리(신고, 제재 등 )
-  - 부정 거래 티켓 신고 처리
+  - 신고 처리
+  - 관리자 등록
 
 ## 사이트맵(SITEMAP)
 <img width="5176" height="2302" alt="image" src="https://github.com/user-attachments/assets/8b4e1661-f7b8-4212-a45a-f0c4d5b3fd5d" />
