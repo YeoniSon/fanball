@@ -58,14 +58,18 @@ export const Label = styled.label`
   font-size: 0.875rem;
 `;
 
-export const Input = styled.input`
-  padding: 0.75rem;
+export const InputContainer = styled.div`
+  position: relative;
   border: 2px solid #e5e7eb;
   border-radius: 0.5rem;
+  width: 100%;
   font-size: 1rem;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
-  &:focus {
+  &:focus-within {
     outline: none;
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
@@ -74,6 +78,17 @@ export const Input = styled.input`
   &.error {
     border-color: #ef4444;
   }
+`;
+
+export const Input = styled.input`
+  position: relative;
+  width: 100%;
+  outline: none;
+  padding: 0.75rem;
+  padding-right: 40px; /* 공간 확보: 토글 아이콘 */
+  border: none;
+  font-size: 1rem;
+  transition: border-color 0.2s;
 `;
 
 export const ErrorMessage = styled.div`
@@ -140,5 +155,35 @@ export const TestAccounts = styled.div`
     &:last-child {
       margin-bottom: 0;
     }
+  }
+`;
+
+export const ToggleButton = styled.button`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #374151;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const FindPasswordLink = styled.button`
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  align-self: flex-end;
+  padding: 0;
+
+  &:hover {
+    color: #1d4ed8;
   }
 `;

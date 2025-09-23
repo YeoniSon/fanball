@@ -27,13 +27,16 @@ import EditNotice from "./components/pages/notice/EditNotice";
 import NewNotice from "./components/pages/notice/NewNotice";
 import NoticesPage from "./components/pages/notice/NoticesPage";
 import NoticesDetailPage from "./components/pages/notice/NoticesDetailPage";
+import FindPassword from "./components/pages/user/FindPassword";
 
 // BrowserRouter 내부에서 useLocation을 사용하는 컴포넌트
 function AppContent() {
   const location = useLocation();
 
   // 현재 경로가 login, signup이면 false
-  const isAuthPage = ["/login", "/signup"].includes(location.pathname);
+  const isAuthPage = ["/login", "/signup", "/findPassword"].includes(
+    location.pathname
+  );
 
   return (
     <>
@@ -43,6 +46,8 @@ function AppContent() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          {/* 비밀번호 찾기 페이지 라우트 */}
+          <Route path="/findPassword" element={<FindPassword />} />
         </Routes>
       ) : (
         // 일반 페이지일 때는 헤더와 사이드바 포함

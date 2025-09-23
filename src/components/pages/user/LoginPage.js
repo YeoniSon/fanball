@@ -11,7 +11,13 @@ import {
   ErrorMessage,
   LoginButton,
   SignupLink,
+  InputContainer,
+  ToggleButton,
+  FindPasswordLink,
+  FindEmailLink,
+  FindEmailPasswordContainer,
 } from "../../../styles/LoginPageStyled";
+import { ShowIcon, NoShowIcon } from "../../common/Icons";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -19,6 +25,7 @@ const LoginPage = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [users, setUsers] = useState([]);
+  const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
 
@@ -95,6 +102,10 @@ const LoginPage = () => {
     }
   };
 
+  const handleFindPassword = () => {
+    navigate("/findPassword");
+  };
+
   return (
     <LoginContainer>
       <LoginCard>
@@ -106,29 +117,47 @@ const LoginPage = () => {
         <Form onSubmit={handleSubmit}>
           <FormGroup>
             <Label htmlFor="email">이메일</Label>
-            <Input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="이메일을 입력하세요"
-              className={error && !email ? "error" : ""}
-            />
+            <InputContainer>
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="이메일을 입력하세요"
+                className={error && !email ? "error" : ""}
+              />
+            </InputContainer>
           </FormGroup>
 
           <FormGroup>
             <Label htmlFor="password">비밀번호</Label>
-            <Input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="비밀번호를 입력하세요"
-              className={error && !password ? "error" : ""}
-            />
+            <InputContainer>
+              <Input
+                id="password"
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="비밀번호를 입력하세요"
+                className={error && !password ? "error" : ""}
+              />
+              <ToggleButton
+                type="button"
+                onClick={() => setShowPassword((v) => !v)}
+              >
+                {showPassword ? (
+                  <ShowIcon color="#5d5d5dff" />
+                ) : (
+                  <NoShowIcon color="#5d5d5dff" />
+                )}
+              </ToggleButton>
+            </InputContainer>
           </FormGroup>
 
           {error && <ErrorMessage>{error}</ErrorMessage>}
+
+          <FindPasswordLink onClick={() => handleFindPassword()}>
+            비밀번호를 잊으셨나요?
+          </FindPasswordLink>
 
           <LoginButton type="submit" disabled={isLoading}>
             {isLoading ? "로그인 중..." : "로그인"}
