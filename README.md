@@ -6,7 +6,7 @@
 
 ---
 
-FullStack
+FrontEnd
 
 → FrontEnd: React
 
