@@ -50,6 +50,10 @@ const NoticeSection = () => {
     navigate("/notices");
   };
 
+  const handleDetailNotice = (noticeId) => {
+    navigate(`/notices/${noticeId}`);
+  };
+
   const formatDate = (dateString) => {
     const options = { year: "numeric", month: "2-digit", day: "2-digit" };
     return new Date(dateString).toLocaleDateString(undefined, options);
@@ -82,7 +86,7 @@ const NoticeSection = () => {
                 {notice.author}
               </NoticeDate>
               <Content>{notice.content}</Content>
-              <Button>
+              <Button onClick={() => handleDetailNotice(notice.id)}>
                 <DetailButton>상세보기</DetailButton>
               </Button>
             </NoticeBox>

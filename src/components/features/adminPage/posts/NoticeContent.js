@@ -89,6 +89,10 @@ const NoticeContent = ({ notices }) => {
     alert(`공지사항 ${noticeId} 비활성`);
   };
 
+  const handleDetailNotice = (noticeId) => {
+    navigate(`/notices/${noticeId}`);
+  };
+
   return (
     <>
       <Header>
@@ -123,6 +127,7 @@ const NoticeContent = ({ notices }) => {
               borderBottom: "1px solid #eee",
               padding: "10px 0",
             }}
+            onClick={() => handleDetailNotice(notice.id)}
           >
             <NoticeHeader>
               <BadgeContainer>
