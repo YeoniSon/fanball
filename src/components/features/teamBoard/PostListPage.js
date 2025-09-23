@@ -26,6 +26,7 @@ import {
   PlusIcon,
 } from "../../common/Icons";
 import TeamInfo from "../../common/TeamInfo";
+import Pagination from "../../common/Pagination";
 
 const PostListPage = () => {
   const { teamId } = useParams();
@@ -34,6 +35,8 @@ const PostListPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [category, setCategory] = useState("all");
   const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
+  const pageSize = 6;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -65,6 +68,16 @@ const PostListPage = () => {
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );
   }, [postData, teamId, category]);
+
+  // 필터 변경 시 페이지 리셋
+  useEffect(() => {
+    setPage(1);
+  }, [teamId, category]);
+
+  // 페이지네이션 계산
+  const pageCount = Math.max(1, Math.ceil(filteredPosts.length / pageSize));
+  const start = (page - 1) * pageSize;
+  const currentPagePosts = filteredPosts.slice(start, start + pageSize);
 
   const categoryLabel = (c) => {
     switch (c) {
@@ -130,7 +143,7 @@ const PostListPage = () => {
         {filteredPosts.length === 0 ? (
           <PostContainer>게시글이 없습니다.</PostContainer>
         ) : (
-          filteredPosts.map((post) => (
+          currentPagePosts.map((post) => (
             <PostContainer key={post.id} onClick={() => handlePostClick(post)}>
               <PostAuthorIcon>{post.author.charAt(0)}</PostAuthorIcon>
               <PostInfoContainer>
@@ -168,6 +181,9 @@ const PostListPage = () => {
           ))
         )}
       </PostListContainer>
+      {pageCount > 1 && (
+        <Pagination page={page} pageCount={pageCount} onChange={setPage} />
+      )}
     </>
   );
 };

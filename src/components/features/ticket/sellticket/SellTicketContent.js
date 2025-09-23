@@ -227,7 +227,9 @@ const SellTicketContent = ({ option }) => {
           </TicketCard>
         </div>
       ))}
-      <Pagination page={page} pageCount={pageCount} onChange={setPage} />
+      {pageCount > 1 && (
+        <Pagination page={page} pageCount={pageCount} onChange={setPage} />
+      )}
     </div>
   );
 };

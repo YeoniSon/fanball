@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { PersonIcon, LocationIcon, ChatIcon } from "../../../common/Icons";
+import Pagination from "../../../common/Pagination";
 import {
   NoLoginMessage,
   Title,
@@ -188,6 +189,9 @@ const BuyTicketContent = ({ ticketStatus = "all" }) => {
           </TicketCard>
         </div>
       ))}
+      {pageCount > 1 && (
+        <Pagination page={page} pageCount={pageCount} onChange={setPage} />
+      )}
     </div>
   );
 };
