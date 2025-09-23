@@ -68,6 +68,8 @@ export const NoticeItem = styled.div`
   border-radius: 8px;
   padding: 0 16px 16px 16px;
   margin-top: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
 `;
 
 export const Title = styled.h3`
