@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { PersonIcon, LocationIcon, ChatIcon } from "../../../common/Icons";
 import Pagination from "../../../common/Pagination";
 import {
@@ -26,6 +27,7 @@ import {
 } from "../../../../styles/ticket/buyTicket/BuyTicketContentStyled";
 
 const BuyTicketContent = ({ ticketStatus = "all" }) => {
+  const navigate = useNavigate();
   const [ticketData, setTicketData] = useState([]);
   const currentUser = useMemo(() => {
     try {
@@ -114,6 +116,10 @@ const BuyTicketContent = ({ ticketStatus = "all" }) => {
     fetchData();
   }, [ticketStatus]);
 
+  const handleMessageClick = (sellerId) => {
+    navigate(`/message?user=${sellerId}`);
+  };
+
   if (!currentUser) {
     return (
       <div>
@@ -181,7 +187,9 @@ const BuyTicketContent = ({ ticketStatus = "all" }) => {
             <StatsRow>
               <PurchaseCode>구매번호 : {ticket.orderNumber}</PurchaseCode>
 
-              <TicketButton>
+              <TicketButton
+                onClick={() => handleMessageClick(ticket.seller.id)}
+              >
                 <ChatIcon />
                 구매문의
               </TicketButton>

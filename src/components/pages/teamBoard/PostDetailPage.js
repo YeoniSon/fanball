@@ -29,7 +29,7 @@ const PostDetailPage = () => {
     <>
       <Header>
         <BackButton onClick={handleBackButtonClick}>
-          <ArrowLeftIcon />
+          <ArrowLeftIcon color="#000000" />
           게시판으로
         </BackButton>
         <Badge color={badgeContent.color}>

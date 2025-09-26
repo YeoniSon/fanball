@@ -113,6 +113,10 @@ const TicketResultContents = ({ team = "ALL" }) => {
     navigate(`/ticket/detail/${ticketId}`);
   };
 
+  const handleMessageClick = (sellerId) => {
+    navigate(`/message?user=${sellerId}`);
+  };
+
   useEffect(() => {
     // 팀 변경 시 첫 페이지로 이동
     setPage(1);
@@ -200,7 +204,10 @@ const TicketResultContents = ({ team = "ALL" }) => {
                 상세보기
               </DetailButton>
 
-              <TicketButton disabled={ticket.status !== "available"}>
+              <TicketButton
+                disabled={ticket.status !== "available"}
+                onClick={() => handleMessageClick(ticket.seller.id)}
+              >
                 <ChatIcon />
                 {ticket.status === "available" ? "구매 문의" : "구매불가"}
                 {(() => {

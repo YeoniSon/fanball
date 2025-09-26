@@ -27,7 +27,7 @@ const NewPostPage = () => {
     <>
       <Header>
         <BackButton onClick={handleBackButtonClick}>
-          <ArrowLeftIcon /> 게시판으로
+          <ArrowLeftIcon color="#007bff" /> 게시판으로
         </BackButton>
         <Title>글쓰기</Title>
         <SubmitButton onClick={handleSubmit}>

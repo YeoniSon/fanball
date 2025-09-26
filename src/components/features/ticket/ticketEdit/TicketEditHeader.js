@@ -48,7 +48,7 @@ const TicketEditHeader = () => {
     <div>
       <TicketEditHeaderContainer>
         <HeaderButton onClick={handleClickBack}>
-          <ArrowLeftIcon />
+          <ArrowLeftIcon color="#000000" />
           뒤로 가기
         </HeaderButton>
         <HeaderTitleBox>

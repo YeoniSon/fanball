@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   ChatContainer,
   ChatListContainer,
@@ -23,6 +23,7 @@ const ChatList = () => {
   const [users, setUsers] = useState([]);
   const [selectedThreadId, setSelectedThreadId] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const currentUser = useMemo(() => {
     try {
@@ -94,6 +95,46 @@ const ChatList = () => {
       })
       .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0));
   }, [threads, messages, users, myId]);
+
+  // If we arrived with /message?user={targetId}, auto-select or create that chat thread
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const targetUserIdParam = params.get("user");
+    if (!targetUserIdParam || !myId || !Array.isArray(threads)) return;
+    const targetUserId = Number(String(targetUserIdParam).match(/\d+/)?.[0]);
+    if (!targetUserId) return;
+    const existing = threads.find(
+      (t) =>
+        Array.isArray(t?.participants) &&
+        t.participants.includes(Number(myId)) &&
+        t.participants.includes(Number(targetUserId))
+    );
+    if (existing?.id) {
+      if (existing.id !== selectedThreadId) {
+        setSelectedThreadId(existing.id);
+      }
+      return;
+    }
+
+    // Create a new thread in-memory if none exists
+    const newThread = {
+      id: Date.now(),
+      participants: [Number(myId), Number(targetUserId)],
+      unread: { [String(myId)]: 0, [String(targetUserId)]: 0 },
+      lastMessageAt: null,
+    };
+    setThreads((prev) => {
+      const already = (prev || []).find(
+        (t) =>
+          Array.isArray(t?.participants) &&
+          t.participants.includes(Number(myId)) &&
+          t.participants.includes(Number(targetUserId))
+      );
+      if (already) return prev;
+      return [...prev, newThread];
+    });
+    setSelectedThreadId(newThread.id);
+  }, [location.search, threads, myId, selectedThreadId]);
 
   const chatMessages = useMemo(() => {
     if (!selectedThreadId) return [];

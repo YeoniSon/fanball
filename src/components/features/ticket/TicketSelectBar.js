@@ -46,7 +46,7 @@ const TicketSelectBar = () => {
           isActive={activeTab === "buyTicket"}
           onClick={() => handleTabClick("buyTicket")}
         >
-          티켓 구매
+          구매 내역
         </Select>
       </SelectContainer>
       {renderContent()}
