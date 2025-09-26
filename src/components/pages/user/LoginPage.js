@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   LoginContainer,
@@ -14,8 +14,7 @@ import {
   InputContainer,
   ToggleButton,
   FindPasswordLink,
-  FindEmailLink,
-  FindEmailPasswordContainer,
+  Button,
 } from "../../../styles/LoginPageStyled";
 import { ShowIcon, NoShowIcon } from "../../common/Icons";
 
@@ -166,21 +165,9 @@ const LoginPage = () => {
 
         <SignupLink>
           계정이 없으신가요?{" "}
-          <button
-            type="button"
-            onClick={() => navigate("/signup")}
-            style={{
-              background: "none",
-              border: "none",
-              color: "#2563eb",
-              textDecoration: "underline",
-              cursor: "pointer",
-              fontSize: "inherit",
-              fontFamily: "inherit",
-            }}
-          >
+          <Button type="button" onClick={() => navigate("/signup")}>
             회원가입
-          </button>
+          </Button>
         </SignupLink>
       </LoginCard>
     </LoginContainer>

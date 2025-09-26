@@ -187,3 +187,17 @@ export const FindPasswordLink = styled.button`
     color: #1d4ed8;
   }
 `;
+
+export const Button = styled.button`
+  background: none;
+  border: none;
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+
+  &:hover {
+    color: #1d4ed8;
+  }
+`;
