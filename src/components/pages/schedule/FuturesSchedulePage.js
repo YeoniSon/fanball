@@ -1,5 +1,5 @@
 import CommonBanner from "../../common/Banner";
-import SchedulePage from "../../features/futures/SchedulePage";
+import SchedulePage from "../../features/futures/SchedulePage";
 
 const FuturesSchedulePage = () => {
   return (
