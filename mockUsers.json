@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.com",
+      "password": "123456",
+      "phone": "010-1234-5678",
+      "name": "테스트 사용자",
+      "role": "user",
+      "nickname": "테스터",
+      "reputation": 85,
+      "completedDeals": 12,
+      "responseRate": 96,
+      "joinDate": "2024-01-15",
+      "favoriteTeam": "SSG 랜더스",
+      "profileImage": null,
+      "blocked": false,
+      "tradeCount": 12,
+      "reportCount": 1,
+      "postCount": 2,
+      "commentCount": 8,
+      "likesReceived": 13,
+      "likesGiven": 5
+    },
+    {
+      "id": 2,
+      "email": "user@example.com",
+      "password": "password123",
+      "phone": "010-9876-5432",
+      "name": "김철수",
+      "role": "user",
+      "nickname": "야구팬",
+      "reputation": 92,
+      "completedDeals": 7,
+      "responseRate": 88,
+      "joinDate": "2024-01-10",
+      "favoriteTeam": "SSG 랜더스",
+      "profileImage": null,
+      "blocked": true,
+      "tradeCount": 7,
+      "reportCount": 1,
+      "postCount": 6,
+      "commentCount": 11,
+      "likesReceived": 37,
+      "likesGiven": 8
+    }
+  ]
+}

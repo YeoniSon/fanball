@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fanball/static/css/main.371b951d.css",
+    "main.js": "/fanball/static/js/main.4dc79fa0.js",
+    "index.html": "/fanball/index.html",
+    "main.371b951d.css.map": "/fanball/static/css/main.371b951d.css.map",
+    "main.4dc79fa0.js.map": "/fanball/static/js/main.4dc79fa0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.371b951d.css",
+    "static/js/main.4dc79fa0.js"
+  ]
+}

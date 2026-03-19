@@ -1,0 +1,45 @@
+{
+  "reasonOptions": [
+    "부적절한 언어",
+    "스팸 홍보",
+    "욕설/비방",
+    "허위 정보",
+    "성희롱/혐오",
+    "도배/광고",
+    "사기/사칭"
+  ],
+  "reports": [
+    {
+      "id": "rpt_001",
+      "reporterId": 1,
+      "reporterNickname": "테스터",
+      "reportedUserId": 2,
+      "reportedUserNickname": "피해자",
+      "postId": "post_review_ssg_001",
+      "postTitle": "어제 경기 후기: 불펜이 흐름을 잡았다",
+      "target": "comment",
+      "commentId": "c_review_ssg_001",
+      "reason": "부적절한 언어",
+      "title": "부적절한 언어 사용",
+      "content": "채팅에서 욕설을 사용했습니다.",
+      "status": "pending",
+      "createdAt": "2025-08-10T09:00:00.000Z"
+    },
+    {
+      "id": "rpt_002",
+      "reporterId": 2,
+      "reporterNickname": "야구팬",
+      "reportedUserId": 1,
+      "reportedUserNickname": "테스터",
+      "postId": "post_free_ssg_001",
+      "postTitle": "랜더스 팬들 모여요! 이번 주 응원 계획 공유",
+      "target": "post",
+      "reason": "스팸 홍보",
+      "title": "스팸 홍보 게시물",
+      "content": "동일한 홍보 글을 반복적으로 게시했습니다.",
+      "status": "resolved",
+      "createdAt": "2025-08-09T14:30:00.000Z",
+      "resolvedAt": "2025-08-09T16:00:00.000Z"
+    }
+  ]
+}

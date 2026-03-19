@@ -1,0 +1,221 @@
+{
+  "threads": [
+    {
+      "id": "t1",
+      "ticketId": "T001",
+      "participants": [1, 2],
+      "lastMessageAt": "2025-08-20T12:45:00Z",
+      "unread": { "1": 2, "2": 0 }
+    },
+    {
+      "id": "t2",
+      "ticketId": "T003",
+      "participants": [1, 3],
+      "lastMessageAt": "2025-08-21T09:35:00Z",
+      "unread": { "1": 1, "3": 0 }
+    },
+    {
+      "id": "t3",
+      "ticketId": "T005",
+      "participants": [2, 3],
+      "lastMessageAt": "2025-08-22T18:05:30Z",
+      "unread": { "2": 2, "3": 2 }
+    },
+    {
+      "id": "t4",
+      "ticketId": "T002",
+      "participants": [1, 2],
+      "lastMessageAt": "2025-08-23T14:10:00Z",
+      "unread": { "1": 1, "2": 0 }
+    },
+    {
+      "id": "t5",
+      "ticketId": "T010",
+      "participants": [1, 3],
+      "lastMessageAt": "2025-08-24T11:22:00Z",
+      "unread": { "1": 1, "3": 0 }
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "threadId": "t1",
+      "ticketId": "T001",
+      "senderId": 2,
+      "receiverId": 1,
+      "content": "안녕하세요, 티켓 문의 드려요.",
+      "type": "text",
+      "createdAt": "2025-08-20T12:00:00Z",
+      "status": "read"
+    },
+    {
+      "id": "m2",
+      "threadId": "t1",
+      "ticketId": "T001",
+      "senderId": 1,
+      "receiverId": 2,
+      "content": "네, 어떤 부분이 궁금하신가요?",
+      "type": "text",
+      "createdAt": "2025-08-20T12:05:00Z",
+      "status": "read"
+    },
+    {
+      "id": "m3",
+      "threadId": "t1",
+      "ticketId": "T001",
+      "senderId": 2,
+      "receiverId": 1,
+      "content": "좌석 시야는 어떤가요?",
+      "type": "text",
+      "createdAt": "2025-08-20T12:30:00Z",
+      "status": "unread"
+    },
+    {
+      "id": "m4",
+      "threadId": "t1",
+      "ticketId": "T001",
+      "senderId": 1,
+      "receiverId": 2,
+      "content": "시야 아주 좋아요!",
+      "type": "text",
+      "createdAt": "2025-08-20T12:40:00Z",
+      "status": "read"
+    },
+    {
+      "id": "m5",
+      "threadId": "t1",
+      "ticketId": "T001",
+      "senderId": 2,
+      "receiverId": 1,
+      "content": "가격 네고 가능할까요?",
+      "type": "text",
+      "createdAt": "2025-08-20T12:45:00Z",
+      "status": "unread"
+    },
+
+    {
+      "id": "m6",
+      "threadId": "t2",
+      "ticketId": "T003",
+      "senderId": 1,
+      "receiverId": 3,
+      "content": "구매 확정하시겠어요?",
+      "type": "text",
+      "createdAt": "2025-08-21T09:00:00Z",
+      "status": "read"
+    },
+    {
+      "id": "m7",
+      "threadId": "t2",
+      "ticketId": "T003",
+      "senderId": 3,
+      "receiverId": 1,
+      "content": "네, 결제 진행할게요.",
+      "type": "text",
+      "createdAt": "2025-08-21T09:10:00Z",
+      "status": "unread"
+    },
+    {
+      "id": "m8",
+      "threadId": "t2",
+      "ticketId": "T003",
+      "senderId": 1,
+      "receiverId": 3,
+      "content": "입금 확인 되면 전달드릴게요.",
+      "type": "text",
+      "createdAt": "2025-08-21T09:35:00Z",
+      "status": "read"
+    },
+
+    {
+      "id": "m9",
+      "threadId": "t3",
+      "ticketId": "T005",
+      "senderId": 2,
+      "receiverId": 3,
+      "content": "관람 날짜 변경 가능한가요?",
+      "type": "text",
+      "createdAt": "2025-08-22T17:30:00Z",
+      "status": "unread"
+    },
+    {
+      "id": "m10",
+      "threadId": "t3",
+      "ticketId": "T005",
+      "senderId": 3,
+      "receiverId": 2,
+      "content": "문의 감사합니다. 변경은 어려워요.",
+      "type": "text",
+      "createdAt": "2025-08-22T17:50:00Z",
+      "status": "unread"
+    },
+    {
+      "id": "m11",
+      "threadId": "t3",
+      "ticketId": "T005",
+      "senderId": 2,
+      "receiverId": 3,
+      "content": "그럼 기존 일정으로 진행할게요.",
+      "type": "text",
+      "createdAt": "2025-08-22T18:05:00Z",
+      "status": "unread"
+    },
+    {
+      "id": "m12",
+      "threadId": "t3",
+      "ticketId": "T005",
+      "senderId": 3,
+      "receiverId": 2,
+      "content": "네, 감사합니다!",
+      "type": "text",
+      "createdAt": "2025-08-22T18:05:30Z",
+      "status": "unread"
+    },
+
+    {
+      "id": "m13",
+      "threadId": "t4",
+      "ticketId": "T002",
+      "senderId": 1,
+      "receiverId": 2,
+      "content": "내일 경기 티켓 문의드려요.",
+      "type": "text",
+      "createdAt": "2025-08-23T14:05:00Z",
+      "status": "read"
+    },
+    {
+      "id": "m14",
+      "threadId": "t4",
+      "ticketId": "T002",
+      "senderId": 2,
+      "receiverId": 1,
+      "content": "네, 어떤 좌석을 찾으시나요?",
+      "type": "text",
+      "createdAt": "2025-08-23T14:10:00Z",
+      "status": "unread"
+    },
+
+    {
+      "id": "m15",
+      "threadId": "t5",
+      "ticketId": "T010",
+      "senderId": 3,
+      "receiverId": 1,
+      "content": "좌석 위치가 어디인가요?",
+      "type": "text",
+      "createdAt": "2025-08-24T11:10:00Z",
+      "status": "unread"
+    },
+    {
+      "id": "m16",
+      "threadId": "t5",
+      "ticketId": "T010",
+      "senderId": 1,
+      "receiverId": 3,
+      "content": "2루석 B열입니다.",
+      "type": "text",
+      "createdAt": "2025-08-24T11:22:00Z",
+      "status": "read"
+    }
+  ]
+}

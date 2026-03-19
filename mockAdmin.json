@@ -1,0 +1,48 @@
+{
+  "admins": [
+    {
+      "id": 3,
+      "email": "admin@fanball.com",
+      "password": "admin123",
+      "name": "홍길동",
+      "role": "admin",
+      "nickname": "FANBALL 관리자",
+      "reputation": 100,
+      "completedDeals": 42,
+      "responseRate": 99,
+      "joinDate": "2024-01-01",
+      "favoriteTeam": "LG 트윈스",
+      "profileImage": null,
+      "blocked": false,
+      "tradeCount": 42,
+      "reportCount": 0,
+      "postCount": 4,
+      "commentCount": 6,
+      "likesReceived": 16,
+      "likesGiven": 6,
+      "noticesCount": 1
+    },
+    {
+      "id": 4,
+      "email": "manager@fanball.com",
+      "password": "manager123",
+      "name": "관리자 계정",
+      "role": "admin",
+      "nickname": "운영자",
+      "reputation": 100,
+      "completedDeals": 0,
+      "responseRate": 100,
+      "joinDate": "2024-01-05",
+      "favoriteTeam": "두산 베어스",
+      "profileImage": null,
+      "blocked": false,
+      "tradeCount": 0,
+      "reportCount": 0,
+      "postCount": 0,
+      "commentCount": 0,
+      "likesReceived": 0,
+      "likesGiven": 0,
+      "noticesCount": 1
+    }
+  ]
+}
