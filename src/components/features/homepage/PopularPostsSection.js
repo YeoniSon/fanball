@@ -26,11 +26,12 @@ const PopularPostsSection = () => {
   const navigate = useNavigate();
   const [popularPosts, setPopularPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   useEffect(() => {
     const fetchPopularPosts = async () => {
       try {
-        const response = await fetch("/mockPosts.json");
+        const response = await fetch(`${publicUrl}/mockPosts.json`);
         const data = await response.json();
         setPopularPosts(data.popularPosts);
         setLoading(false);

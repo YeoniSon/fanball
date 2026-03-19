@@ -25,6 +25,7 @@ const PlayerProfile = ({ player }) => {
   const { playerId } = useParams();
   const [playerData, setPlayerData] = useState(player);
   const [loading, setLoading] = useState(false);
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   const handlePlayerListMove = () => {
     navigate("/players");
@@ -74,7 +75,7 @@ const PlayerProfile = ({ player }) => {
         </PlayerListMoveButton>
         <PlayerHeader>
           <Avatar
-            src={playerData.photo || "/players/placeholder.png"}
+            src={`${publicUrl}${playerData.photo || "/players/placeholder.png"}`}
             alt={playerData.name}
           />
           <PlayerInfo>
@@ -88,7 +89,10 @@ const PlayerProfile = ({ player }) => {
 
             <PlayerTeam>
               {playerData?.teamlogo && (
-                <TeamLogo src={playerData.teamlogo} alt={playerData.team} />
+                <TeamLogo
+                  src={`${publicUrl}${playerData.teamlogo}`}
+                  alt={playerData.team}
+                />
               )}
               {playerData?.team ?? "-"}
             </PlayerTeam>

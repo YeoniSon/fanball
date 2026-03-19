@@ -7,65 +7,66 @@ import {
 } from "../../../styles/SideBarStyled";
 
 const TeamBoardMenu = ({ activeMenu, onMenuClick, allMenuItems }) => {
+  const publicUrl = process.env.PUBLIC_URL || "";
   const teamMenuItems = [
     {
       id: "SSG",
       label: "SSG 랜더스",
-      logo: "/team-logos/ssg-landers.png",
+      logo: `${publicUrl}/team-logos/ssg-landers.png`,
       path: "/ssgLanders",
     },
     {
       id: "NC",
       label: "NC 다이노스",
-      logo: "/team-logos/nc-dinos.png",
+      logo: `${publicUrl}/team-logos/nc-dinos.png`,
       path: "/ncDinos",
     },
     {
       id: "KIA",
       label: "KIA 타이거즈",
-      logo: "/team-logos/kia-tigers.png",
+      logo: `${publicUrl}/team-logos/kia-tigers.png`,
       path: "/kiaTigers",
     },
     {
       id: "LG",
       label: "LG 트윈스",
-      logo: "/team-logos/lg-twins.png",
+      logo: `${publicUrl}/team-logos/lg-twins.png`,
       path: "/lgTwins",
     },
     {
       id: "KT",
       label: "KT 위즈",
-      logo: "/team-logos/kt-wiz.png",
+      logo: `${publicUrl}/team-logos/kt-wiz.png`,
       path: "/ktWiz",
     },
     {
       id: "DOOSAN",
       label: "두산 베어스",
-      logo: "/team-logos/doosan-bears.png",
+      logo: `${publicUrl}/team-logos/doosan-bears.png`,
       path: "/doosanBears",
     },
     {
       id: "SAMSUNG",
       label: "삼성 라이온즈",
-      logo: "/team-logos/samsung-lions.png",
+      logo: `${publicUrl}/team-logos/samsung-lions.png`,
       path: "/samsungLions",
     },
     {
       id: "LOTTE",
       label: "롯데 자이언츠",
-      logo: "/team-logos/lotte-giants.png",
+      logo: `${publicUrl}/team-logos/lotte-giants.png`,
       path: "/lotteGiants",
     },
     {
       id: "KIWOO",
       label: "키움 히어로즈",
-      logo: "/team-logos/kiwoom-heroes.png",
+      logo: `${publicUrl}/team-logos/kiwoom-heroes.png`,
       path: "/kiwoomHeroes",
     },
     {
       id: "HANHWA",
       label: "한화 이글스",
-      logo: "/team-logos/hanwha-eagles.png",
+      logo: `${publicUrl}/team-logos/hanwha-eagles.png`,
       path: "/hanhwaEagles",
     },
   ];

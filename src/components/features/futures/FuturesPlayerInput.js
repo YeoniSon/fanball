@@ -31,71 +31,72 @@ const PlayerInput = () => {
   const [playerData, setPlayerData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   const teams = [
     {
       id: "doosan-bears",
-      logo: "/team-logos/doosan-bears.png",
+      logo: `${publicUrl}/team-logos/doosan-bears.png`,
       name: "두산 베어스",
       shortName: "두산",
     },
     {
       id: "hanwha-eagles",
-      logo: "/team-logos/hanwha-eagles.png",
+      logo: `${publicUrl}/team-logos/hanwha-eagles.png`,
       name: "한화 이글스",
       shortName: "한화",
     },
     {
       id: "kia-tigers",
-      logo: "/team-logos/kia-tigers.png",
+      logo: `${publicUrl}/team-logos/kia-tigers.png`,
       name: "KIA 타이거즈",
       shortName: "KIA",
     },
     {
       id: "kiwoom-heroes",
-      logo: "/team-logos/kiwoom-heroes.png",
+      logo: `${publicUrl}/team-logos/kiwoom-heroes.png`,
       name: "키움 히어로즈",
       shortName: "키움",
     },
     {
       id: "kt-wiz",
-      logo: "/team-logos/kt-wiz.png",
+      logo: `${publicUrl}/team-logos/kt-wiz.png`,
       name: "KT 위즈",
       shortName: "KT",
     },
     {
       id: "lg-twins",
-      logo: "/team-logos/lg-twins.png",
+      logo: `${publicUrl}/team-logos/lg-twins.png`,
       name: "LG 트윈스",
       shortName: "LG",
     },
     {
       id: "lotte-giants",
-      logo: "/team-logos/lotte-giants.png",
+      logo: `${publicUrl}/team-logos/lotte-giants.png`,
       name: "롯데 자이언츠",
       shortName: "롯데",
     },
     {
       id: "nc-dinos",
-      logo: "/team-logos/nc-dinos.png",
+      logo: `${publicUrl}/team-logos/nc-dinos.png`,
       name: "NC 다이노스",
       shortName: "NC",
     },
     {
       id: "samsung-lions",
-      logo: "/team-logos/samsung-lions.png",
+      logo: `${publicUrl}/team-logos/samsung-lions.png`,
       name: "삼성 라이온즈",
       shortName: "삼성",
     },
     {
       id: "ssg-landers",
-      logo: "/team-logos/ssg-landers.png",
+      logo: `${publicUrl}/team-logos/ssg-landers.png`,
       name: "SSG 랜더스",
       shortName: "SSG",
     },
     {
       id: "sangmoo",
-      logo: "/team-logos/sangmoo.png",
+      logo: `${publicUrl}/team-logos/sangmoo.png`,
       name: "상무",
       shortName: "상무",
     },

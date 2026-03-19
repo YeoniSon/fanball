@@ -19,6 +19,15 @@ const Ranking = () => {
   const [activeLeague, setActiveLeague] = useState("north");
   const [rankingData, setRankingData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const publicUrl = process.env.PUBLIC_URL || "";
+
+  const withPublicUrl = (url) => {
+    if (!url) return url;
+    if (!publicUrl) return url;
+    if (url.startsWith(publicUrl)) return url;
+    if (url.startsWith("/")) return `${publicUrl}${url}`;
+    return url;
+  };
 
   useEffect(() => {
     const fetchRankingData = async () => {
@@ -95,7 +104,7 @@ const Ranking = () => {
             <RankCell className={`rank-${team.rank}`}>{team.rank}</RankCell>
 
             <TeamCell>
-              <RankingTeamLogo src={team.logo} alt={team.team} />
+              <RankingTeamLogo src={withPublicUrl(team.logo)} alt={team.team} />
               <RankingTeamName>{team.team}</RankingTeamName>
             </TeamCell>
 

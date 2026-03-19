@@ -22,12 +22,13 @@ import {
 import { CalenderIcon, ClockIcon, LocationIcon } from "../../../common/Icons";
 
 const DetailGame = ({ gameData }) => {
+  const publicUrl = process.env.PUBLIC_URL || "";
   const teamIcon = [
     {
       id: "SSG",
       shortName: "SSG",
       label: "SSG 랜더스",
-      logo: "/team-logos/ssg-landers.png",
+      logo: `${publicUrl}/team-logos/ssg-landers.png`,
       path: "/ssgLanders",
       color: "#CE0E2D",
     },
@@ -35,7 +36,7 @@ const DetailGame = ({ gameData }) => {
       id: "NC",
       shortName: "NC",
       label: "NC 다이노스",
-      logo: "/team-logos/nc-dinos.png",
+      logo: `${publicUrl}/team-logos/nc-dinos.png`,
       path: "/ncDinos",
       color: "#315288",
     },
@@ -43,7 +44,7 @@ const DetailGame = ({ gameData }) => {
       id: "KIA",
       shortName: "KIA",
       label: "KIA 타이거즈",
-      logo: "/team-logos/kia-tigers.png",
+      logo: `${publicUrl}/team-logos/kia-tigers.png`,
       path: "/kiaTigers",
       color: "#EA0029",
     },
@@ -51,7 +52,7 @@ const DetailGame = ({ gameData }) => {
       id: "LG",
       shortName: "LG",
       label: "LG 트윈스",
-      logo: "/team-logos/lg-twins.png",
+      logo: `${publicUrl}/team-logos/lg-twins.png`,
       path: "/lgTwins",
       color: "#C30452",
     },
@@ -59,7 +60,7 @@ const DetailGame = ({ gameData }) => {
       id: "KT",
       shortName: "KT",
       label: "KT 위즈",
-      logo: "/team-logos/kt-wiz.png",
+      logo: `${publicUrl}/team-logos/kt-wiz.png`,
       path: "/ktWiz",
       color: "#000000",
     },
@@ -67,7 +68,7 @@ const DetailGame = ({ gameData }) => {
       id: "DOOSAN",
       shortName: "두산",
       label: "두산 베어스",
-      logo: "/team-logos/doosan-bears.png",
+      logo: `${publicUrl}/team-logos/doosan-bears.png`,
       path: "/doosanBears",
       color: "#131230",
     },
@@ -75,7 +76,7 @@ const DetailGame = ({ gameData }) => {
       id: "SAMSUNG",
       shortName: "삼성",
       label: "삼성 라이온즈",
-      logo: "/team-logos/samsung-lions.png",
+      logo: `${publicUrl}/team-logos/samsung-lions.png`,
       path: "/samsungLions",
       color: "#074CA1",
     },
@@ -83,7 +84,7 @@ const DetailGame = ({ gameData }) => {
       id: "LOTTE",
       shortName: "롯데",
       label: "롯데 자이언츠",
-      logo: "/team-logos/lotte-giants.png",
+      logo: `${publicUrl}/team-logos/lotte-giants.png`,
       path: "/lotteGiants",
       color: "#041E42",
     },
@@ -91,7 +92,7 @@ const DetailGame = ({ gameData }) => {
       id: "KIWOOM",
       shortName: "키움",
       label: "키움 히어로즈",
-      logo: "/team-logos/kiwoom-heroes.png",
+      logo: `${publicUrl}/team-logos/kiwoom-heroes.png`,
       path: "/kiwoomHeroes",
       color: "#570514",
     },
@@ -99,19 +100,19 @@ const DetailGame = ({ gameData }) => {
       id: "HANWHA",
       shortName: "한화",
       label: "한화 이글스",
-      logo: "/team-logos/hanwha-eagles.png",
+      logo: `${publicUrl}/team-logos/hanwha-eagles.png`,
       path: "/hanhwaEagles",
       color: "#FF6600",
     },
   ];
 
   const findLogoByTeamName = (name) => {
-    if (!name) return "/team-logos/default.png";
+    if (!name) return `${publicUrl}/team-logos/default.png`;
     const entry =
       teamIcon.find((t) => t.label === name) ||
       teamIcon.find((t) => name.includes(t.shortName)) ||
       null;
-    return entry?.logo || "/team-logos/default.png";
+    return entry?.logo || `${publicUrl}/team-logos/default.png`;
   };
 
   const formatDate = (dateString) => {

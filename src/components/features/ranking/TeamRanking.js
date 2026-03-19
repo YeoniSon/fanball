@@ -20,6 +20,15 @@ const TeamRanking = () => {
   const [year, setYear] = useState(new Date().getFullYear());
   const [standings, setStandings] = useState([]);
   const [loading, setLoading] = useState(false);
+  const publicUrl = process.env.PUBLIC_URL || "";
+
+  const withPublicUrl = (url) => {
+    if (!url) return url;
+    if (!publicUrl) return url;
+    if (url.startsWith(publicUrl)) return url;
+    if (url.startsWith("/")) return `${publicUrl}${url}`;
+    return url;
+  };
 
   const fetchStandings = async (y) => {
     setLoading(true);
@@ -68,7 +77,7 @@ const TeamRanking = () => {
             <TableRow key={t.teamId}>
               <RankCell className={`rank-${t.rank}`}>{t.rank}</RankCell>
               <TeamCell>
-                <TeamLogo src={t.logo} alt={t.team} />
+                <TeamLogo src={withPublicUrl(t.logo)} alt={t.team} />
                 <TeamName>{t.team}</TeamName>
               </TeamCell>
               <StatCell>{t.games}</StatCell>

@@ -18,6 +18,7 @@ const RbiBatter = () => {
   const [year, setYear] = useState(new Date().getFullYear());
   const [leaders, setLeaders] = useState([]);
   const [loading, setLoading] = useState(false);
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   const fetchData = async (y) => {
     setLoading(true);
@@ -38,7 +39,8 @@ const RbiBatter = () => {
     fetchData(year);
   }, [year]);
 
-  const getTeamLogo = (teamId) => (teamId ? `/team-logos/${teamId}.png` : "");
+  const getTeamLogo = (teamId) =>
+    teamId ? `${publicUrl}/team-logos/${teamId}.png` : "";
 
   return (
     <div>

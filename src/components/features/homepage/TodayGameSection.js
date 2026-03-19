@@ -23,16 +23,23 @@ const TodayGameSection = () => {
   const navigate = useNavigate();
   const [todayGames, setTodayGames] = useState([]);
   const [loading, setLoading] = useState(true);
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   useEffect(() => {
     const fetchTodayGames = async () => {
       try {
-        const response = await fetch("/mockGames.json");
+        const response = await fetch(`${publicUrl}/mockGames.json`);
         const data = await response.json();
 
-        // 오늘 날짜 (2024-03-21)의 경기만 가져오기
-        const todayDate = "2024-03-21";
-        const games = data.gamesByDate[todayDate] || [];
+        // mock json에는 특정 날짜만 들어있을 수 있으므로,
+        // 오늘 날짜에 데이터가 없으면 첫 날짜를 fallback으로 사용합니다.
+        const todayDate = new Date().toISOString().slice(0, 10);
+        const dateKeys = Object.keys(data?.gamesByDate || {});
+        const fallbackDate = dateKeys[0];
+        const games =
+          data?.gamesByDate?.[todayDate] ||
+          data?.gamesByDate?.[fallbackDate] ||
+          [];
 
         setTodayGames(games);
         setLoading(false);

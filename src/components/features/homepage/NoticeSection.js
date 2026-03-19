@@ -19,11 +19,12 @@ import {
 const NoticeSection = () => {
   const [notices, setNotices] = useState([]);
   const navigate = useNavigate();
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   useEffect(() => {
     const fetchNotices = async () => {
       try {
-        const response = await fetch("/mockNotices.json");
+        const response = await fetch(`${publicUrl}/mockNotices.json`);
         const noticeData = await response.json();
         setNotices(
           Array.isArray(noticeData?.notices) ? noticeData.notices : []

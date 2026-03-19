@@ -78,6 +78,8 @@ const PlayerInfo = () => {
     navigate(`/players/detail/${playerId}`);
   };
 
+  const publicUrl = process.env.PUBLIC_URL || "";
+
   return (
     <div>
       <FilterSection
@@ -96,7 +98,7 @@ const PlayerInfo = () => {
               <Card key={p.playerId}>
                 <CardHeader>
                   <Avatar
-                    src={p.photo || "/players/placeholder.png"}
+                    src={`${publicUrl}${p.photo || "/players/placeholder.png"}`}
                     alt={p.name}
                   />
                   <div>

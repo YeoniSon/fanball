@@ -26,11 +26,12 @@ const TicketSection = () => {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   useEffect(() => {
     const fetchTickets = async () => {
       try {
-        const response = await fetch("/mockTickets.json");
+        const response = await fetch(`${publicUrl}/mockTickets.json`);
         const data = await response.json();
         setTickets(data.tickets);
         setLoading(false);
