@@ -14,6 +14,7 @@ import {
   InputContainer,
   ToggleButton,
   FindPasswordLink,
+  TestAccounts,
   Button,
 } from "../../../styles/LoginPageStyled";
 import { ShowIcon, NoShowIcon } from "../../common/Icons";
@@ -162,6 +163,16 @@ const LoginPage = () => {
             {isLoading ? "로그인 중..." : "로그인"}
           </LoginButton>
         </Form>
+
+        <TestAccounts>
+          <h3>로그인 테스트 계정</h3>
+          <div className="account">
+            회원용 이메일: <b>test@test.com</b> / 비번: <b>123456</b>
+          </div>
+          <div className="account">
+            관리자 이메일: <b>admin@fanball.com</b> / 비번: <b>admin123</b>
+          </div>
+        </TestAccounts>
 
         <SignupLink>
           계정이 없으신가요?{" "}

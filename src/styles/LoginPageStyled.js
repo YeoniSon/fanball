@@ -144,12 +144,12 @@ export const TestAccounts = styled.div`
   h3 {
     margin: 0 0 0.5rem 0;
     font-size: 0.875rem;
-    color: #374151;
+    color: #ef4444;
   }
 
   .account {
     font-size: 0.75rem;
-    color: #6b7280;
+    color: #ef4444;
     margin-bottom: 0.25rem;
 
     &:last-child {
