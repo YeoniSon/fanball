@@ -63,7 +63,7 @@ function AppContent() {
             <SideBar />
 
             {/* 메인 콘텐츠 */}
-            <div style={{ flex: 1, padding: "2rem" }}>
+            <div style={{ flex: 1, padding: "2rem", minWidth: 0 }}>
               <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/schedule" element={<LeagueSchedulePage />} />
@@ -135,9 +135,12 @@ function AppContent() {
 }
 
 function App() {
+  // GitHub Pages처럼 서브경로(/fallball)로 배포될 때 라우팅 기준이 맞도록 설정
+  const basename = process.env.PUBLIC_URL;
+
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <AppContent />
       </BrowserRouter>
     </div>
