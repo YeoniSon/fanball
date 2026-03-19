@@ -16,7 +16,8 @@ export const LoginContainer = styled.div`
 export const LoginCard = styled.div`
   background: white;
   border-radius: 1rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   padding: 3rem;
   width: 100%;
@@ -64,7 +65,9 @@ export const InputContainer = styled.div`
   border-radius: 0.5rem;
   width: 100%;
   font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -135,11 +138,7 @@ export const SignupLink = styled.div`
 `;
 
 export const TestAccounts = styled.div`
-  margin-top: 2rem;
-  padding: 1rem;
-  background: #f3f4f6;
-  border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
+  margin: 2rem;
 
   h3 {
     margin: 0 0 0.5rem 0;
