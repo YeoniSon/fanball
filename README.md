@@ -69,3 +69,6 @@ Project => React로 구현
 
 ## Figma Url
 [UI/UX](https://www.figma.com/make/OuYP9uKhA7Jl9l0XZMLl21/KBO-%ED%8C%AC-%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8?node-id=0-1&t=aCwpNBQCaE6GqFpb-1)
+
+## 시연 링크
+[GitHub Page](https://yeonison.github.io/fanball)
